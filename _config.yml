@@ -1,4 +1,4 @@
-baseurl: "/obxtodo"
+baseurl: "/obxtodo.com"
 url: "https://obxtodo.github.io"
 title: OBX To Do
 remote_theme: pages-themes/minimal@v0.2.0 # A clean starting point
