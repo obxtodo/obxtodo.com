@@ -3,14 +3,55 @@ layout: default
 title: OBX To Do Gallery
 ---
 <style>
-  /* 1. Force a plain white background on everything */
-  body, html, .wrapper {
+  /* 1. GLOBAL RESET: WHITE BACKGROUND & FULL WIDTH */
+  html, body {
     background-color: #ffffff !important;
     background-image: none !important;
-    color: #333333 !important; /* Dark grey text for readability */
+    color: #333333 !important;
+    margin: 0;
+    padding: 0;
   }
 
-  /* 2. The "Nuclear Option" to remove all GitHub/Theme references */
+  .wrapper {
+    width: 90% !important;
+    max-width: 1100px !important;
+    margin: 0 auto !important;
+    background: #ffffff !important;
+    float: none !important;
+    position: relative !important;
+  }
+
+  /* 2. HEADER: REMOVE SIDEBAR LOOK & CENTER BRANDING */
+  header {
+    width: 100% !important;
+    float: none !important;
+    position: static !important;
+    text-align: center !important;
+    padding: 40px 0 20px 0 !important;
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 30px;
+  }
+
+  header h1 {
+    font-size: 2.5rem !important;
+    color: #222222 !important;
+    margin-bottom: 5px !important;
+  }
+
+  header p {
+    font-size: 1.1rem !important;
+    color: #666666 !important;
+  }
+
+  /* 3. SECTION: EXPAND CONTENT TO FULL WIDTH */
+  section {
+    width: 100% !important;
+    float: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* 4. CLEANUP: HIDE GITHUB LINKS, BUTTONS, AND FOOTERS */
   footer, 
   .wrapper footer, 
   header p.view, 
@@ -20,21 +61,41 @@ title: OBX To Do Gallery
     display: none !important;
   }
 
-  /* 3. Clean up the header layout */
-  header {
-    margin-bottom: 20px;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
+  /* 5. GALLERY GRID STYLING (For index.html) */
+  .gallery-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
+    gap: 30px !important;
+    padding: 20px 0 !important;
   }
 
-  /* 4. Fix link colors (so they aren't the default theme blue) */
+  .gallery-item {
+    border: 1px solid #efefef;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    background: #fff;
+  }
+
+  .gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  }
+
+  /* 6. RESPONSIVE TEXT & LINKS */
   a {
     color: #0077cc;
     text-decoration: none;
   }
-  
+
   a:hover {
     text-decoration: underline;
+  }
+
+  /* Fix for the carousel images to ensure they don't overflow */
+  img {
+    max-width: 100%;
+    height: auto;
   }
 </style>
 
