@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<h2>{{ page.title }}</h2>
+<p>{{ page.description }}</p>
+
+<section id="image-carousel" class="splide" aria-label="Beautiful OBX Photos">
+  <div class="splide__track">
+    <ul class="splide__list">
+      {% for img in page.images %}
+      <li class="splide__slide">
+        <img src="{{ img }}" style="width:100%; border-radius:10px;">
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<p style="margin-top:20px;">
+  <a href="{{ page.instagram_url }}" target="_blank">View on Instagram →</a>
+</p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script>
+  new Splide('#image-carousel', { type: 'loop', drag: 'free', snap: true }).mount();
+</script>
