@@ -14,13 +14,13 @@ Whether you’re planning to climb the 200+ steps or just want the perfect sunse
 📍 Ocracoke Island (Ocracoke) - The Village Classic."
 instagram_url: "https://www.instagram.com/p/DWq3OIjlQal"
 images:
-  - "/assets/img/lighthouse 1.jpg"
-  - "/assets/img/lighthouse 2.jpg"
-  - "/assets/img/lighthouse 3.jpg"
-  - "/assets/img/lighthouse 4.jpg"
-  - "/assets/img/lighthouse 5.jpg"
-  - "/assets/img/lighthouse 6.jpg"
-  - "/assets/img/lighthouse 7.jpg"
-  - "/assets/img/lighthouse 8.jpg"
+  - "/assets/img/lighthouse1.jpg"
+  - "/assets/img/lighthouse2.jpg"
+  - "/assets/img/lighthouse3.jpg"
+  - "/assets/img/lighthouse4.jpg"
+  - "/assets/img/lighthouse5.jpg"
+  - "/assets/img/lighthouse6.jpg"
+  - "/assets/img/lighthouse7.jpg"
+  - "/assets/img/lighthouse8.jpg"
   
 ---
