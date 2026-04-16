@@ -1,4 +1,4 @@
-title: OBX To Go
+title: OBX To Do
 remote_theme: pages-themes/minimal@v0.2.0 # A clean starting point
 plugins:
   - jekyll-remote-theme
