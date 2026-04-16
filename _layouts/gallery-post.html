@@ -9,7 +9,7 @@ layout: default
     <ul class="splide__list">
       {% for img in page.images %}
       <li class="splide__slide">
-        <img src="{{ img }}" style="width:100%; border-radius:10px;">
+        <img src="{{ site.baseurl }}{{ img }}" style="width:100%; border-radius:10px;">
       </li>
       {% endfor %}
     </ul>
