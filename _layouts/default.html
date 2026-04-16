@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <style>
+    /* Paste that FULL style section I gave you in the previous turn right here */
+    html, body { background-color: #ffffff !important; ... }
+    /* ... rest of the CSS ... */
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+      <p>{{ site.description }}</p>
+    </header>
+
+    <section>
+      {{ content }}
+    </section>
+  </div>
+
+</body>
+</html>
