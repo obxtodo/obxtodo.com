@@ -1,7 +1,8 @@
 ---
 layout: gallery-post
 title: "Lighthouses of the Outer Banks"
-description: |Your family’s guide to the iconic towers of the Outer Banks.
+description: |
+Your family’s guide to the iconic towers of the Outer Banks.
 
 Lighthouses are the heartbeat of the OBX, but every tower has a different vibe. From the tallest brick lighthouse in America to the most toddler-friendly cottage-style light in Manteo, there is a stop for every family.
 
