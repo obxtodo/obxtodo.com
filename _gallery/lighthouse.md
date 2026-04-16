@@ -1,7 +1,7 @@
 ---
 layout: gallery-post
 title: "Lighthouses of the Outer Banks"
-description: "Your family’s guide to the iconic towers of the Outer Banks.
+description: |Your family’s guide to the iconic towers of the Outer Banks.
 
 Lighthouses are the heartbeat of the OBX, but every tower has a different vibe. From the tallest brick lighthouse in America to the most toddler-friendly cottage-style light in Manteo, there is a stop for every family.
 
@@ -11,7 +11,7 @@ Whether you’re planning to climb the 200+ steps or just want the perfect sunse
 📍 Roanoke Marshes (Manteo) - The Hidden Gem.
 📍 Bodie Island (Nags Head) - The Horizontal Stripes.
 📍 Cape Hatteras (Buxton) - The Spiral Giant.
-📍 Ocracoke Island (Ocracoke) - The Village Classic."
+📍 Ocracoke Island (Ocracoke) - The Village Classic.
 instagram_url: "https://www.instagram.com/p/DWq3OIjlQal"
 images:
   - "/assets/img/lighthouse1.jpg"
