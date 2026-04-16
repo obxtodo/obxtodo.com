@@ -1,6 +1,15 @@
 ---
 layout: gallery-post
 title: "Lighthouses of the Outer Banks"
+images:
+  - "/assets/img/lighthouse1.jpg"
+  - "/assets/img/lighthouse2.jpg"
+  - "/assets/img/lighthouse3.jpg"
+  - "/assets/img/lighthouse4.jpg"
+  - "/assets/img/lighthouse5.jpg"
+  - "/assets/img/lighthouse6.jpg"
+  - "/assets/img/lighthouse7.jpg"
+  - "/assets/img/lighthouse8.jpg"
 description: |
   Your family’s guide to the iconic towers of the Outer Banks.
   
@@ -14,14 +23,4 @@ description: |
   📍 Cape Hatteras (Buxton) - The Spiral Giant.
   📍 Ocracoke Island (Ocracoke) - The Village Classic.
 instagram_url: "https://www.instagram.com/p/DWq3OIjlQal"
-images:
-  - "/assets/img/lighthouse1.jpg"
-  - "/assets/img/lighthouse2.jpg"
-  - "/assets/img/lighthouse3.jpg"
-  - "/assets/img/lighthouse4.jpg"
-  - "/assets/img/lighthouse5.jpg"
-  - "/assets/img/lighthouse6.jpg"
-  - "/assets/img/lighthouse7.jpg"
-  - "/assets/img/lighthouse8.jpg"
-  
 ---
