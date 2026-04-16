@@ -8,7 +8,7 @@ title: OBX To Do Gallery
 <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;">
   {% for post in site.gallery %}
     <div class="gallery-item" style="border: 1px solid #ddd; padding: 10px; border-radius: 8px;">
-      <a href="{{ post.url }}">
+      <a href="{{ site.baseurl }}{{ post.url }}">
         <img src="{{ site.baseurl }}{{ post.images[0] }}" style="width: 100%; height: 200px; object-fit: cover; border-radius: 5px;">
         <h3 style="margin-top: 10px;">{{ post.title }}</h3>
       </a>
