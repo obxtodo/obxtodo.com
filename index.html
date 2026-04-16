@@ -2,6 +2,49 @@
 layout: default
 title: OBX To Do Gallery
 ---
+Since you want a clean, minimalist professional look for obxtodo, we’re going to strip away the "coder" aesthetic entirely.
+
+To get a plain white background and remove those stubborn GitHub links, we need to override the theme's default colors and hide the footer and header elements.
+
+The "Clean Slate" Code
+Add this to the very top of your index.html (right after the second ---):
+
+HTML
+<style>
+  /* 1. Force a plain white background on everything */
+  body, html, .wrapper {
+    background-color: #ffffff !important;
+    background-image: none !important;
+    color: #333333 !important; /* Dark grey text for readability */
+  }
+
+  /* 2. The "Nuclear Option" to remove all GitHub/Theme references */
+  footer, 
+  .wrapper footer, 
+  header p.view, 
+  header ul, 
+  .owner, 
+  hr {
+    display: none !important;
+  }
+
+  /* 3. Clean up the header layout */
+  header {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+
+  /* 4. Fix link colors (so they aren't the default theme blue) */
+  a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
 
 <h2>Latest Posts</h2>
 
