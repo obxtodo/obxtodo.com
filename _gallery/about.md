@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About
+description: Outer Banks Family Fun - Your family-first guide to the best things to do in the Outer Banks, from lighthouses to local live music.
 permalink: /about/
 hide: true
 nav_show: false
