@@ -1,0 +1,17 @@
+# macOS system files
+.DS_Store
+**/.DS_Store
+
+# Jekyll build output
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby/Bundler files (standard practice for GH Pages)
+Gemfile
+Gemfile.lock
+.bundle/
+vendor/
+
+# Personal/Private files
+private/
