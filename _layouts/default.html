@@ -55,18 +55,8 @@
       margin-bottom: 50px;
     }
 
-    header h1 {
-      font-size: 3.2rem !important;
-      font-style: italic;
-      margin: 0 !important;
-    }
-
-    header h1 a {
-      color: #2c3e50 !important;
-      text-decoration: none !important;
-      transition: opacity 0.3s ease;
-    }
-
+    header h1 { font-size: 3.2rem !important; font-style: italic; margin: 0 !important; }
+    header h1 a { color: #2c3e50 !important; text-decoration: none !important; transition: opacity 0.3s ease; }
     header h1 a:hover { opacity: 0.7; }
 
     header p {
@@ -79,9 +69,8 @@
       margin-top: 15px !important;
     }
 
-    /* 4. NAVIGATION (Dynamic States) */
+    /* 4. NAVIGATION */
     nav { margin-top: 30px; }
-    
     nav a {
       font-family: 'Montserrat', sans-serif !important;
       font-size: 0.75rem !important;
@@ -97,7 +86,6 @@
       transition: color 0.3s ease;
     }
     
-    /* Underline Base */
     nav a::after {
       content: '';
       position: absolute;
@@ -110,16 +98,8 @@
       transform: translateX(-50%);
     }
     
-    /* Hover and Active Logic */
-    nav a:hover::after, 
-    nav a.active::after {
-      width: 70%;
-    }
-
-    nav a:hover, 
-    nav a.active {
-      color: #3498db !important;
-    }
+    nav a:hover::after, nav a.active::after { width: 70%; }
+    nav a:hover, nav a.active { color: #3498db !important; }
 
     /* 5. SPLIDE CUSTOMIZATION */
     .splide__pagination__page {
@@ -131,10 +111,7 @@
       margin: 0 5px !important;
       transition: all 0.3s ease !important;
     }
-    .splide__pagination__page.is-active {
-      background: #3498db !important;
-      width: 45px !important;
-    }
+    .splide__pagination__page.is-active { background: #3498db !important; width: 45px !important; }
 
     /* 6. FLEXBOX FOR POSTS */
     .post-container {
@@ -164,116 +141,82 @@
     .gallery-item {
       border: none !important;
       border-radius: 16px;
-      overflow: hidden; /* Clips the zoom */
-      isolation: isolate; /* Pro-fix for zoom artifacts */
+      overflow: hidden;
       background: #ffffff;
       transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
       box-shadow: 0 4px 15px rgba(0,0,0,0.03);
       animation: fadeInUp 0.8s ease-out forwards;
-      opacity: 0; 
+      opacity: 0;
+      position: relative;
     }
 
-    /* Staggered Delay for Grid Items */
+    /* Staggered Delay */
     .gallery-item:nth-child(1) { animation-delay: 0.1s; }
     .gallery-item:nth-child(2) { animation-delay: 0.2s; }
     .gallery-item:nth-child(3) { animation-delay: 0.3s; }
     .gallery-item:nth-child(4) { animation-delay: 0.4s; }
-    .gallery-item:nth-child(5) { animation-delay: 0.5s; }
-    .gallery-item:nth-child(6) { animation-delay: 0.6s; }
 
     .gallery-item:hover {
       transform: translateY(-12px);
       box-shadow: 0 25px 50px rgba(0,0,0,0.1);
     }
 
-    .gallery-item img {
-      width: 100%;
-      aspect-ratio: 4 / 5;
-      object-fit: cover;
-      transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1), filter 0.6s ease;
-    }
-    
-    .gallery-item:hover img {
-      transform: scale(1.1); /* Slightly more pronounced zoom */
-      filter: brightness(1.05) contrast(1.05);
-    }
-
-    /* This is the secret sauce: The "Frame" */
+    /* The Secret Sauce Wrap */
     .gallery-image-wrap {
       width: 100%;
       aspect-ratio: 4 / 5;
-      overflow: hidden; /* This keeps the zoom inside the top half */
-      border-radius: 16px 16px 0 0; /* Only round the top corners */
+      overflow: hidden; 
+      border-radius: 16px 16px 0 0;
       position: relative;
     }
 
-    .gallery-item {
-      border: none !important;
-      border-radius: 16px;
-      background: #ffffff;
-      transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-      box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-    }
-
-    /* Target the image specifically inside the wrap */
     .gallery-image-wrap img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1), filter 0.6s ease;
     }
 
     .gallery-item:hover .gallery-image-wrap img {
-      transform: scale(1.1); /* Zoom is now contained in the wrap */
+      transform: scale(1.1);
+      filter: brightness(1.05) contrast(1.05);
     }
 
     .gallery-item h3 {
       padding: 20px;
       margin: 0;
-      background: #ffffff; /* Blocks any bleed-through */
+      background: #ffffff;
       position: relative;
       z-index: 10;
     }
 
     /* 8. HIDE THEME ARTIFACTS */
-    footer, .wrapper footer, header p.view, header ul, .owner, hr {
-      display: none !important;
-    }
+    footer, .wrapper footer, header p.view, header ul, .owner, hr { display: none !important; }
 
     /* 9. RESPONSIVE FIXES */
     @media (max-width: 768px) {
       .post-container { flex-direction: column; }
       .post-media, .post-content { width: 100%; }
       header { padding: 30px 0 !important; }
-      header h1 { font-size: 2.4rem !important; }
+      header h1 { font-size: 2.2rem !important; }
       header p { letter-spacing: 3px; font-size: 0.7rem !important; }
-      .post-container { gap: 30px; }
     }
 
     img { max-width: 100%; height: auto; display: block; }
   </style>
 </head>
 <body>
-
   <div class="wrapper">
     <header>
       <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
       <p>{{ site.description }}</p>
       <nav>
-        <a href="{{ '/' | relative_url }}" 
-           class="{% if page.url == '/' or page.url == '/index.html' %}active{% endif %}">Home</a>
-           
+        <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' or page.url == '/index.html' %}active{% endif %}">Home</a>
         <a href="https://instagram.com/obxtodo" target="_blank">Instagram</a>
-        
-        <a href="{{ '/about/' | relative_url }}" 
-           class="{% if page.url contains 'about' %}active{% endif %}">About</a>
+        <a href="{{ '/about/' | relative_url }}" class="{% if page.url contains 'about' %}active{% endif %}">About</a>
       </nav>
     </header>
-
-    <section>
-      {{ content }}
-    </section>
+    <section>{{ content }}</section>
   </div>
-
 </body>
 </html>
