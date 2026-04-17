@@ -1,58 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }} | {{ site.title }}</title>
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
   <style>
-    /* 1. MASTER THEME RESET */
+    /* 1. MASTER THEME RESET & TYPOGRAPHY */
     html, body {
       background-color: #ffffff !important;
       background-image: none !important;
-      color: #333333 !important;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      color: #444444 !important; /* Softer professional grey */
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
     }
 
-    /* 2. CONTAINER CONSTRAINTS (The "Normal Size" Fix) */
+    /* Editorial Style for Headings */
+    header h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif !important;
+      color: #222222 !important;
+      letter-spacing: -0.02em;
+      margin-top: 0;
+    }
+
+    /* 2. CONTAINER CONSTRAINTS */
     .wrapper {
       width: 90% !important;
-      max-width: 1000px !important; /* Keeps site from getting super wide */
+      max-width: 1050px !important;
       margin: 0 auto !important;
       float: none !important;
       position: relative !important;
       background: #ffffff !important;
     }
 
-    /* 3. HEADER & BRANDING */
+    /* 3. HEADER & BRANDING (Centered Layout) */
     header {
       width: 100% !important;
       float: none !important;
       position: static !important;
       text-align: center !important;
-      padding: 60px 0 30px 0 !important;
-      border-bottom: 1px solid #f0f0f0;
-      margin-bottom: 40px;
+      padding: 80px 0 40px 0 !important;
+      border-bottom: 1px solid #f5f5f5;
+      margin-bottom: 50px;
     }
 
     header h1 {
-      font-size: 2.2rem !important;
+      font-size: 2.8rem !important;
       margin: 0 !important;
     }
 
     header h1 a {
       color: #222 !important;
       text-decoration: none !important;
+      transition: opacity 0.2s ease;
+    }
+
+    header h1 a:hover {
+      opacity: 0.7;
     }
 
     header p {
-      color: #888 !important;
-      font-size: 1rem !important;
-      margin-top: 10px !important;
+      color: #999 !important;
+      font-size: 1.1rem !important;
+      margin-top: 12px !important;
+      font-style: italic;
     }
 
     /* 4. CONTENT SECTION */
@@ -62,47 +80,58 @@
       padding: 0 !important;
     }
 
-    /* 5. FLEXBOX LAYOUT (Image Left / Text Right) */
+    /* 5. TWO-COLUMN GALLERY POST LAYOUT (Flexbox) */
     .post-container {
       display: flex;
       flex-direction: row;
-      gap: 50px;
+      gap: 60px;
       align-items: flex-start;
-      margin-top: 20px;
+      margin-bottom: 80px;
     }
 
     .post-media {
-      flex: 1.2; /* Slightly more room for the images */
-      max-width: 550px;
+      flex: 1.3;
+      max-width: 600px;
     }
 
     .post-content {
       flex: 1;
     }
 
-    .post-content h1 {
-      margin-top: 0;
-      font-size: 2rem;
-    }
-
-    /* 6. GALLERY GRID (Homepage) */
+    /* 6. HOMEPAGE GRID (Glassmorphism & Interactive) */
     .gallery-grid {
       display: grid !important;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
-      gap: 25px !important;
-      padding-bottom: 50px;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
+      gap: 40px !important;
+      padding-bottom: 80px;
     }
 
     .gallery-item {
-      border: 1px solid #eee;
-      border-radius: 12px;
+      border: none !important;
+      border-radius: 16px;
       overflow: hidden;
-      transition: transform 0.2s ease;
+      background: #ffffff;
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.02);
     }
 
     .gallery-item:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 0; /* Let the container handle the radius */
+    }
+
+    .gallery-item h3 {
+      padding: 20px;
+      font-size: 1.4rem;
+      margin: 0;
+      text-align: center;
     }
 
     /* 7. HIDE THEME ARTIFACTS */
@@ -111,39 +140,4 @@
     }
 
     /* 8. RESPONSIVE MOBILE FIX */
-    @media (max-width: 768px) {
-      .post-container {
-        flex-direction: column;
-      }
-      .post-media, .post-content {
-        max-width: 100%;
-        width: 100%;
-      }
-      header {
-        padding: 30px 0 !important;
-      }
-    }
-
-    /* IMAGE STYLING */
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="wrapper">
-    <header>
-      <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-      <p>{{ site.description }}</p>
-    </header>
-
-    <section>
-      {{ content }}
-    </section>
-  </div>
-
-</body>
-</html>
+    @media
