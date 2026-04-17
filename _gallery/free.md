@@ -2,12 +2,12 @@
 layout: gallery-post
 title: "Free & Fun OBX"
 images:
-  - "/assets/img/free1.jpg"
-  - "/assets/img/free2.jpg"
-  - "/assets/img/free3.jpg"
-  - "/assets/img/free4.jpg"
-  - "/assets/img/free5.jpg"
-  - "/assets/img/free6.jpg"
+  - "/assets/img/free1.png"
+  - "/assets/img/free2.png"
+  - "/assets/img/free3.png"
+  - "/assets/img/free4.png"
+  - "/assets/img/free5.png"
+  - "/assets/img/free6.png"
 description: |
   Some free & fun activities on the Outer Banks! From the towering dunes at Jockey's Ridge to the free ferry ride over to Ocracoke, we’ve mapped out some of the best no-cost fun on the islands.
 
