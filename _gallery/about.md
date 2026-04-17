@@ -12,8 +12,6 @@ hide: true
 We are a Maryland-based family with a deep-rooted love for the OBX. With three kids in tow, our content is designed with families in mind—focusing on fun attractions and events.
 
 ### Connect With Us
-We are constantly updating our gallery with new guides and things to do! 
-
 * **Instagram:** [@obxtodo](https://instagram.com/obxtodo)
 * **Email:** info@obxtodo.com
 
