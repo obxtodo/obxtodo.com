@@ -5,18 +5,15 @@ title: OBX To Do Gallery
 
 <h2>Latest Posts</h2>
 
-<div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;">
+<div class="gallery-grid">
   {% for post in site.gallery %}
-    <div class="gallery-item" style="border: 1px solid #ddd; padding: 10px; border-radius: 8px;">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        <img src="{{ site.baseurl }}{{ post.images[0] }}" style="width: 100%; object-fit: cover; border-radius: 5px;">
-        <h3 style="margin-top: 10px;">{{ post.title }}</h3>
-      </a>
-    </div>
+    {% if post.hide != true %}
+      <div class="gallery-item">
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          <img src="{{ site.baseurl }}{{ post.images[0] }}" alt="{{ post.title }}">
+          <h3>{{ post.title }}</h3>
+        </a>
+      </div>
+    {% endif %}
   {% endfor %}
 </div>
-
-<style>
-  footer { display: none !important; }
-  .wrapper footer { display: none; }
-</style>
