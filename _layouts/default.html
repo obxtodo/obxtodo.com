@@ -89,22 +89,40 @@
 
     /* 4. NAVIGATION (Restored Montserrat Style) */
     nav { margin-top: 30px; }
-    nav a {
-      font-family: 'Montserrat', sans-serif !important;
-      font-size: 0.75rem !important;
-      letter-spacing: 2px;
-      font-weight: 600;
-      margin: 0 15px;
-      color: #2c3e50 !important;
-      text-decoration: none !important;
-      text-transform: uppercase;
-      transition: color 0.2s;
-    }
-    
-    nav a:hover { 
-      color: #3498db !important; 
-    }
-
+   nav a {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 0.75rem !important;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin: 0 18px;
+    color: #2c3e50 !important;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+  }
+  
+  /* The Animated Underline */
+  nav a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 50%;
+    background-color: #3498db;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateX(-50%);
+  }
+  
+  nav a:hover::after {
+    width: 80%; /* Modern look is slightly shorter than the text */
+  }
+  
+  nav a:hover {
+    color: #3498db !important;
+  }
     /* 5. SPLIDE CUSTOMIZATION */
     .splide__pagination__page {
       background: #ddd !important;
