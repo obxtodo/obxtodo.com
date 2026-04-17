@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
+    
     /* 1. MASTER THEME RESET */
     html, body {
       background-color: #ffffff !important;
@@ -135,12 +136,23 @@
       gap: 40px !important;
       padding-bottom: 80px;
     }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
     .gallery-item {
       border: none !important;
       border-radius: 16px;
       overflow: hidden;
       transition: all 0.4s ease;
       box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+      animation: fadeInUp 0.6s ease-out forwards;
     }
     .gallery-item:hover {
       transform: translateY(-10px);
