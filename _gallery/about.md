@@ -2,6 +2,7 @@
 layout: default
 title: About OBX To Do
 permalink: /about/
+hide: true
 ---
 
 ### The Vision
