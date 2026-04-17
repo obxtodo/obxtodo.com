@@ -117,6 +117,16 @@
       color: #3498db !important;
     }
 
+    /* Permanent underline for the current page */
+    nav a.active::after {
+      width: 70%;
+      background-color: #3498db;
+    }
+    
+    nav a.active {
+      color: #3498db !important;
+    }
+
     /* 5. SPLIDE CUSTOMIZATION */
     .splide__pagination__page {
       background: #ddd !important;
@@ -216,11 +226,15 @@
     <header>
       <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
       <p>{{ site.description }}</p>
-      <nav>
-        <a href="{{ '/' | relative_url }}">Gallery</a>
-        <a href="https://instagram.com/obxtodo" target="_blank">Instagram</a>
-        <a href="{{ '/about/' | relative_url }}">About</a>
-      </nav>
+<nav>
+  <a href="{{ '/' | relative_url }}" 
+     class="{% if page.url == '/' %}active{% endif %}">Gallery</a>
+     
+  <a href="https://instagram.com/obxtodo" target="_blank">Instagram</a>
+  
+  <a href="{{ '/about/' | relative_url }}" 
+     class="{% if page.url contains 'about' %}active{% endif %}">About</a>
+</nav>
     </header>
 
     <section>
