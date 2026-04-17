@@ -45,10 +45,13 @@
       position: sticky !important;
       top: 0;
       z-index: 1000;
-      background: rgba(255, 255, 255, 0.8) !important; /* Semi-transparent white */
-      backdrop-filter: blur(10px); /* The "Glass" effect */
-      padding: 20px 0 !important; /* Shorter padding for sticky mode */
+      background: rgba(255, 255, 255, 0.9) !important; /* Slightly more opaque for readability */
+      backdrop-filter: blur(12px); /* Deep frosted glass effect */
+      -webkit-backdrop-filter: blur(12px);
+      padding: 30px 0 !important; 
       border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      text-align: center !important; /* Ensures everything stays centered */
+      transition: padding 0.3s ease; /* Prepared for future scroll-shrink logic */
     }
    /* header {
       width: 100% !important;
