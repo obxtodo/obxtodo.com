@@ -159,6 +159,17 @@
       box-shadow: 0 20px 40px rgba(0,0,0,0.08);
     }
 
+    .gallery-item img {
+      width: 100%;
+      aspect-ratio: 4 / 5; /* Vertical "Portrait" look is very trendy for travel */
+      object-fit: cover; /* Crops the image to fit the box perfectly */
+      transition: transform 0.5s ease;
+    }
+    
+    .gallery-item:hover img {
+      transform: scale(1.05); /* Subtle zoom inside the card on hover */
+    }
+
     /* 8. HIDE THEME ARTIFACTS */
     footer, .wrapper footer, header p.view, header ul, .owner, hr {
       display: none !important;
