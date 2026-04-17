@@ -3,6 +3,8 @@ layout: default
 title: About OBX To Do
 permalink: /about/
 hide: true
+nav_show: false
+nav_order: 1
 ---
 
 ### The Vision

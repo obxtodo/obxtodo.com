@@ -6,7 +6,9 @@ title: OBX To Do
 <h2>Latest Posts</h2>
 
 <div class="gallery-grid">
-  {% for post in site.gallery %}
+  
+  {% assign sorted_pages = site.gallery | sort: "nav_order" % | reverse %}
+    {% for post in sorted_pages %}
     {% if post.hide != true %}
       <div class="gallery-item">
         <a href="{{ site.baseurl }}{{ post.url }}">

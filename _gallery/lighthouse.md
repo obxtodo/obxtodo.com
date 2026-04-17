@@ -1,6 +1,8 @@
 ---
 layout: gallery-post
 title: "Lighthouses of the Outer Banks"
+nav_show: true
+nav_order: 2
 images:
   - "/assets/img/lighthouse1.jpg"
   - "/assets/img/lighthouse2.jpg"

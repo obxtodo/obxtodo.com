@@ -1,6 +1,8 @@
 ---
 layout: gallery-post
 title: "Free & Fun OBX"
+nav_show: true
+nav_order: 4
 images:
   - "/assets/img/free1.png"
   - "/assets/img/free2.png"
