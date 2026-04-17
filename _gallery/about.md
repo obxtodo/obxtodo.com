@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About OBX To Do
+permalink: /about/
 ---
 
 ### The Vision
