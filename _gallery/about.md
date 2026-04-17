@@ -14,7 +14,16 @@ nav_order: 1
 We are a Maryland-based family but our hearts live in the OBX. With kids in tow, we’ve spent years discovering the heartbeat of the islands. obxtodo is our way of sharing those family-first attractions and events with you.
 
 ### Connect With Us
-* **Instagram:** [@obxtodo](https://instagram.com/obxtodo)
-* **Email:** info@obxtodo.com
+<div class="connect-container">
+  <a href="https://instagram.com/obxtodo" target="_blank" class="instagram-btn">
+    <i class="fa-brands fa-instagram"></i>
+    <span>Instagram</span>
+  </a>
+
+  <a href="mailto:info@obxtodo.com" class="email-btn">
+    <i class="fa-solid fa-envelope"></i>
+    <span>Email</span>
+  </a>
+</div>
 
 ---
