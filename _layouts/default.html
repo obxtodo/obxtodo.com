@@ -54,8 +54,33 @@
       width: 100%;
       margin-bottom: 50px;
     }
+/* 3.1 LOGO & TITLE ALIGNMENT */
+    .logo-container {
+      display: flex;
+      align-items: center; /* Vertically centers logo with text */
+      justify-content: center; /* Keeps everything in the middle */
+      gap: 20px; /* Space between logo and text */
+      margin-bottom: 5px;
+    }
 
-    header h1 { font-size: 3.2rem !important; font-style: italic; margin: 0 !important; }
+    .site-logo {
+      height: 60px; /* Adjust based on your logo's proportions */
+      width: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .site-logo:hover {
+      transform: rotate(-5deg) scale(1.1); /* Adds a little 'dynamic' personality */
+    }
+
+    /* Adjust H1 to ensure it doesn't force a new line */
+    header h1 {
+      font-size: 3.2rem !important;
+      font-style: italic;
+      margin: 0 !important;
+      display: inline-block;
+    }
+    
     header h1 a { color: #2c3e50 !important; text-decoration: none !important; transition: opacity 0.3s ease; }
     header h1 a:hover { opacity: 0.7; }
 
@@ -200,6 +225,7 @@
       header { padding: 30px 0 !important; }
       header h1 { font-size: 2.2rem !important; }
       header p { letter-spacing: 3px; font-size: 0.7rem !important; }
+      .site-logo { height: 45px; }
     }
 
     img { max-width: 100%; height: auto; display: block; }
@@ -208,7 +234,10 @@
 <body>
   <div class="wrapper">
     <header>
-      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+      <div class="logo-container">
+    <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="obxtodo logo" class="site-logo">
+    <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+  </div>
       <p>{{ site.description }}</p>
       <nav>
         <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' or page.url == '/index.html' %}active{% endif %}">Home</a>
