@@ -10,7 +10,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
-    
     /* 1. MASTER THEME RESET */
     html, body {
       background-color: #ffffff !important;
@@ -20,6 +19,7 @@
       padding: 0;
       line-height: 1.8;
       -webkit-font-smoothing: antialiased;
+      scroll-behavior: smooth;
     }
 
     /* Elegant Serif for Titles */
@@ -40,28 +40,20 @@
       background: #ffffff !important;
     }
 
-    /* 3. HEADER & BRANDING (Restored Montserrat Style) */
+    /* 3. HEADER & BRANDING (Frosted Glass & Centered) */
     header {
       position: sticky !important;
       top: 0;
       z-index: 1000;
-      background: rgba(255, 255, 255, 0.9) !important; /* Slightly more opaque for readability */
-      backdrop-filter: blur(12px); /* Deep frosted glass effect */
+      background: rgba(255, 255, 255, 0.9) !important;
+      backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
-      padding: 30px 0 !important; 
+      padding: 35px 0 !important; 
       border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-      text-align: center !important; /* Ensures everything stays centered */
-      transition: padding 0.3s ease; /* Prepared for future scroll-shrink logic */
-    }
-   /* header {
-      width: 100% !important;
-      float: none !important;
-      position: static !important;
       text-align: center !important;
-      padding: 80px 0 40px 0 !important;
-      border-bottom: 1px solid #f5f5f5;
+      width: 100%;
       margin-bottom: 50px;
-    }*/
+    }
 
     header h1 {
       font-size: 3.2rem !important;
@@ -72,7 +64,7 @@
     header h1 a {
       color: #2c3e50 !important;
       text-decoration: none !important;
-      transition: opacity 0.2s ease;
+      transition: opacity 0.3s ease;
     }
 
     header h1 a:hover { opacity: 0.7; }
@@ -81,149 +73,42 @@
       font-family: 'Montserrat', sans-serif !important;
       font-weight: 500;
       text-transform: uppercase;
-      letter-spacing: 5px; /* Restored wide spacing */
+      letter-spacing: 5px;
       font-size: 0.8rem !important;
       color: #95a5a6 !important;
       margin-top: 15px !important;
     }
 
-    /* 4. NAVIGATION (Restored Montserrat Style) */
+    /* 4. NAVIGATION (Modern Animated Underline) */
     nav { margin-top: 30px; }
-   nav a {
-    font-family: 'Montserrat', sans-serif !important;
-    font-size: 0.75rem !important;
-    letter-spacing: 2px;
-    font-weight: 600;
-    margin: 0 18px;
-    color: #2c3e50 !important;
-    text-decoration: none !important;
-    text-transform: uppercase;
-    position: relative;
-    display: inline-block;
-    transition: color 0.3s ease;
-  }
-  
-  /* The Animated Underline */
-  nav a::after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    bottom: -4px;
-    left: 50%;
-    background-color: #3498db;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translateX(-50%);
-  }
-  
-  nav a:hover::after {
-    width: 80%; /* Modern look is slightly shorter than the text */
-  }
-  
-  nav a:hover {
-    color: #3498db !important;
-  }
-    /* 5. SPLIDE CUSTOMIZATION */
-    .splide__pagination__page {
-      background: #ddd !important;
-      border-radius: 0 !important;
-      width: 25px !important;
-      height: 3px !important;
-      border: none !important;
-      margin: 0 5px !important;
-      transition: all 0.3s ease !important;
-    }
-    .splide__pagination__page.is-active {
-      background: #3498db !important;
-      width: 45px !important;
-    }
-
-    /* 6. FLEXBOX FOR GALLERY POSTS */
-    .post-container {
-      display: flex;
-      flex-direction: row;
-      gap: 60px;
-      align-items: flex-start;
-      margin-bottom: 80px;
-    }
-    .post-media { flex: 1.3; max-width: 600px; }
-    .post-content { flex: 1; }
-    .post-content h2 { font-size: 1.8rem; margin-bottom: 15px; }
-
-    /* 7. HOMEPAGE GRID */
-    .gallery-grid {
-      display: grid !important;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
-      gap: 40px !important;
-      padding-bottom: 80px;
-    }
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    .gallery-item {
-      border: none !important;
-      border-radius: 16px;
-      overflow: hidden;
-      transition: all 0.4s ease;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-      animation: fadeInUp 0.6s ease-out forwards;
-    }
-    .gallery-item:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-    }
-
-    .gallery-item img {
-      width: 100%;
-      aspect-ratio: 4 / 5; /* Vertical "Portrait" look is very trendy for travel */
-      object-fit: cover; /* Crops the image to fit the box perfectly */
-      transition: transform 0.5s ease;
+    
+    nav a {
+      font-family: 'Montserrat', sans-serif !important;
+      font-size: 0.75rem !important;
+      letter-spacing: 2px;
+      font-weight: 600;
+      margin: 0 18px;
+      color: #2c3e50 !important;
+      text-decoration: none !important;
+      text-transform: uppercase;
+      position: relative;
+      padding-bottom: 6px;
+      display: inline-block;
+      transition: color 0.3s ease;
     }
     
-    .gallery-item:hover img {
-      transform: scale(1.05); /* Subtle zoom inside the card on hover */
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: 0;
+      left: 50%;
+      background-color: #3498db;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      transform: translateX(-50%);
     }
-
-    /* 8. HIDE THEME ARTIFACTS */
-    footer, .wrapper footer, header p.view, header ul, .owner, hr {
-      display: none !important;
+    
+    nav a:hover::after {
+      width: 70%;
     }
-
-    /* 9. RESPONSIVE MOBILE FIX */
-    @media (max-width: 768px) {
-      .post-container { flex-direction: column; }
-      .post-media, .post-content { width: 100%; }
-      header { padding: 50px 0 !important; }
-      header h1 { font-size: 2.4rem !important; }
-    }
-
-    img { max-width: 100%; height: auto; display: block; }
-  </style>
-</head>
-<body>
-
-  <div class="wrapper">
-    <header>
-      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-      <p>{{ site.description }}</p>
-      <nav>
-        <a href="{{ '/' | relative_url }}">Gallery</a>
-        <a href="https://instagram.com/obxtodo" target="_blank">Instagram</a>
-        <a href="{{ '/about/' | relative_url }}">About</a>
-      </nav>
-    </header>
-
-    <section>
-      {{ content }}
-    </section>
-  </div>
-
-</body>
-</html>
