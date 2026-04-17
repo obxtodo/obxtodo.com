@@ -45,7 +45,7 @@
       position: sticky !important;
       top: 0;
       z-index: 1000;
-      background: rgba(255, 255, 255, 0.9) !important;
+      background: rgba(255, 255, 255, 0.92) !important;
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       padding: 35px 0 !important; 
@@ -79,7 +79,7 @@
       margin-top: 15px !important;
     }
 
-    /* 4. NAVIGATION (Modern Animated Underline) */
+    /* 4. NAVIGATION (Dynamic States) */
     nav { margin-top: 30px; }
     
     nav a {
@@ -97,6 +97,7 @@
       transition: color 0.3s ease;
     }
     
+    /* Underline Base */
     nav a::after {
       content: '';
       position: absolute;
@@ -109,20 +110,13 @@
       transform: translateX(-50%);
     }
     
-    nav a:hover::after {
-      width: 70%;
-    }
-
-    nav a:hover {
-      color: #3498db !important;
-    }
-
-    /* Permanent underline for the current page */
+    /* Hover and Active Logic */
+    nav a:hover::after, 
     nav a.active::after {
       width: 70%;
-      background-color: #3498db;
     }
-    
+
+    nav a:hover, 
     nav a.active {
       color: #3498db !important;
     }
@@ -152,7 +146,7 @@
     }
     .post-media { flex: 1.3; max-width: 600px; }
     .post-content { flex: 1; }
-    .post-content h2 { font-size: 1.8rem; margin-bottom: 15px; }
+    .post-content h2 { font-size: 2.2rem; margin-bottom: 15px; }
 
     /* 7. HOMEPAGE GRID & DYNAMIC EFFECTS */
     .gallery-grid {
@@ -170,11 +164,13 @@
     .gallery-item {
       border: none !important;
       border-radius: 16px;
-      overflow: hidden;
+      overflow: hidden; /* Clips the zoom */
+      isolation: isolate; /* Pro-fix for zoom artifacts */
+      background: #ffffff;
       transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
       box-shadow: 0 4px 15px rgba(0,0,0,0.03);
       animation: fadeInUp 0.8s ease-out forwards;
-      opacity: 0; /* Ensures clean fade-in */
+      opacity: 0; 
     }
 
     /* Staggered Delay for Grid Items */
@@ -198,11 +194,11 @@
     }
     
     .gallery-item:hover img {
-      transform: scale(1.08);
+      transform: scale(1.1); /* Slightly more pronounced zoom */
       filter: brightness(1.05) contrast(1.05);
     }
 
-    /* 8. CLEANUP THEME ELEMENTS */
+    /* 8. HIDE THEME ARTIFACTS */
     footer, .wrapper footer, header p.view, header ul, .owner, hr {
       display: none !important;
     }
@@ -212,7 +208,7 @@
       .post-container { flex-direction: column; }
       .post-media, .post-content { width: 100%; }
       header { padding: 30px 0 !important; }
-      header h1 { font-size: 2.2rem !important; }
+      header h1 { font-size: 2.4rem !important; }
       header p { letter-spacing: 3px; font-size: 0.7rem !important; }
       .post-container { gap: 30px; }
     }
@@ -226,15 +222,15 @@
     <header>
       <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
       <p>{{ site.description }}</p>
-<nav>
-  <a href="{{ '/' | relative_url }}" 
-     class="{% if page.url == '/' %}active{% endif %}">Home</a>
-     
-  <a href="https://instagram.com/obxtodo" target="_blank">Instagram</a>
-  
-  <a href="{{ '/about/' | relative_url }}" 
-     class="{% if page.url contains 'about' %}active{% endif %}">About</a>
-</nav>
+      <nav>
+        <a href="{{ '/' | relative_url }}" 
+           class="{% if page.url == '/' or page.url == '/index.html' %}active{% endif %}">Home</a>
+           
+        <a href="https://instagram.com/obxtodo" target="_blank">Instagram</a>
+        
+        <a href="{{ '/about/' | relative_url }}" 
+           class="{% if page.url contains 'about' %}active{% endif %}">About</a>
+      </nav>
     </header>
 
     <section>
