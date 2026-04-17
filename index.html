@@ -10,7 +10,9 @@ title: OBX To Do Gallery
     {% if post.hide != true %}
       <div class="gallery-item">
         <a href="{{ site.baseurl }}{{ post.url }}">
-          <img src="{{ site.baseurl }}{{ post.images[0] }}" alt="{{ post.title }}">
+          <div class="gallery-image-wrap">
+            <img src="{{ site.baseurl }}{{ post.images[0] }}" alt="{{ post.title }}">
+          </div>
           <h3>{{ post.title }}</h3>
         </a>
       </div>
