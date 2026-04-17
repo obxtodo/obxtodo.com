@@ -216,18 +216,7 @@
       z-index: 10;
     }
 
-    /* 1. Toggle Button (The 3 Bars) */
-.menu-toggle {
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1002;
-}
+
 
 .bar {
   width: 25px;
@@ -293,6 +282,39 @@
   text-decoration: none;
   color: #2c3e50;
 }
+/* The container that holds everything in a row */
+.header-content {
+  display: flex;
+  align-items: center; /* Vertically centers the menu icon with the logo */
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* The vertical box for Logo + Description */
+.brand-wrapper {
+  display: flex;
+  flex-direction: column; /* Stacks logo on top of description */
+  align-items: center;
+  flex: 2; /* Takes up the middle space */
+}
+
+.menu-toggle {
+  flex: 1; /* Takes up the left space */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.header-spacer {
+  flex: 1; /* Balances the menu-toggle on the right */
+}
+
+/* Adjust the description p tag */
+header p {
+  margin: 5px 0 0 0 !important; /* Tighten the gap under the logo */
+  text-align: center;
+}
 
 .instagram-btn {
   display: inline-flex;
@@ -350,8 +372,10 @@
     <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="obxtodo logo" class="site-logo">
     <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
   </div>
-          <p>{{ site.description }}</p>
+  <div class="header-spacer"></div>
   </div>
+
+          <p>{{ site.description }}</p>
 </header>
 
 <div id="side-menu" class="side-menu">
