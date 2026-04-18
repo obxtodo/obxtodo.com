@@ -506,6 +506,8 @@ header p {
   .event-card {
     flex-direction: column;
     align-items: flex-start;
+    padding: 1.5rem; /* Increase padding for better mobile touch targets */
+    position: relative;
   }
   
   .date-badge {
@@ -514,15 +516,22 @@ header p {
     min-width: auto;
     margin-bottom: 1rem;
     padding: 0.5rem 1rem;
+    align-self: flex-start; /* Keeps the badge from stretching full width */
+  }
+
+  .event-info {
+    width: 100%; /* Ensure the text doesn't squeeze the button */
+    margin-bottom: 1rem;
   }
   
   .btn-sm {
-    margin-top: 1rem;
-    width: 100%;
+    display: block; /* Makes it a full-width block */
+    width: 100%; 
     text-align: center;
+    margin-left: 0; /* Resets the 'auto' margin from desktop */
+    box-sizing: border-box; /* Crucial: ensures padding doesn't add to width */
   }
 }
-
 .email-btn:hover { 
   background: #58C896; /* Instagram Pink */
   transform: translateY(-2px); 
