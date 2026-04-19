@@ -17,59 +17,73 @@ description: OBX To Do | Outer Banks Family Fun
     </div>
   </div>
 </section>
-{% assign current_time = "now" | date: "%s" | plus: 0 %}
+{% assign now_unix = "now" | date: "%s" | plus: 0 %}
+{% assign day_of_week = "now" | date: "%u" | plus: 0 %} {% comment %} 1 (Mon) to 7 (Sun) {% endcomment %}
+
 {% comment %} 
-  We determine 'Weekend Start' (next Friday). 
-  Logic: If it's already the weekend, we show the current one.
+  Calculate days until next Friday (Day 5). 
+  If today is Friday(5), Saturday(6), or Sunday(7), we stay on this weekend (offset 0 or negative).
+  Otherwise, we look forward to the upcoming Friday.
 {% endcomment %}
+
+{% if day_of_week <= 4 %}
+  {% assign days_until_friday = 5 | minus: day_of_week %}
+{% else %}
+  {% assign days_until_friday = 0 %} {% comment %} We are already in the weekend {% endcomment %}
+{% endif %}
+
+{% assign seconds_until_friday = days_until_friday | times: 86400 %}
+{% assign weekend_start_unix = now_unix | plus: seconds_until_friday | date: "%Y-%m-%d 00:00" | date: "%s" | plus: 0 %}
+{% assign weekend_end_unix = weekend_start_unix | plus: 259200 %} {% comment %} Friday 00:00 + 72 hours = Monday 00:00 {% endcomment %}
 
 <section class="weekly-snapshot">
   <div class="snapshot-header">
     <h3>The Weekend Outlook</h3>
-    <p>Hand-picked events for {{ "now" | date: "%b %d" }} — {{ "now" | date: "%s" | plus: 172800 | date: "%b %d" }}</p>
+    <p>Hand-picked events for {{ weekend_start_unix | date: "%b %d" }} — {{ weekend_end_unix | minus: 86400 | date: "%b %d" }}</p>
   </div>
 
-
-
-<div class="event-list">
- {% assign count = 0 %}
+  <div class="event-list">
+    {% assign count = 0 %}
     {% assign sorted_events = site.data.events | sort: "date" %}
     
     {% for event in sorted_events %}
       {% assign event_date = event.date | date: "%s" | plus: 0 %}
       
-      {% comment %} Show if event is within the next 3 days and limit to 3 total {% endcomment %}
-      {% if event_date >= current_time and count < 3 %}
-      <div class="event-card">
-        
-        <div class="date-badge">
-          <span class="month">{{ event.date | date: "%b" }}</span>
-          <span class="day">{{ event.date | date: "%-d" }}</span>
-        </div>
-
-        <div class="event-info">
-          <div class="title-row">
-            <h4>{{ event.name }}</h4>
-            
-            {% if event.end_date %}
-              <span class="multi-day-tag">Multi-Day Event</span>
-            {% endif %}
+      {% comment %} 
+        Logic: Show events that fall between Friday morning and Sunday night.
+      {% endcomment %}
+      {% if event_date >= weekend_start_unix and event_date < weekend_end_unix %}
+        <div class="event-card">
+          <div class="date-badge">
+            <span class="month">{{ event.date | date: "%b" }}</span>
+            <span class="day">{{ event.date | date: "%-d" }}</span>
           </div>
-          
-          <p class="location-time">
-            <i class="fa-solid fa-location-dot"></i> {{ event.location }} • {{ event.time }}
-          </p>
-        </div>
 
-        {% if event.link %}
-          <a href="{{ event.link }}" class="btn-sm" target="_blank">Details</a>
-        {% endif %}
-      </div>
+          <div class="event-info">
+            <div class="title-row">
+              <h4>{{ event.name }}</h4>
+              {% if event.end_date %}
+                <span class="multi-day-tag">Multi-Day Event</span>
+              {% endif %}
+            </div>
+            <p class="location-time">
+              <i class="fa-solid fa-location-dot"></i> {{ event.location }} • {{ event.time }}
+            </p>
+          </div>
+
+          {% if event.link %}
+            <a href="{{ event.link }}" class="btn-sm" target="_blank">Details</a>
+          {% endif %}
+        </div>
         {% assign count = count | plus: 1 %}
       {% endif %}
     {% endfor %}
-</div>
 
+    {% if count == 0 %}
+      <p style="text-align:center; opacity:0.6;">Check back soon for this weekend's lineup!</p>
+    {% endif %}
+  </div>
+</section>
 </section>
 <h2>Guides</h2>
 
