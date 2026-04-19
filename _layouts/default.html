@@ -58,13 +58,14 @@
       margin-bottom: 50px;
     }
 /* 3.1 LOGO & TITLE ALIGNMENT */
-    .logo-container {
-      display: flex;
-      align-items: center; /* Vertically centers logo with text */
-      justify-content: center; /* Keeps everything in the middle */
-      gap: 20px; /* Space between logo and text */
-      margin-bottom: 5px;
-    }
+ .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Changed from flex-start to center */
+  gap: 20px;
+  flex: 2; /* Takes up the middle space */
+  margin-bottom: 0;
+}
 
     .site-logo {
       height: 60px; /* Adjust based on your logo's proportions */
@@ -77,12 +78,12 @@
     }
 
     /* Adjust H1 to ensure it doesn't force a new line */
-    header h1 {
-      font-size: 3.2rem !important;
-      font-style: italic;
-      margin: 0 !important;
-      display: inline-block;
-    }
+header h1 {
+  font-size: 3.2rem !important;
+  font-style: italic;
+  margin: 0 !important;
+  line-height: 1; /* Helps with vertical centering */
+}
     
     header h1 a { color: #2c3e50 !important; text-decoration: none !important; transition: opacity 0.3s ease; }
     header h1 a:hover { opacity: 0.7; }
@@ -90,6 +91,7 @@
     header p {
       font-family: 'Montserrat', sans-serif !important;
       font-weight: 500;
+      text-align: center;
       text-transform: uppercase;
       letter-spacing: 5px;
       font-size: 0.8rem !important;
@@ -234,7 +236,7 @@
   position: fixed;
   z-index: 2000;
   top: 0;
-  left: -300px; /* Hidden by default */
+  left: -300px; 
   background-color: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(10px);
   overflow-x: hidden;
@@ -292,6 +294,11 @@
   padding: 0 20px;
 }
 
+.header-content::before {
+  content: "";
+  flex: 1;
+}
+
 /* The vertical box for Logo + Description */
 .brand-wrapper {
   display: flex;
@@ -301,12 +308,15 @@
 }
 
 .menu-toggle {
-  flex: 1; /* Takes up the left space */
+  flex: 1;
   display: flex;
   flex-direction: column;
+  align-items: flex-end; /* Keeps the bars on the right side of its flex-box */
   gap: 5px;
   cursor: pointer;
+  padding: 10px;
 }
+
 
 .header-spacer {
   flex: 1; /* Balances the menu-toggle on the right */
@@ -425,21 +435,94 @@ header p {
   margin: 2rem 0;
 }
 
-/* Individual Event Card */
+/* Individual Event Card - Dashboard Style */
 .event-card {
   display: flex;
   align-items: center;
-  background: #ffffff;
-  padding: 1.25rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  border-left: 5px solid #58C896; /* Brand Green Accent */
+  background: #f8fafc;
+  padding: 15px 20px;
+  border-radius: 16px;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
 }
 
 .event-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  border-color: #58C896;
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* The Date Badge (The Hero of the Card) */
+.date-badge {
+  min-width: 55px !important;
+  height: 55px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center;
+  justify-content: center;
+  background: #f0fdf4; /* Seafoam background */
+  border-radius: 12px;
+  margin-right: 1.25rem;
+  border: 1px solid rgba(88, 200, 150, 0.2);
+}
+
+.date-badge .month {
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #58C896;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+.date-badge .day {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #2c3e50;
+  line-height: 1;
+}
+
+/* Info Section */
+.event-info {
+  flex-grow: 1;
+}
+
+.event-info h4 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  color: #2c3e50 !important;
+  margin: 0 0 2px 0 !important;
+}
+
+.location-time {
+  font-size: 0.8rem !important;
+  color: #64748b !important;
+  margin: 0 !important;
+}
+
+
+/* The Button - Minimalist */
+.btn-sm {
+  background: #f1f5f9;
+  color: #475569 !important;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  transition: all 0.2s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.event-card:hover .btn-sm {
+  background: #58C896;
+  color: white !important;
+  border-color: #58C896;
 }
 
 /* The Date Badge */
@@ -565,7 +648,6 @@ header p {
 
 /* 1. Alignment for the right-side container */
 .header-right {
-  flex: 1; /* Matches the menu-toggle's flex for perfect centering of the logo */
   display: flex;
   justify-content: flex-end; /* Pushes icon to the far right */
   align-items: center;
@@ -574,7 +656,7 @@ header p {
 /* 2. Styling the Icon */
 .header-right a {
   color: #2c3e50; /* Match your header title color */
-  font-size: 1.5rem; /* Slightly larger than standard text */
+  font-size: 1.4rem; /* Slightly larger than standard text */
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
@@ -595,11 +677,351 @@ header p {
     font-size: 1.3rem;
   }
 }
+/* --- Hero Section Styles --- */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 70vh; /* Takes up 70% of the screen height */
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Parallax-like effect */
+  border-radius: 24px;
+  overflow: hidden;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Darkens the image slightly */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero-content-box {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 50px;
+  border-radius: 20px;
+  max-width: 700px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-subtitle {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #58C896;
+  margin-bottom: 15px;
+}
+
+.hero-title {
+  font-family: 'Lora', serif !important;
+  font-size: 3rem !important;
+  line-height: 1.2;
+  color: #2c3e50 !important;
+  margin-bottom: 20px !important;
+}
+
+.hero-text {
+  font-size: 1.1rem;
+  color: #5a5a5a;
+  margin-bottom: 35px;
+}
+
+/* --- Buttons --- */
+.hero-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-btn {
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hero-btn.primary {
+  background: #2c3e50;
+  color: #fff !important;
+}
+
+.hero-btn.secondary {
+  background: transparent;
+  border: 2px solid #2c3e50;
+  color: #2c3e50 !important;
+}
+
+.hero-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  background: #58C896;
+  border-color: #58C896;
+  color: #fff !important;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+  .hero-section { 
+    /* Change fixed height to 'auto' so it grows with the text */
+    height: auto !important; 
+    min-height: 450px; 
+    padding: 60px 0; /* Adds breathing room at top and bottom */
+    border-radius: 0; 
+    margin-left: -5.5%; 
+    width: 111%; 
+    background-attachment: scroll; 
+  }
+
+  .hero-content-box { 
+    padding: 40px 20px; 
+    width: 85%; /* Keeps the card centered with a nice margin */
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95); /* Slightly more opaque for readability */
+  }
+
+  .hero-title { 
+    font-size: 1.8rem !important; 
+    margin-bottom: 15px !important;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+}
+/* Custom Footer Styling */
+.site-footer {
+  text-align: center;
+  padding: 40px 0;
+  margin-top: 60px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  align-items: center;
+}
+
+.footer-socials a {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+}
+
+.footer-socials a:hover {
+  color: #58C896; /* Matches your brand green */
+  transform: translateY(-3px);
+}
+.weekly-snapshot {
+  margin-bottom: 60px;
+}
+
+.snapshot-header {
+  margin-bottom: 25px;
+}
+
+.snapshot-header h3 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.snapshot-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.snapshot-card {
+  display: flex;
+  align-items: center;
+  background: #f8fafc;
+  padding: 15px 20px;
+  border-radius: 16px;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.snapshot-card:hover {
+  background: #ffffff;
+  border-color: #58C896;
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.snapshot-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  padding-right: 20px;
+  border-right: 2px solid #e2e8f0;
+  min-width: 45px;
+}
+
+.snapshot-date .day {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #58C896;
+}
+
+.snapshot-date .num {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #2c3e50;
+}
+
+.snapshot-info {
+  flex-grow: 1;
+}
+
+.snapshot-info h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #2c3e50;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 600 !important;
+}
+
+.snapshot-info p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.snapshot-card i {
+  color: #cbd5e1;
+  font-size: 0.9rem;
+}
+ /* 1. Reset/Consistency for the Badge */
+  .date-badge {
+    min-width: 65px !important;
+    height: 65px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    background: #f0fdf4;
+    border-radius: 12px;
+    margin-right: 1.5rem;
+  }
+
+  /* 2. Title and Tag Layout */
+  .title-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 4px;
+    flex-wrap: wrap;
+  }
+
+  .title-row h4 {
+    margin: 0 !important;
+    font-size: 1.15rem;
+    color: #2c3e50;
+  }
+
+  /* 3. The Minimal Multi-Day Tag */
+  .multi-day-tag {
+    background: #e2e8f0; /* Soft grey instead of dark navy */
+    color: #475569;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+    border: 1px solid #cbd5e1;
+  }
+
+  .location-time {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #7f8c8d;
+  }
+
+  @media (max-width: 600px) {
+    .title-row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+    }
+  }
+
+  @media (max-width: 768px) {
+  .hero-section {
+    /* Reduce height to show content below 'the fold' */
+    height: 55vh; 
+    min-height: 400px;
+    border-radius: 0;
+    /* Bleed to edges if your wrapper has padding */
+    margin-left: -5.5%; 
+    width: 111%; 
+    /* Disable fixed background on mobile (helps performance/jitter) */
+    background-attachment: scroll; 
+  }
+
+  .hero-content-box {
+    padding: 30px 20px;
+    width: 90%; /* Leaves a small gap on the sides */
+    border-radius: 15px;
+  }
+
+  .hero-title {
+    font-size: 1.75rem !important; /* Scaled down for readability */
+    line-height: 1.1;
+  }
+
+  .hero-text {
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+    line-height: 1.4;
+  }
+
+  /* Stack buttons for easier thumb-tapping */
+  .hero-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-btn {
+    width: 100%; /* Full width buttons are better for UX */
+    padding: 14px 0;
+    text-align: center;
+  }
+}
+.event-card, .event-card * {
+  box-sizing: border-box !important;
+}
 
 
 
     /* 8. HIDE THEME ARTIFACTS */
-    footer, .wrapper footer, header p.view, header ul, .owner, hr { display: none !important; }
+    header p.view, header ul, .owner, hr { display: none !important; }
 
     /* 9. RESPONSIVE FIXES */
     @media (max-width: 768px) {
@@ -618,21 +1040,17 @@ header p {
   <div class="wrapper">
 <header>
   <div class="header-content">
-    <div class="menu-toggle" onclick="toggleMenu()">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </div>
+
 
       <div class="logo-container">
     <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="obxtodo logo" class="site-logo">
     <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
   </div>
-  <div class="header-right">
-  <a href="https://instagram.com/obxtodo" target="_blank" aria-label="Instagram">
-    <i class="fa-brands fa-instagram"></i>
-  </a>
-</div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
   </div>
 
           <p>{{ site.description }}</p>
@@ -668,7 +1086,22 @@ header p {
   </div>
 </div>
     <section>{{ content }}</section>
+    <footer class="site-footer">
+  <div class="footer-socials">
+    <a href="https://instagram.com/obxtodo" target="_blank" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    
+    <a href="mailto:info@obxtodo.com" aria-label="Email">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
   </div>
+  <p style="font-size: 0.7rem; letter-spacing: 1px; margin-top: 15px; opacity: 0.5;">
+    &copy; {{ "now" | date: "%Y" }} {{ site.title }}
+  </p>
+</footer>
+  </div>
+
   <div style="margin-bottom: 50px;"></div>
   <script>
   function toggleMenu() {

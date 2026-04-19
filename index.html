@@ -3,10 +3,75 @@ layout: default
 title: Home
 description: OBX To Do | Outer Banks Family Fun
 ---
-<a href="/this-week/" class="this-week-promo">
-  <i class="fa-solid fa-calendar-day"></i> See What's Happening This Week
-</a>
-<h2>Latest Posts</h2>
+
+<section class="hero-section" style="background-image: url('{{ site.baseurl }}/assets/img/sunrise.jpg');">
+  <div class="hero-overlay">
+    <div class="hero-content-box">
+      <span class="hero-subtitle">Welcome to OBX To Do</span>
+      <h2 class="hero-title">Your guide for things to do in the Outer Banks</h2>
+      <p class="hero-text">From lighthouse climbs and Jockey’s Ridge sunsets to live music at Fish Heads, we spotlight the local events and hidden gems that make the Outer Banks feel like home.</p>
+      <div class="hero-actions">
+        <a href="{{ '/this-week/' | relative_url }}" class="hero-btn primary">What's Happening This Week</a>
+        <a href="{{ '/events/' | relative_url }}" class="hero-btn secondary">Event Calendar</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% assign current_time = "now" | date: "%s" | plus: 0 %}
+{% comment %} 
+  We determine 'Weekend Start' (next Friday). 
+  Logic: If it's already the weekend, we show the current one.
+{% endcomment %}
+
+<section class="weekly-snapshot">
+  <div class="snapshot-header">
+    <h3>The Weekend Outlook</h3>
+    <p>Hand-picked events for {{ "now" | date: "%b %d" }} — {{ "now" | date: "%s" | plus: 172800 | date: "%b %d" }}</p>
+  </div>
+
+
+
+<div class="event-list">
+ {% assign count = 0 %}
+    {% assign sorted_events = site.data.events | sort: "date" %}
+    
+    {% for event in sorted_events %}
+      {% assign event_date = event.date | date: "%s" | plus: 0 %}
+      
+      {% comment %} Show if event is within the next 3 days and limit to 3 total {% endcomment %}
+      {% if event_date >= current_time and count < 3 %}
+      <div class="event-card">
+        
+        <div class="date-badge">
+          <span class="month">{{ event.date | date: "%b" }}</span>
+          <span class="day">{{ event.date | date: "%-d" }}</span>
+        </div>
+
+        <div class="event-info">
+          <div class="title-row">
+            <h4>{{ event.name }}</h4>
+            
+            {% if event.end_date %}
+              <span class="multi-day-tag">Multi-Day Event</span>
+            {% endif %}
+          </div>
+          
+          <p class="location-time">
+            <i class="fa-solid fa-location-dot"></i> {{ event.location }} • {{ event.time }}
+          </p>
+        </div>
+
+        {% if event.link %}
+          <a href="{{ event.link }}" class="btn-sm" target="_blank">Details</a>
+        {% endif %}
+      </div>
+        {% assign count = count | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+</div>
+
+</section>
+<h2>Guides</h2>
 
 <div class="gallery-grid">
   
