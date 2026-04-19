@@ -67,6 +67,50 @@
   margin-bottom: 0;
 }
 
+@media (max-width: 768px) {
+  /* 1. Remove the spacers that are squeezing you from the sides */
+  .header-content::before, 
+  .header-spacer { 
+    display: none !important; 
+  }
+
+  /* 2. Setup the container to be a tight horizontal row */
+  .logo-container {
+    display: flex !important;
+    flex-direction: row !important; /* Forces side-by-side */
+    align-items: center !important;
+    justify-content: flex-start !important; /* Keeps them left-aligned */
+    gap: 12px !important; /* Space between logo and text */
+    flex: 1;
+    padding-left: 10px;
+  }
+
+  /* 3. Shrink the logo and H1 so they can actually fit on one line */
+  .site-logo {
+    height: 35px !important; /* Smaller logo for mobile row */
+    width: auto;
+  }
+
+  header h1 {
+    font-size: 1.4rem !important; /* Small enough to stay on one line */
+    white-space: nowrap !important; /* Prevents wrapping if you prefer it on one line */
+    letter-spacing: 1px !important;
+    margin: 0 !important;
+  }
+
+  /* 4. Ensure the menu toggle doesn't overlap the text */
+  .menu-toggle {
+    padding-right: 15px;
+    flex-shrink: 0; /* Prevents the menu icon from getting squashed */
+  }
+
+  /* 5. Adjust header padding to make it more compact */
+  header {
+    padding: 15px 0 !important;
+    margin-bottom: 30px !important;
+  }
+}
+
     .site-logo {
       height: 60px; /* Adjust based on your logo's proportions */
       width: auto;
@@ -697,7 +741,6 @@ header p {
 .hero-overlay {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3); /* Darkens the image slightly */
   display: flex;
   align-items: center;
   justify-content: center;
