@@ -37,9 +37,35 @@ description: OBX To Do | Outer Banks Family Fun
 {% assign weekend_end_unix = weekend_start_unix | plus: 259200 %} {% comment %} Friday 00:00 + 72 hours = Monday 00:00 {% endcomment %}
 
 <section class="weekly-snapshot">
+
+{% assign today_date = "now" | date: "%Y-%m-%d" %}
+{% assign day_of_week = "now" | date: "%u" | plus: 0 %}
+
+{% comment %} 
+  Determine the Start and End dates for the Weekend display.
+  Friday = 5, Saturday = 6, Sunday = 7.
+{% endcomment %}
+
+{% if day_of_week <= 4 %}
+  {% assign days_to_fri = 5 | minus: day_of_week %}
+  {% assign days_to_sun = 7 | minus: day_of_week %}
+{% else %}
+  {% comment %} We are currently in the weekend, so show from Friday of THIS week to Sunday {% endcomment %}
+  {% assign days_to_fri = 5 | minus: day_of_week %}
+  {% assign days_to_sun = 7 | minus: day_of_week %}
+{% endif %}
+
+{% assign seconds_per_day = 86400 %}
+{% assign fri_seconds = days_to_fri | times: seconds_per_day %}
+{% assign sun_seconds = days_to_sun | times: seconds_per_day %}
+
+{% assign weekend_start_date = "now" | date: "%s" | plus: fri_seconds | date: "%Y-%m-%d" %}
+{% assign weekend_end_date = "now" | date: "%s" | plus: sun_seconds | date: "%Y-%m-%d" %}
+
+<section class="weekly-snapshot">
   <div class="snapshot-header">
     <h3>The Weekend Outlook</h3>
-    <p>Hand-picked events for {{ weekend_start_unix | date: "%b %d" }} — {{ weekend_end_unix | minus: 86400 | date: "%b %d" }}</p>
+    <p>Hand-picked events for {{ weekend_start_date | date: "%b %d" }} — {{ weekend_end_date | date: "%b %d" }}</p>
   </div>
 
   <div class="event-list">
@@ -47,13 +73,13 @@ description: OBX To Do | Outer Banks Family Fun
     {% assign sorted_events = site.data.events | sort: "date" %}
     
     {% for event in sorted_events %}
-      {% assign event_date = event.date | date: "%s" | plus: 0 %}
+      {% assign event_day = event.date | date: "%Y-%m-%d" %}
       
       {% comment %} 
-        Logic: Show events that fall between Friday morning and Sunday night.
+        Compare literal YYYY-MM-DD strings to avoid Unix hour/minute/timezone drift.
       {% endcomment %}
-      {% if event_date >= weekend_start_unix and event_date < weekend_end_unix %}
-        <div class="event-card">
+      {% if event_day >= weekend_start_date and event_day <= weekend_end_date %}
+         <div class="event-card">
           <div class="date-badge">
             <span class="month">{{ event.date | date: "%b" }}</span>
             <span class="day">{{ event.date | date: "%-d" }}</span>
@@ -79,10 +105,6 @@ description: OBX To Do | Outer Banks Family Fun
       {% endif %}
     {% endfor %}
 
-    {% if count == 0 %}
-      <p style="text-align:center; opacity:0.6;">Check back soon for this weekend's lineup!</p>
-    {% endif %}
-  </div>
 </section>
 </section>
 <h2>Guides</h2>
