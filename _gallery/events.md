@@ -11,22 +11,31 @@ nav_order: 3
 Stay up to date with festivals, live music, and local happenings.
 
 {% comment %} 
-  1. Filter logic: Keep multi-day events visible until they are over.
+  We convert "now" to a simple YYYY-MM-DD string.
+  Crucial: We subtract 12 hours (43200 seconds) from 'now' to create a safety 
+  buffer so events don't disappear at night due to UTC/Server time offsets.
 {% endcomment %}
-{% assign today = "now" | date: "%s" | plus: 0 %}
+{% assign day_buffer = "now" | date: "%s" | minus: 43200 %}
+{% assign today_str = day_buffer | date: "%Y-%m-%d" %}
+
 {% assign sorted_events = site.data.events | sort: "date" %}
 
 <div class="event-list">
   {% for event in sorted_events %}
     
-    {% assign event_start_seconds = event.date | date: "%s" | plus: 0 %}
+    {% comment %} Convert event dates to the same string format for comparison {% endcomment %}
+    {% assign event_start = event.date | date: "%Y-%m-%d" %}
+    
     {% if event.end_date %}
-      {% assign event_show_until = event.end_date | date: "%s" | plus: 0 %}
+      {% assign event_expiry = event.end_date | date: "%Y-%m-%d" %}
     {% else %}
-      {% assign event_show_until = event_start_seconds %}
+      {% assign event_expiry = event_start %}
     {% endif %}
 
-    {% if event_show_until >= today %}
+    {% comment %} 
+      String comparison: "2026-04-19" >= "2026-04-18" will be true.
+    {% endcomment %}
+    {% if event_expiry >= today_str %}
       <div class="event-card">
         
         <div class="date-badge">
