@@ -11,3 +11,4 @@ collections:
   gallery:
     output: true
     permalink: /gallery/:path/
+timezone: America/New_York
