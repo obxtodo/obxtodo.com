@@ -1,0 +1,21 @@
+name: Sync Events to Current
+on:
+  push:
+    paths:
+      - '_data/events.yml' # Only triggers when this file is edited
+jobs:
+  copy-file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@v3
+      - name: Push to obxcurrent.com
+        uses: dmnemec/copy_file_to_another_repo_action@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.SYNC_TOKEN }}
+        with:
+          source_file: '_data/events.yml'
+          destination_repo: 'obxtodo/obxcurrent.com'
+          destination_folder: '_data'
+          user_email: 'obxtodo@gmail.com'
+          user_name: 'obxtodo@gmail.com'
