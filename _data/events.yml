@@ -1,4 +1,18 @@
 - name: "History Happy Hour"
+  date: 2026-04-20
+  time: "6:00 PM - 7:00 PM"
+  location: "NouVines, Manteo"
+  link: "https://nouvines.com/events"
+
+- name: "Earth & Arts OBX"
+  date: 2026-04-20
+  time: "4:00 PM - SUNSET"
+  location: "Soundside Event Site, Nags Head"
+  link: "https://nouvines.com/events"
+
+
+
+- name: "History Happy Hour"
   date: 2026-04-22
   time: "6:00 PM - 7:00 PM"
   location: "NouVines, Manteo"
