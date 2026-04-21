@@ -1,3 +1,29 @@
+- name: "History Happy Hour"
+  date: 2026-04-22
+  time: "6:00 PM - 7:00 PM"
+  location: "NouVines, Manteo"
+  link: "https://nouvines.com/events"
+
+- name: "Earth & Arts OBX"
+  date: 2026-04-22
+  time: "4:00 PM - SUNSET"
+  location: "Soundside Event Site, Nags Head"
+  link: "https://nouvines.com/events"
+
+
+
+- name: "GOODBYE ALIBI"
+  date: 2026-04-24
+  time: "6:30 PM - 9:30 PM"
+  location: "Outer Banks Brewing Station, Kill Devil Hills"
+  link: "https://www.obbrewing.com/events/goodbye-alibi"
+
+- name: "Ocracoke Earth Day Celebration"
+  date: 2026-04-24
+  time: "7:00 PM"
+  location: "Ocracoke"
+  link: "https://www.ocracokealive.org/earthday.html"
+
 
 - name: "The Brothers Comatose - Bluegrass Island Nights"
   date: 2026-04-28
@@ -37,6 +63,19 @@
   time: "All Day"
   location: "Jockey's Ridge State Park"
   link: "https://www.kittyhawk.com/event/hang-gliding-spectacular/"
+
+- name: "Concert on the Dunes"
+  date: 2026-05-15
+  time: "6:00 PM"
+  location: "Jockey's Ridge State Park"
+  link: "https://friendsofjockeysridge.org/news-events/concert-on-the-dunes/"
+
+- name: "Manteo Spring Litter Pick-up"
+  date: 2026-05-16
+  time: "9:00 AM - 11:00 AM"
+  location: "Roanoke Island Maritime Museum, Manteo"
+  link: "https://www.manteonc.gov/departments/community-and-economic-development/special-events/town-sponsored-events/rodney-crow-murray-annual-litter-pick-ups"
+
 
 - name: "The Wailers"
   date: 2026-05-25
