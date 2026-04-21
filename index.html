@@ -17,6 +17,7 @@ description: OBX To Do | Outer Banks Family Fun
     </div>
   </div>
 </section>
+
 {% assign now_unix = "now" | date: "%s" | plus: 0 %}
 {% assign day_of_week = "now" | date: "%u" | plus: 0 %} {% comment %} 1 (Mon) to 7 (Sun) {% endcomment %}
 
@@ -61,6 +62,19 @@ description: OBX To Do | Outer Banks Family Fun
 
 {% assign weekend_start_date = "now" | date: "%s" | plus: fri_seconds | date: "%Y-%m-%d" %}
 {% assign weekend_end_date = "now" | date: "%s" | plus: sun_seconds | date: "%Y-%m-%d" %}
+  <div class="snapshot-header">
+    <h3>OBX Current</h3>
+
+<a href="https://obxcurrent.com" class="event-card">
+  <div class="status-icon-wrap">
+    <i class="fa-solid fa-wind"></i>
+  </div>
+  <div class="status-content">
+    <span class="status-label">Today on the OBX</span>
+    <span class="status-subtext">Live conditions, tides, and today’s local events</span>
+  </div>
+</a>
+  </div>
 
 <section class="weekly-snapshot">
   <div class="snapshot-header">
