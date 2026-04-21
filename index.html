@@ -111,7 +111,7 @@ description: OBX To Do | Outer Banks Family Fun
 
 <div class="gallery-grid">
   
-  {% assign sorted_pages = site.gallery | sort: "nav_order" % | reverse %}
+  {% assign sorted_pages = site.gallery | sort: "nav_order" | reverse %}
     {% for post in sorted_pages %}
     {% if post.hide != true %}
       <div class="gallery-item">

@@ -1112,7 +1112,7 @@ header p {
 
     <span class="menu-label">Guides</span>
     
-    {% assign sorted_pages = site.gallery | sort: "nav_order" %| reverse %}
+    {% assign sorted_pages = site.gallery | sort: "nav_order" | reverse %}
     {% for p in sorted_pages %}
       {% if p.nav_show == true %}
         <a href="{{ p.url | relative_url }}" class="{% if page.url == p.url %}active{% endif %}">
