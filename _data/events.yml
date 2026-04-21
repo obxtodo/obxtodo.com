@@ -20,6 +20,7 @@
 
 - name: "Ocracoke Earth Day Celebration"
   date: 2026-04-24
+  end_date: 2026-04-26
   time: "7:00 PM"
   location: "Ocracoke"
   link: "https://www.ocracokealive.org/earthday.html"
