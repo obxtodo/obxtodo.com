@@ -64,17 +64,29 @@ description: OBX To Do | Outer Banks Family Fun
 {% assign weekend_end_date = "now" | date: "%s" | plus: sun_seconds | date: "%Y-%m-%d" %}
   <div class="snapshot-header">
     <h3>OBX Current</h3>
+        <p>Live conditions, tides, and today’s local events</p>
+<div class="hero-actions-left">
+  <a href="https://obxcurrent.com" class="hero-btn secondary" target="_blank" style="display: inline-flex; align-items: center; text-decoration: none;">
+    <div style="display: flex; flex-direction: column; align-items: flex-start;">
+      <span style="display: flex; align-items: center;">
+        Today on the OBX
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:8px;">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+          <polyline points="15 3 21 3 21 9"></polyline>
+          <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+      </span>
+      <small class="btn-subtext" style="display: block; margin-top: 2px;">www.obxcurrent.com</small>
+    </div>
+  </a>
+</div>
+  </div>
 
-<a href="https://obxcurrent.com" class="event-card">
-  <div class="status-icon-wrap">
-    <i class="fa-solid fa-wind"></i>
-  </div>
-  <div class="status-content">
-    <span class="status-label">Today on the OBX</span>
-    <span class="status-subtext">Live conditions, tides, and today’s local events</span>
-  </div>
-</a>
-  </div>
+  
+
+
+
+
 
 <section class="weekly-snapshot">
   <div class="snapshot-header">

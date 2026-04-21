@@ -794,6 +794,12 @@ header p {
   flex-wrap: wrap;
 }
 
+.hero-actions-left {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
 .hero-btn {
   padding: 15px 30px;
   border-radius: 50px;
@@ -1122,6 +1128,29 @@ header p {
 .status-link-card:hover .arrow-icon {
   transform: translateX(3px);
   color: #58C896;
+}
+
+/* Stack text vertically */
+.btn-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* or center, depending on your button style */
+  line-height: 1.2;
+}
+
+/* Style the URL subtext */
+.btn-subtext {
+  font-size: 0.7rem;
+  opacity: 0.8;
+  font-weight: normal;
+  margin-top: 2px;
+}
+
+/* Style the icon */
+.external-icon {
+  font-style: normal;
+  margin-left: 4px;
+  font-size: 0.9em;
 }
 
 
