@@ -461,16 +461,6 @@ header p {
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-.btn-sm {
-  background: #58C896;
-  color: white !important;
-  padding: 5px 15px;
-  border-radius: 20px;
-  text-decoration: none;
-  font-size: 0.8rem;
-  font-weight: 600;
-  margin-left: auto; /* Pushes button to the far right */
-}
 
 
 /* Container for the whole list */
@@ -498,6 +488,23 @@ header p {
   border-color: #58C896;
   transform: translateX(5px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+
+
+.event-card:hover .btn-sm {
+  background: #58C896;
+  color: white !important;
+  border-color: #58C896;
+}
+/* Optional: Add a subtle style to the card to show it's a "Long" event */
+.event-card.multi-day {
+  border-left-style: double;
+  border-left-width: 8px;
+}
+
+.event-card, .event-card * {
+  box-sizing: border-box !important;
 }
 
 /* The Date Badge (The Hero of the Card) */
@@ -551,6 +558,16 @@ header p {
 }
 
 
+.btn-sm {
+  background: #58C896;
+  color: white !important;
+  padding: 5px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-left: auto; /* Pushes button to the far right */
+}
 /* The Button - Minimalist */
 .btn-sm {
   background: #f1f5f9;
@@ -565,10 +582,23 @@ header p {
   border: 1px solid #e2e8f0;
 }
 
-.event-card:hover .btn-sm {
+
+
+
+/* The Action Button */
+.btn-sm {
   background: #58C896;
   color: white !important;
-  border-color: #58C896;
+  padding: 0.5rem 1rem;
+  border-radius: 99px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.btn-sm:hover {
+  background: #46a37a;
 }
 
 /* The Date Badge */
@@ -615,21 +645,6 @@ header p {
   color: #718096;
 }
 
-/* The Action Button */
-.btn-sm {
-  background: #58C896;
-  color: white !important;
-  padding: 0.5rem 1rem;
-  border-radius: 99px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background 0.2s;
-}
-
-.btn-sm:hover {
-  background: #46a37a;
-}
 
 @media (max-width: 600px) {
   .event-card {
@@ -684,12 +699,6 @@ header p {
   font-size: 1rem;
   color: #58C896;
   font-weight: 400;
-}
-
-/* Optional: Add a subtle style to the card to show it's a "Long" event */
-.event-card.multi-day {
-  border-left-style: double;
-  border-left-width: 8px;
 }
 
 /* 1. Alignment for the right-side container */
@@ -1069,9 +1078,6 @@ header p {
     padding: 14px 0;
     text-align: center;
   }
-}
-.event-card, .event-card * {
-  box-sizing: border-box !important;
 }
 
 .status-link-card {
