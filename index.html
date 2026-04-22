@@ -117,6 +117,10 @@ description: OBX To Do | Outer Banks Family Fun
               {% if event.end_date %}
                 <span class="multi-day-tag">Multi-Day Event</span>
               {% endif %}
+
+            {% if event.other %}
+              <span class="multi-day-tag">{{ event.other }}</span>
+            {% endif %}
             </div>
             <p class="location-time">
               <i class="fa-solid fa-location-dot"></i> {{ event.location }} • {{ event.time }}
