@@ -25,8 +25,13 @@
   location: "Soundside Event Site, Nags Head"
   link: "https://nouvines.com/events"
 
+- name: "The Ramble"
+  date: 2026-04-22
+  time: "6:00 PM - 9:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/ramble"
 
-  
 - name: "Adam Nixon"
   date: 2026-04-23
   time: "6:00 PM - 9:00 PM"
