@@ -23,7 +23,7 @@ nav_show: false
 </div>
 
 <div class="event-list">
-  {% assign sorted_events = site.data.events | sort: "date" %}
+  {% assign sorted_events = site.data.events | sort: "sort_id" %}
   {% assign count = 0 %}
 
   {% for event in sorted_events %}

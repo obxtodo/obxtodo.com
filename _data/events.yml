@@ -1,29 +1,30 @@
-
 - name: "Family Night Fun"
   date: 2026-04-21
   time: "4:30 PM - 6:30 PM"
   location: "Kill Devil Hills Library"
   link: "https://www.facebook.com/events/2473439533078641"
-
+  sort_id: 202604211630
 
 - name: "Springing & Spritzing into Summer!"
   date: 2026-04-21
   time: "4:00 PM - 6:00 PM"
   location: "The Cottage Shop, Nags Head"
   link: "https://www.facebook.com/events/2156054365224722"
-
-
-- name: "History Happy Hour"
-  date: 2026-04-22
-  time: "6:00 PM - 7:00 PM"
-  location: "NouVines, Manteo"
-  link: "https://nouvines.com/events"
+  sort_id: 202604211600
 
 - name: "Earth & Arts OBX"
   date: 2026-04-22
   time: "4:00 PM - SUNSET"
   location: "Soundside Event Site, Nags Head"
   link: "https://nouvines.com/events"
+  sort_id: 202604221600
+
+- name: "History Happy Hour"
+  date: 2026-04-22
+  time: "6:00 PM - 7:00 PM"
+  location: "NouVines, Manteo"
+  link: "https://nouvines.com/events"
+  sort_id: 202604221800
 
 - name: "The Ramble"
   date: 2026-04-22
@@ -31,6 +32,14 @@
   other: "Weather Dependent"
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/ramble"
+  sort_id: 202604221800
+
+- name: "Spring Soirée @ The French Door"
+  date: 2026-04-23
+  time: "1:00 PM - 6:00 PM"
+  location: "The French Door, Nags Head"
+  link: "https://www.instagram.com/p/DXMMWjRDskT/"
+  sort_id: 202604231300
 
 - name: "Adam Nixon"
   date: 2026-04-23
@@ -38,7 +47,7 @@
   other: "Weather Dependent"
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/adam-nixon"
-
+  sort_id: 202604231800
 
 - name: "Jackie Burns"
   date: 2026-04-24
@@ -46,196 +55,14 @@
   other: "Weather Dependent"
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/jackie-burns"
-
-
-- name: "Micah Iverson"
-  date: 2026-04-25
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/micah-iverson"
-
-
-- name: "Phil Watson"
-  date: 2026-04-26
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/phil-watson"
-
-
-- name: "The Walking Dolphins"
-  date: 2026-04-29
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/walking-dolphins"
-
-
-- name: "Graham Outten"
-  date: 2026-04-30
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/graham-outten-live"
-
-
-- name: "Bryan Campbell"
-  date: 2026-05-01
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/bryan-campbell"
-
-
-- name: "Adam Nixon"
-  date: 2026-05-02
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/adam-nixon"
-
-
-- name: "Suzie Jacuzzi"
-  date: 2026-05-03
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/suzie-jacuzzi"
-
-
-- name: "TV 3 (Tom Vinick)"
-  date: 2026-05-06
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/tv-3-tom-vinick"
-
-
-- name: "Brad Privott"
-  date: 2026-05-07
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/brad-privott"
-
-
-- name: "Micah Iverson"
-  date: 2026-05-08
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/micah-iverson"
-
-
-- name: "Brooke & Nick"
-  date: 2026-05-09
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/brooke-nick"
-
-
-- name: "Phil Watson"
-  date: 2026-05-10
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/phil-watson"
-
-
-- name: "Jeremy & The Generations"
-  date: 2026-05-13
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/jeremy-generations"
-
-
-- name: "Brad Privott"
-  date: 2026-05-14
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/brad-privott"
-
-
-- name: "Jay Decosta"
-  date: 2026-05-15
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/jay-decosta"
-
-
-- name: "Jay Decosta"
-  date: 2026-05-16
-  time: "12:00 PM - 3:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/jay-decosta"
-
-
-- name: "Ty Fleming"
-  date: 2026-05-16
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/ty-fleming"
-
-
-- name: "Dan Rosnato"
-  date: 2026-05-17
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/dan-rosnato"
-
-
-- name: "Jeremy & The Generations"
-  date: 2026-05-20
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/jeremy-generations"
-
-
-- name: "Adam Nixon"
-  date: 2026-05-21
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/adam-nixon"
-
-
-- name: "Micah Iverson"
-  date: 2026-05-22
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/micah-iverson"
-
-
-- name: "Drew Freeland"
-  date: 2026-05-23
-  time: "7:00 PM - 10:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/drew-freeland"
-  
-
-
-- name: "Spring Soirée @ The French Door"
-  date: 2026-04-23
-  time: "1:00 PM - 6:00 PM"
-  location: "The French Door, Nags Head"
-  link: "https://www.instagram.com/p/DXMMWjRDskT/"
+  sort_id: 202604241800
 
 - name: "GOODBYE ALIBI"
   date: 2026-04-24
   time: "6:30 PM - 9:30 PM"
   location: "Outer Banks Brewing Station, Kill Devil Hills"
   link: "https://www.obbrewing.com/events/goodbye-alibi"
+  sort_id: 202604241830
 
 - name: "Ocracoke Earth Day Celebration"
   date: 2026-04-24
@@ -243,38 +70,74 @@
   time: "7:00 PM"
   location: "Ocracoke"
   link: "https://www.ocracokealive.org/earthday.html"
-
-- name: "GET SCONED AND DYE Make-Your-Own Tie-Dye Session"
-  date: 2026-04-25
-  time: "11:00 AM"
-  location: "OBX Wake & Take, Nags Head"
-  link: "https://www.facebook.com/events/1932129197667393"
-
-- name: "Surfing for Autism Percent Day @ Whalehead Brewery"
-  date: 2026-04-25
-  time: "ALL DAY"
-  location: "Whalehead Brewery, Corolla"
-  link: "https://www.instagram.com/p/DXaAbdwFTEW/"
+  sort_id: 202604241900
 
 - name: "Independent Bookstore Day"
   date: 2026-04-25
   time: "9:00 AM - 5:00 PM"
   location: "Downtown Books, Manteo"
   link: "https://www.instagram.com/p/DW9opyFkTGq/"
+  sort_id: 202604250900
 
+- name: "GET SCONED AND DYE Make-Your-Own Tie-Dye Session"
+  date: 2026-04-25
+  time: "11:00 AM"
+  location: "OBX Wake & Take, Nags Head"
+  link: "https://www.facebook.com/events/1932129197667393"
+  sort_id: 202604251100
+
+- name: "Micah Iverson"
+  date: 2026-04-25
+  time: "6:00 PM - 9:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/micah-iverson"
+  sort_id: 202604251800
+
+- name: "Surfing for Autism Percent Day @ Whalehead Brewery"
+  date: 2026-04-25
+  time: "ALL DAY"
+  location: "Whalehead Brewery, Corolla"
+  link: "https://www.instagram.com/p/DXaAbdwFTEW/"
+  sort_id: 202604250000
 
 - name: "Skate! Kitty Hawk"
   date: 2026-04-26
   time: "12:00 PM - 2:00 PM"
   location: "Kitty Hawk Skate Park"
   link: "https://www.facebook.com/KittyHawkPolice/posts/-time-to-hit-the-pavement-the-kitty-hawk-police-department-invites-you-to-the-6t/1247190180892784/"
+  sort_id: 202604261200
 
+- name: "Phil Watson"
+  date: 2026-04-26
+  time: "6:00 PM - 9:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/phil-watson"
+  sort_id: 202604261800
 
 - name: "The Brothers Comatose - Bluegrass Island Nights"
   date: 2026-04-28
   time: "6:30 PM - 9:30 PM"
   location: "Roanoke Island Festival Park, Manteo"
   link: "https://www.roanokeisland.com/news/events/brothers-comatose-bluegrass-island-nights"
+  sort_id: 202604281830
+
+- name: "The Walking Dolphins"
+  date: 2026-04-29
+  time: "6:00 PM - 9:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/walking-dolphins"
+  sort_id: 202604291800
+
+- name: "Graham Outten"
+  date: 2026-04-30
+  time: "6:00 PM - 9:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/graham-outten-live"
+  sort_id: 202604301800
 
 - name: "OBX Rod & Custom Festival"
   date: 2026-04-30
@@ -282,25 +145,108 @@
   time: "10:00 AM - 6:00 PM"
   location: "Soundside Event Site, Nags Head"
   link: "https://obxrodandcustomfestival.com/"
+  sort_id: 202604301000
 
+- name: "Bryan Campbell"
+  date: 2026-05-01
+  time: "6:00 PM - 9:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/bryan-campbell"
+  sort_id: 202605011800
+
+- name: "Adam Nixon"
+  date: 2026-05-02
+  time: "6:00 PM - 9:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/adam-nixon"
+  sort_id: 202605021800
+
+- name: "Suzie Jacuzzi"
+  date: 2026-05-03
+  time: "6:00 PM - 9:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/suzie-jacuzzi"
+  sort_id: 202605031800
+
+- name: "TV 3 (Tom Vinick)"
+  date: 2026-05-06
+  time: "6:00 PM - 9:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/tv-3-tom-vinick"
+  sort_id: 202605061800
+
+- name: "Brad Privott"
+  date: 2026-05-07
+  time: "6:00 PM - 9:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/brad-privott"
+  sort_id: 202605071800
 
 - name: "Dare County KidsFest"
   date: 2026-05-08
   time: "9:30 AM - 12:30 PM"
   location: "Roanoke Island Festival Park, Manteo"
   link: "https://www.roanokeisland.com/news/events/kidsfest-0"
+  sort_id: 202605080930
+
+- name: "Micah Iverson"
+  date: 2026-05-08
+  time: "6:00 PM - 9:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/micah-iverson"
+  sort_id: 202605081800
 
 - name: "Artrageous Kids Art Festival"
   date: 2026-05-09
   time: "10:00 AM - 2:00 PM"
   location: "Dowdy Park, Nags Head"
   link: "https://www.darearts.org/artrageous"
+  sort_id: 202605091000
 
 - name: "Michael Cleveland & Flamekeeper - Bluegrass Island Nights"
   date: 2026-05-09
   time: "6:30 PM - 9:30 PM"
   location: "Roanoke Island Festival Park, Manteo"
   link: "https://www.roanokeisland.com/news/events/michael-cleveland-flamekeeper-bluegrass-island-nights"
+  sort_id: 202605091830
+
+- name: "Brooke & Nick"
+  date: 2026-05-09
+  time: "6:00 PM - 9:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/brooke-nick"
+  sort_id: 202605091800
+
+- name: "Phil Watson"
+  date: 2026-05-10
+  time: "6:00 PM - 9:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/phil-watson"
+  sort_id: 202605101800
+
+- name: "Jeremy & The Generations"
+  date: 2026-05-13
+  time: "6:00 PM - 9:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/jeremy-generations"
+  sort_id: 202605131800
+
+- name: "Brad Privott"
+  date: 2026-05-14
+  time: "6:00 PM - 9:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/brad-privott"
+  sort_id: 202605141800
 
 - name: "54th Annual Hang Gliding Spectacular"
   date: 2026-05-14
@@ -308,25 +254,92 @@
   time: "All Day"
   location: "Jockey's Ridge State Park"
   link: "https://www.kittyhawk.com/event/hang-gliding-spectacular/"
+  sort_id: 202605140000
 
 - name: "Concert on the Dunes"
   date: 2026-05-15
   time: "6:00 PM"
   location: "Jockey's Ridge State Park"
   link: "https://friendsofjockeysridge.org/news-events/concert-on-the-dunes/"
+  sort_id: 202605151800
+
+- name: "Jay Decosta"
+  date: 2026-05-15
+  time: "6:00 PM - 9:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/jay-decosta"
+  sort_id: 202605151800
 
 - name: "Manteo Spring Litter Pick-up"
   date: 2026-05-16
   time: "9:00 AM - 11:00 AM"
   location: "Roanoke Island Maritime Museum, Manteo"
   link: "https://www.manteonc.gov/departments/community-and-economic-development/special-events/town-sponsored-events/rodney-crow-murray-annual-litter-pick-ups"
+  sort_id: 202605160900
 
+- name: "Jay Decosta"
+  date: 2026-05-16
+  time: "12:00 PM - 3:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/jay-decosta"
+  sort_id: 202605161200
+
+- name: "Ty Fleming"
+  date: 2026-05-16
+  time: "6:00 PM - 9:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/ty-fleming"
+  sort_id: 202605161800
+
+- name: "Dan Rosnato"
+  date: 2026-05-17
+  time: "6:00 PM - 9:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/dan-rosnato"
+  sort_id: 202605171800
+
+- name: "Jeremy & The Generations"
+  date: 2026-05-20
+  time: "6:00 PM - 9:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/jeremy-generations"
+  sort_id: 202605201800
+
+- name: "Adam Nixon"
+  date: 2026-05-21
+  time: "6:00 PM - 9:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/adam-nixon"
+  sort_id: 202605211800
+
+- name: "Micah Iverson"
+  date: 2026-05-22
+  time: "6:00 PM - 9:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/micah-iverson"
+  sort_id: 202605221800
+
+- name: "Drew Freeland"
+  date: 2026-05-23
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/drew-freeland"
+  sort_id: 202605231900
 
 - name: "The Wailers"
   date: 2026-05-25
   time: "8:00 PM"
   location: "Outer Banks Brewing Station, Kill Devil Hills"
   link: "https://www.obbrewing.com/events/the-wailers"
+  sort_id: 202605252000
 
 - name: "Ocracoke Festival"
   date: 2026-06-05
@@ -334,25 +347,21 @@
   time: "ALL DAY"
   location: "Ocracoke"
   link: "https://www.visitocracokenc.com/event/ocrafolk-festival-4/"
-
+  sort_id: 202606050000
 
 - name: "Dare Day Dockside"
   date: 2026-06-06
   time: "10:00 AM - 5:00 PM"
   location: "Wanchese Marina, Wanchese"
   link: "https://outerbanksthisweek.com/wanchesemarina/events/dare-day-dockside"
+  sort_id: 202606061000
 
 - name: "Joe Russo's Almost Dead"
   date: 2026-06-12
   time: "6:30 PM"
   location: "Roanoke Island Festival Park, Manteo"
   link: "https://www.roanokeisland.com/news/events/joe-russos-almost-dead-0"
-
-- name: "Kool & The Gang"
-  date: 2026-06-13
-  time: "6:30 PM"
-  location: "Roanoke Island Festival Park, Manteo"
-  link: "https://www.roanokeisland.com/news/events/kool-gang"
+  sort_id: 202606121830
 
 - name: "Rogallo Kite Festival"
   date: 2026-06-12
@@ -360,42 +369,56 @@
   time: "10:00 AM - 4:00 PM"
   location: "Jockey's Ridge State Park"
   link: "https://www.kittyhawk.com/event/rogallo-kite-festival/"
+  sort_id: 202606121000
+
+- name: "Kool & The Gang"
+  date: 2026-06-13
+  time: "6:30 PM"
+  location: "Roanoke Island Festival Park, Manteo"
+  link: "https://www.roanokeisland.com/news/events/kool-gang"
+  sort_id: 202606131830
 
 - name: "String Cheese Incident"
   date: 2026-06-21
   time: "6:45 PM"
   location: "Roanoke Island Festival Park, Manteo"
   link: "https://www.roanokeisland.com/news/events/evening-string-cheese-incident"
+  sort_id: 202606211845
 
 - name: "Freedom 5k"
   date: 2026-07-03
   time: "7:30 PM"
   location: "Kill Devil Hills"
   link: "https://www.theobxrunningcompany.com/5k-run-july-4th-outer-banks.html"
+  sort_id: 202607031930
 
 - name: "Duck: Fourth of July Parade"
   date: 2026-07-04
   time: "9:20 PM"
   location: "Duck"
   link: "https://ducknc.gov/recreation-special-events/4th-of-july/"
+  sort_id: 202607042120
 
 - name: "Kill Devil Hills: Fourth of July Fireworks Show"
   date: 2026-07-04
   time: "9:15 PM"
   location: "Avalon Pier, Kill Devil Hills"
   link: "https://events.dncr.nc.gov/event/town-of-kill-devil-hills-independence-day-fireworks-show"
+  sort_id: 202607042115
 
 - name: "Nags Head: Fourth of July Fireworks Show"
   date: 2026-07-04
   time: "9:20 PM"
   location: "Nags Head Fishing Pier, Nags Head"
   link: "https://events.dncr.nc.gov/event/nags-head-fourth-of-july-fireworks-show"
+  sort_id: 202607042120
 
 - name: "moe. & Umphrey's McGee"
   date: 2026-07-09
   time: "6:30 PM"
   location: "Roanoke Island Festival Park, Manteo"
   link: "https://www.roanokeisland.com/news/events/live-obx-moementum-tour-umphreys-mcgee-moe"
+  sort_id: 202607091830
 
 - name: "Wright Kite Festival"
   date: 2026-07-17
@@ -403,25 +426,29 @@
   time: "10:00 AM - 4:00 PM"
   location: "Wright Brothers National Memorial"
   link: "https://www.kittyhawk.com/event/wright-kite-festival/"
+  sort_id: 202607171000
 
-- name: "Moby Festival at Whalebone"
+- name: "Maby Festival at Whalebone"
   date: 2026-07-24
   end_date: 2026-07-25
   time: "All Day"
   location: "Whalebone Junction, Nags Head"
   link: "https://www.kittyhawk.com/event/moby-fest/"
+  sort_id: 202607240000
 
 - name: "20th Annual OBX Watermelon Festival"
   date: 2026-08-06
   time: "10:00 AM - 4:00 PM"
   location: "Kitty Hawk Kites, Nags Head"
   link: "https://www.kittyhawk.com/event/outer-banks-watermelon-festival/"
+  sort_id: 202608061000
 
 - name: "Ocracoke Seafood Festival"
   date: 2026-09-05
   time: "2:00 PM"
   location: "Ocracoke"
   link: "https://www.visitocracokenc.com/event/ocracoke-seafood-festival-health-center-benefit-3/"
+  sort_id: 202609051400
 
 - name: "Outer Banks Pride Fest"
   date: 2026-09-11
@@ -429,3 +456,4 @@
   time: "12:00 PM - 6:00 PM"
   location: "Roanoke Island Festival Park, Manteo"
   link: "https://www.obxpridefest.com"
+  sort_id: 202609111200

@@ -18,7 +18,7 @@ Stay up to date with festivals, live music, and local happenings.
 {% assign day_buffer = "now" | date: "%s" | minus: 43200 %}
 {% assign today_str = day_buffer | date: "%Y-%m-%d" %}
 
-{% assign sorted_events = site.data.events | sort: "date" %}
+{% assign sorted_events = site.data.events | sort: "sort_id" %}
 
 <div class="event-list">
   {% for event in sorted_events %}
