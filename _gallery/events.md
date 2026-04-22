@@ -50,6 +50,10 @@ Stay up to date with festivals, live music, and local happenings.
             {% if event.end_date %}
               <span class="multi-day-tag">Multi-Day Event</span>
             {% endif %}
+
+            {% if event.other %}
+              <span class="multi-day-tag">{{ event.other }}</span>
+            {% endif %}
           </div>
           
           <p class="location-time">
