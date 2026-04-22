@@ -1210,7 +1210,10 @@ header p {
 <div id="side-menu" class="side-menu">
   <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times;</a>
   <div class="menu-links">
-    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/' | relative_url }}" 
+   class="{% if page.url == '/' or page.url == '/index.html' %}active{% endif %}">
+   Home
+</a>
      <a href="{{ '/about/' | relative_url }}" class="{% if page.url contains 'about' %}active{% endif %}">About</a>
      <a href="http://www.obxcurrent.com" class="">Today<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:8px;">
           <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
