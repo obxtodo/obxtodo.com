@@ -96,7 +96,7 @@ description: OBX To Do | Outer Banks Family Fun
 
   <div class="event-list">
     {% assign count = 0 %}
-    {% assign sorted_events = site.data.events | sort: "date" %}
+    {% assign sorted_events = site.data.events | sort: "sort_id" %}
     
     {% for event in sorted_events %}
       {% assign event_day = event.date | date: "%Y-%m-%d" %}
