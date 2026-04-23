@@ -86,6 +86,21 @@
   link: "https://www.facebook.com/events/1932129197667393"
   sort_id: 202604251100
 
+- name: "Storywalk Ribbon Cutting"
+  date: 2026-04-25
+  time: "8:30 AM"
+  location: "Aviation Park, Kill Devil Hills"
+  link: "https://www.facebook.com/townofkdh/photos/the-town-of-kill-devil-hills-in-partnership-with-the-kill-devil-hills-library-in/1434038372083749/"
+  sort_id: 202604250830
+
+- name: "Earth Fair OBX"
+  date: 2026-04-25
+  time: "1:00 PM - 4:00 PM"
+  location: "Jockey's Ridge State Park"
+  link: "https://events.dncr.nc.gov/event/earth-fair-obx"
+  sort_id: 202604251300
+
+
 - name: "Live Music @ Fish Heads - Micah Iverson"
   date: 2026-04-25
   time: "6:00 PM - 9:00 PM"
@@ -146,6 +161,14 @@
   location: "Soundside Event Site, Nags Head"
   link: "https://obxrodandcustomfestival.com/"
   sort_id: 202604301000
+
+- name: "Kentucky Derby Party"
+  date: 2026-05-02
+  time: "4:00 PM"
+  location: "The Pioneer Theater, Manteo"
+  link: "https://thepioneertheater.com/event/kentucky-derby-party-under-the-tent/"
+  sort_id: 202605021600
+
 
 - name: "Live Music @ Fish Heads - Bryan Campbell"
   date: 2026-05-01
@@ -277,6 +300,7 @@
   location: "Roanoke Island Maritime Museum, Manteo"
   link: "https://www.manteonc.gov/departments/community-and-economic-development/special-events/town-sponsored-events/rodney-crow-murray-annual-litter-pick-ups"
   sort_id: 202605160900
+
 
 - name: "Live Music @ Fish Heads - Jay Decosta"
   date: 2026-05-16
