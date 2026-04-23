@@ -48,6 +48,7 @@
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/adam-nixon"
   sort_id: 202604231800
+  category: "live-music"
 
 - name: "Live Music @ Fish Heads - Jackie Burns"
   date: 2026-04-24
@@ -56,6 +57,7 @@
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/jackie-burns"
   sort_id: 202604241800
+  category: "live-music"
 
 - name: "GOODBYE ALIBI"
   date: 2026-04-24
@@ -63,6 +65,7 @@
   location: "Outer Banks Brewing Station, Kill Devil Hills"
   link: "https://www.obbrewing.com/events/goodbye-alibi"
   sort_id: 202604241830
+  category: "live-music"
 
 - name: "Ocracoke Earth Day Celebration"
   date: 2026-04-24
@@ -108,6 +111,7 @@
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/micah-iverson"
   sort_id: 202604251800
+  category: "live-music"
 
 - name: "Surfing for Autism Percent Day @ Whalehead Brewery"
   date: 2026-04-25
@@ -121,7 +125,8 @@
   time: "12:00 PM - 2:00 PM"
   location: "Kitty Hawk Skate Park"
   link: "https://www.facebook.com/KittyHawkPolice/posts/-time-to-hit-the-pavement-the-kitty-hawk-police-department-invites-you-to-the-6t/1247190180892784/"
-  sort_id: 202604261200
+  sort_id: 202604261200,
+  category: "free"
 
 - name: "Live Music @ Fish Heads - Phil Watson"
   date: 2026-04-26
@@ -130,6 +135,7 @@
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/phil-watson"
   sort_id: 202604261800
+  category: "live-music"
 
 - name: "The Brothers Comatose - Bluegrass Island Nights"
   date: 2026-04-28
@@ -137,6 +143,7 @@
   location: "Roanoke Island Festival Park, Manteo"
   link: "https://www.roanokeisland.com/news/events/brothers-comatose-bluegrass-island-nights"
   sort_id: 202604281830
+  category: "live-music"
 
 - name: "Live Music @ Fish Heads - The Walking Dolphins"
   date: 2026-04-29
@@ -145,6 +152,7 @@
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/walking-dolphins"
   sort_id: 202604291800
+  category: "live-music"
 
 - name: "Live Music @ Fish Heads - Graham Outten"
   date: 2026-04-30
@@ -153,6 +161,7 @@
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/graham-outten-live"
   sort_id: 202604301800
+  category: "live-music"
 
 - name: "OBX Rod & Custom Festival"
   date: 2026-04-30
@@ -177,6 +186,7 @@
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/bryan-campbell"
   sort_id: 202605011800
+  category: "live-music"
 
 - name: "Live Music @ Fish Heads - Adam Nixon"
   date: 2026-05-02
@@ -185,6 +195,7 @@
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/adam-nixon"
   sort_id: 202605021800
+  category: "live-music"
 
 - name: "Live Music @ Fish Heads - Suzie Jacuzzi"
   date: 2026-05-03
@@ -193,6 +204,7 @@
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/suzie-jacuzzi"
   sort_id: 202605031800
+  category: "live-music"
 
 - name: "Live Music @ Fish Heads - TV 3 (Tom Vinick)"
   date: 2026-05-06
@@ -201,6 +213,7 @@
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/tv-3-tom-vinick"
   sort_id: 202605061800
+  category: "live-music"
 
 - name: "Live Music @ Fish Heads - Brad Privott"
   date: 2026-05-07
@@ -209,6 +222,7 @@
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/brad-privott"
   sort_id: 202605071800
+  category: "live-music"
 
 - name: "Dare County KidsFest"
   date: 2026-05-08
@@ -216,6 +230,7 @@
   location: "Roanoke Island Festival Park, Manteo"
   link: "https://www.roanokeisland.com/news/events/kidsfest-0"
   sort_id: 202605080930
+  category: "free"
 
 - name: "Live Music @ Fish Heads - Micah Iverson"
   date: 2026-05-08
@@ -224,6 +239,7 @@
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/micah-iverson"
   sort_id: 202605081800
+  category: "live-music"
 
 - name: "Artrageous Kids Art Festival"
   date: 2026-05-09
@@ -231,6 +247,7 @@
   location: "Dowdy Park, Nags Head"
   link: "https://www.darearts.org/artrageous"
   sort_id: 202605091000
+  category: "free"
 
 - name: "Michael Cleveland & Flamekeeper - Bluegrass Island Nights"
   date: 2026-05-09
@@ -238,6 +255,7 @@
   location: "Roanoke Island Festival Park, Manteo"
   link: "https://www.roanokeisland.com/news/events/michael-cleveland-flamekeeper-bluegrass-island-nights"
   sort_id: 202605091830
+  category: "live-music"
 
 - name: "Live Music @ Fish Heads - Brooke & Nick"
   date: 2026-05-09
@@ -246,6 +264,7 @@
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/brooke-nick"
   sort_id: 202605091800
+  category: "live-music"
 
 - name: "Live Music @ Fish Heads - Phil Watson"
   date: 2026-05-10
@@ -254,6 +273,7 @@
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/phil-watson"
   sort_id: 202605101800
+  category: "live-music"
 
 - name: "Live Music @ Fish Heads - Jeremy & The Generations"
   date: 2026-05-13
@@ -262,6 +282,7 @@
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/jeremy-generations"
   sort_id: 202605131800
+  category: "live-music"
 
 - name: "Live Music @ Fish Heads - Brad Privott"
   date: 2026-05-14
@@ -270,6 +291,7 @@
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/brad-privott"
   sort_id: 202605141800
+  category: "live-music"
 
 - name: "54th Annual Hang Gliding Spectacular"
   date: 2026-05-14
@@ -278,6 +300,7 @@
   location: "Jockey's Ridge State Park"
   link: "https://www.kittyhawk.com/event/hang-gliding-spectacular/"
   sort_id: 202605140000
+  category: "live-music"
 
 - name: "Concert on the Dunes"
   date: 2026-05-15
@@ -285,6 +308,7 @@
   location: "Jockey's Ridge State Park"
   link: "https://friendsofjockeysridge.org/news-events/concert-on-the-dunes/"
   sort_id: 202605151800
+  category: "live-music"
 
 - name: "Live Music @ Fish Heads - Jay Decosta"
   date: 2026-05-15
@@ -293,6 +317,7 @@
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/jay-decosta"
   sort_id: 202605151800
+  category: "live-music"
 
 - name: "Manteo Spring Litter Pick-up"
   date: 2026-05-16
@@ -300,6 +325,7 @@
   location: "Roanoke Island Maritime Museum, Manteo"
   link: "https://www.manteonc.gov/departments/community-and-economic-development/special-events/town-sponsored-events/rodney-crow-murray-annual-litter-pick-ups"
   sort_id: 202605160900
+  category: "live-music"
 
 
 - name: "Live Music @ Fish Heads - Jay Decosta"
@@ -309,6 +335,7 @@
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/jay-decosta"
   sort_id: 202605161200
+  category: "live-music"
 
 - name: "Live Music @ Fish Heads - Ty Fleming"
   date: 2026-05-16
@@ -317,6 +344,7 @@
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/ty-fleming"
   sort_id: 202605161800
+  category: "live-music"
 
 - name: "Live Music @ Fish Heads - Dan Rosnato"
   date: 2026-05-17
@@ -325,6 +353,7 @@
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/dan-rosnato"
   sort_id: 202605171800
+  category: "live-music"
 
 - name: "Live Music @ Fish Heads - Jeremy & The Generations"
   date: 2026-05-20
@@ -333,6 +362,7 @@
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/jeremy-generations"
   sort_id: 202605201800
+  category: "live-music"
 
 - name: "Live Music @ Fish Heads - Adam Nixon"
   date: 2026-05-21
@@ -341,6 +371,7 @@
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/adam-nixon"
   sort_id: 202605211800
+  category: "live-music"
 
 - name: "Live Music @ Fish Heads - Micah Iverson"
   date: 2026-05-22
@@ -349,6 +380,7 @@
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/micah-iverson"
   sort_id: 202605221800
+  category: "live-music"
 
 - name: "Live Music @ Fish Heads - Drew Freeland"
   date: 2026-05-23
@@ -357,6 +389,7 @@
   location: "Fish Heads Bar & Grill, Nags Head"
   link: "https://outerbanksthisweek.com/fishheads/events/drew-freeland"
   sort_id: 202605231900
+  category: "live-music"
 
 - name: "The Wailers"
   date: 2026-05-25
@@ -364,6 +397,7 @@
   location: "Outer Banks Brewing Station, Kill Devil Hills"
   link: "https://www.obbrewing.com/events/the-wailers"
   sort_id: 202605252000
+  category: "live-music"
 
 - name: "Ocracoke Festival"
   date: 2026-06-05
@@ -379,6 +413,7 @@
   location: "Wanchese Marina, Wanchese"
   link: "https://outerbanksthisweek.com/wanchesemarina/events/dare-day-dockside"
   sort_id: 202606061000
+  category: "free"
 
 - name: "Joe Russo's Almost Dead"
   date: 2026-06-12
@@ -386,6 +421,7 @@
   location: "Roanoke Island Festival Park, Manteo"
   link: "https://www.roanokeisland.com/news/events/joe-russos-almost-dead-0"
   sort_id: 202606121830
+  category: "live-music"
 
 - name: "Rogallo Kite Festival"
   date: 2026-06-12
@@ -394,6 +430,7 @@
   location: "Jockey's Ridge State Park"
   link: "https://www.kittyhawk.com/event/rogallo-kite-festival/"
   sort_id: 202606121000
+  category: "free"
 
 - name: "Kool & The Gang"
   date: 2026-06-13
@@ -401,6 +438,7 @@
   location: "Roanoke Island Festival Park, Manteo"
   link: "https://www.roanokeisland.com/news/events/kool-gang"
   sort_id: 202606131830
+  category: "live-music"
 
 - name: "String Cheese Incident"
   date: 2026-06-21
@@ -408,6 +446,7 @@
   location: "Roanoke Island Festival Park, Manteo"
   link: "https://www.roanokeisland.com/news/events/evening-string-cheese-incident"
   sort_id: 202606211845
+  category: "live-music"
 
 - name: "Freedom 5k"
   date: 2026-07-03
@@ -422,6 +461,7 @@
   location: "Duck"
   link: "https://ducknc.gov/recreation-special-events/4th-of-july/"
   sort_id: 202607042120
+  category: "free"
 
 - name: "Kill Devil Hills: Fourth of July Fireworks Show"
   date: 2026-07-04
@@ -429,6 +469,7 @@
   location: "Avalon Pier, Kill Devil Hills"
   link: "https://events.dncr.nc.gov/event/town-of-kill-devil-hills-independence-day-fireworks-show"
   sort_id: 202607042115
+  category: "free"
 
 - name: "Nags Head: Fourth of July Fireworks Show"
   date: 2026-07-04
@@ -443,6 +484,7 @@
   location: "Roanoke Island Festival Park, Manteo"
   link: "https://www.roanokeisland.com/news/events/live-obx-moementum-tour-umphreys-mcgee-moe"
   sort_id: 202607091830
+  category: "live-music"
 
 - name: "Wright Kite Festival"
   date: 2026-07-17
@@ -459,6 +501,7 @@
   location: "Whalebone Junction, Nags Head"
   link: "https://www.kittyhawk.com/event/moby-fest/"
   sort_id: 202607240000
+  category: "free"
 
 - name: "20th Annual OBX Watermelon Festival"
   date: 2026-08-06
@@ -466,6 +509,7 @@
   location: "Kitty Hawk Kites, Nags Head"
   link: "https://www.kittyhawk.com/event/outer-banks-watermelon-festival/"
   sort_id: 202608061000
+  category: "free"
 
 - name: "Ocracoke Seafood Festival"
   date: 2026-09-05
@@ -481,3 +525,4 @@
   location: "Roanoke Island Festival Park, Manteo"
   link: "https://www.obxpridefest.com"
   sort_id: 202609111200
+  category: "free"

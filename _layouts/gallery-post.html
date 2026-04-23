@@ -30,10 +30,74 @@ layout: default
   <span>View on Instagram</span>
 </a>
 
+{% assign date_start = "now" | date: "%Y%m%d" | plus: 0 %}
+{% assign date_end = "now" | date: "%s" | plus: 604800 | date: "%Y%m%d" | plus: 0 %}
+
+{% comment %} Get the category from the page front matter {% endcomment %}
+{% assign target_category = page.category_filter %}
+
+
+
   </div>
 
 </div>
+<div class="week-header" style="margin-bottom: 30px;">
+  <h3 style="margin-bottom: 5px;">{{ page.title }} - This Week</h3>
+  <p style="font-size: 0.9rem; color: #7f8c8d;">
+    Showing events for: 
+    <strong>{{ "now" | date: "%b %d" }}</strong> – 
+    <strong>{{ "now" | date: "%s" | plus: 604800 | date: "%b %d" }}</strong>
+  </p>
+</div>
 
+<div class="event-list">
+  {% assign sorted_events = site.data.events | sort: "sort_id" %}
+  {% assign count = 0 %}
+
+  {% for event in sorted_events %}
+    {% comment %} Check if the event matches the page category {% endcomment %}
+    {% if event.category == target_category %}
+      
+      {% assign event_start = event.date | date: "%Y%m%d" | plus: 0 %}
+      {% assign event_finish = event.end_date | default: event.date | date: "%Y%m%d" | plus: 0 %}
+
+      {% if event_start <= date_end and event_finish >= date_start %}
+         <div class="event-card">
+          <div class="date-badge">
+            <span class="month">{{ event.date | date: "%b" }}</span>
+            <span class="day">{{ event.date | date: "%-d" }}</span>
+          </div>
+
+          <div class="event-info">
+            <div class="title-row">
+              <h4>{{ event.name }}</h4>
+              {% if event.end_date %}
+                <span class="multi-day-tag">Multi-Day Event</span>
+              {% endif %}
+
+            {% if event.other %}
+              <span class="multi-day-tag">{{ event.other }}</span>
+            {% endif %}
+            </div>
+            <p class="location-time">
+              <i class="fa-solid fa-location-dot"></i> {{ event.location }} • {{ event.time }}
+            </p>
+          </div>
+
+          {% if event.link %}
+            <a class="btn-sm" target="_blank">Details</a>
+          {% endif %}
+        </div>
+        {% assign count = count | plus: 1 %}
+      {% endif %}
+
+    {% endif %}
+  {% endfor %}
+
+  {% if count == 0 %}
+    <p>No upcoming events found for this week.</p>
+  {% endif %}
+</div>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script>

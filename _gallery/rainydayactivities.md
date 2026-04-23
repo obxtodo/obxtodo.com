@@ -3,6 +3,7 @@ layout: gallery-post
 title: "Rainy Day Activities"
 nav_show: true
 nav_order: 3
+category_filter: "rainy-day"
 images:
   - "/assets/img/rain1.jpg"
   - "/assets/img/rain2.jpg"
