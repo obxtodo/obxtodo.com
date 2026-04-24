@@ -1,8 +1,8 @@
 name: Daily Build
 on:
   schedule:
-    - cron: '5 4 * * *' # Runs at 4:05 AM UTC (approx. midnight Eastern)
-  workflow_dispatch: # Allows you to trigger it manually too
+    - cron: '52 12 * * *' # Runs at 12:55 PM UTC (approx. 8:55 AM EDT)
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
