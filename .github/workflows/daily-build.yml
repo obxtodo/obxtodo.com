@@ -1,7 +1,7 @@
 name: Daily Build
 on:
   schedule:
-    - cron: '59 8 * * *'  # Runs at 9:30 AM local time
+    - cron: '13 2 * * *' # 2:13 AM
       timezone: 'America/New_York'
   workflow_dispatch:
 jobs:
