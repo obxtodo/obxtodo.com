@@ -1,3 +1,59 @@
+- name: "Manteo First Friday"
+  date: 2026-05-01
+  time: "6:00 PM - 8:00 PM"
+  location: "Downtown Manteo"
+  link: "https://www.darearts.org/firstfriday"
+  sort_id: 202605011800
+
+
+- name: "Manteo First Friday"
+  date: 2026-06-05
+  time: "6:00 PM - 8:00 PM"
+  location: "Downtown Manteo"
+  link: "https://www.darearts.org/firstfriday"
+  sort_id: 202606051800
+
+
+- name: "Manteo First Friday"
+  date: 2026-07-03
+  time: "6:00 PM - 8:00 PM"
+  location: "Downtown Manteo"
+  link: "https://www.darearts.org/firstfriday"
+  sort_id: 202607031800
+
+
+- name: "Manteo First Friday"
+  date: 2026-08-07
+  time: "6:00 PM - 8:00 PM"
+  location: "Downtown Manteo"
+  link: "https://www.darearts.org/firstfriday"
+  sort_id: 202608071800
+
+
+- name: "Manteo First Friday"
+  date: 2026-09-04
+  time: "6:00 PM - 8:00 PM"
+  location: "Downtown Manteo"
+  link: "https://www.darearts.org/firstfriday"
+  sort_id: 202609051800
+
+
+- name: "Manteo First Friday"
+  date: 2026-10-02
+  time: "6:00 PM - 8:00 PM"
+  location: "Downtown Manteo"
+  link: "https://www.darearts.org/firstfriday"
+  sort_id: 202610021800
+
+
+- name: "Manteo First Friday"
+  date: 2026-11-06
+  time: "6:00 PM - 8:00 PM"
+  location: "Downtown Manteo"
+  link: "https://www.darearts.org/firstfriday"
+  sort_id: 202610061800
+
+
 - name: "Family Night Fun"
   date: 2026-04-21
   time: "4:30 PM - 6:30 PM"
@@ -38,7 +94,7 @@
   date: 2026-04-23
   time: "1:00 PM - 6:00 PM"
   location: "The French Door, Nags Head"
-  link: "https://www.instagram.com/p/DXMMWjRDskT/"
+  link: "https://www.instagram.com/p/DXMMWjRDskT/" 
   sort_id: 202604231300
 
 - name: "Live Music @ Fish Heads - Adam Nixon"
