@@ -176,15 +176,6 @@
   sort_id: 202605031200,
   category: "free"
 
-- name: "Live Music @ Fish Heads - Phil Watson"
-  date: 2026-04-26
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/phil-watson"
-  sort_id: 202604261800
-  category: "live-music"
-
 - name: "The Brothers Comatose - Bluegrass Island Nights"
   date: 2026-04-28
   time: "6:30 PM - 9:30 PM"
