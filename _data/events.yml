@@ -123,14 +123,6 @@
   sort_id: 202604241830
   category: "live-music"
 
-- name: "Ocracoke Earth Day Celebration"
-  date: 2026-04-24
-  end_date: 2026-04-26
-  time: "7:00 PM"
-  location: "Ocracoke"
-  link: "https://www.ocracokealive.org/earthday.html"
-  sort_id: 202604241900
-
 - name: "Independent Bookstore Day"
   date: 2026-04-25
   time: "9:00 AM - 5:00 PM"
@@ -181,7 +173,7 @@
   time: "12:00 PM - 2:00 PM"
   location: "Kitty Hawk Skate Park"
   link: "https://www.facebook.com/KittyHawkPolice/posts/-time-to-hit-the-pavement-the-kitty-hawk-police-department-invites-you-to-the-6t/1247190180892784/"
-  sort_id: 202604261200,
+  sort_id: 202605031200,
   category: "free"
 
 - name: "Live Music @ Fish Heads - Phil Watson"
