@@ -6,76 +6,110 @@ hide: true
 nav_show: false
 ---
 
-{% comment %} 
-  1. Set our range boundaries.
-  We reset 'now' to a clean integer for comparison.
-{% endcomment %}
-{% assign date_start = "now" | date: "%Y%m%d" | plus: 0 %}
-{% assign date_end = "now" | date: "%s" | plus: 604800 | date: "%Y%m%d" | plus: 0 %}
 
-<div class="week-header" style="margin-bottom: 30px;">
-  <h3 style="margin-bottom: 5px;">This Week in the Outer Banks</h3>
-  <p style="font-size: 0.9rem; color: #7f8c8d;">
-    Showing events for: 
-    <strong>{{ "now" | date: "%b %d" }}</strong> – 
-    <strong>{{ "now" | date: "%s" | plus: 604800 | date: "%b %d" }}</strong>
-  </p>
-</div>
+<section class="weekly-snapshot">
+  <div class="snapshot-header">
+    <h3>The Weekly Outlook</h3>
+    <p>Hand-picked events for <span id="week-start-display">...</span> — <span id="week-end-display">...</span></p>
+  </div>
 
-<div class="event-list">
-  {% assign sorted_events = site.data.events | sort: "sort_id" %}
-  {% assign count = 0 %}
+  <div id="weekly-event-list" class="event-list" style="margin-top: 20px;">
+    <p style="text-align: center; color: #64748b;">Gathering this week's schedule...</p>
+  </div>
+</section>
 
-  {% for event in sorted_events %}
-    {% comment %} Convert start and end dates to integers for comparison {% endcomment %}
-    {% assign event_start = event.date | date: "%Y%m%d" | plus: 0 %}
-    
-    {% if event.end_date %}
-      {% assign event_finish = event.end_date | date: "%Y%m%d" | plus: 0 %}
-    {% else %}
-      {% assign event_finish = event_start %}
-    {% endif %}
-
-    {% comment %} 
-      Logic: Show if the event is active at ANY POINT during this 7-day window.
-    {% endcomment %}
-    {% if event_start <= date_end and event_finish >= date_start %}
-      <div class="event-card">
-        
-        <div class="date-badge">
-          <span class="month">{{ event.date | date: "%b" }}</span>
-          <span class="day">{{ event.date | date: "%-d" }}</span>
-        </div>
-
-        <div class="event-info">
-          <div class="title-row">
-            <h4>{{ event.name }}</h4>
-            
-            {% if event.end_date %}
-              <span class="multi-day-tag">Multi-Day Event</span>
-            {% endif %}
-            {% if event.other %}
-              <span class="multi-day-tag">{{ event.other }}</span>
-            {% endif %}
-          </div>
-          
-          <p class="location-time">
-            <i class="fa-solid fa-location-dot"></i> {{ event.location }} • {{ event.time }}
-          </p>
-        </div>
-
-        {% if event.link %}
-          <a href="{{ event.link }}" class="btn-sm" target="_blank">Details</a>
-        {% endif %}
-      </div>
-      {% assign count = count | plus: 1 %}
-    {% endif %}
+<script id="events-data" type="application/json">
+[
+  {% for event in site.data.events %}
+    {
+      "name": {{ event.name | jsonify }},
+      "sort_id": {{ event.sort_id | default: 999 }},
+      "start": "{{ event.date }}",
+      "end": "{{ event.end_date | default: event.date }}",
+      "time": {{ event.time | jsonify }},
+      "location": {{ event.location | jsonify }},
+      "link": {{ event.link | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
   {% endfor %}
+]
+</script>
 
-  {% if count == 0 %}
-    <p>No major events scheduled for this window. Perfect time for a beach day!</p>
-  {% endif %}
-</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    renderWeeklyEvents();
+});
+
+function renderWeeklyEvents() {
+    const container = document.getElementById('weekly-event-list');
+    const dataElement = document.getElementById('events-data');
+    if (!container || !dataElement) return;
+
+    let events = JSON.parse(dataElement.textContent);
+    
+    // 1. Calculate the Monday-Sunday window
+    const now = new Date();
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    const dayOfWeek = today.getDay(); // 0 (Sun) to 6 (Sat)
+
+    let mon = new Date(today);
+    
+    // Logic: If today is Sunday(0), go back 6 days to Monday.
+    // Otherwise, go back (dayOfWeek - 1) days to Monday.
+    const diffToMon = dayOfWeek === 0 ? 6 : dayOfWeek - 1;
+    mon.setDate(today.getDate() - diffToMon);
+
+    let sun = new Date(mon);
+    sun.setDate(mon.getDate() + 6);
+
+    const startWindow = mon.toISOString().slice(0, 10);
+    const endWindow = sun.toISOString().slice(0, 10);
+
+    // Update Header Text
+    const options = { month: 'short', day: 'numeric' };
+    document.getElementById('week-start-display').textContent = mon.toLocaleDateString('en-US', options);
+    document.getElementById('week-end-display').textContent = sun.toLocaleDateString('en-US', options);
+
+    // 2. Filter: Event overlaps the Mon-Sun window
+    let filtered = events.filter(e => {
+        const eventStart = e.start;
+        const eventEnd = e.end || e.start;
+        return eventEnd >= startWindow && eventStart <= endWindow;
+    });
+
+    // 3. Sort by sort_id
+    filtered.sort((a, b) => (a.sort_id || 999) - (b.sort_id || 999));
+
+    if (filtered.length > 0) {
+        container.innerHTML = ''; 
+        filtered.forEach(event => {
+            const d = new Date(event.start + 'T00:00:00');
+            const isMultiDay = event.end && event.end !== event.start;
+
+            container.innerHTML += `
+              <div class="event-card" style="display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-bottom: 15px;">
+                <a href="${event.link}" class="btn-sm" target="_blank" style="flex-shrink: 0;">Details</a>
+                <div class="event-info" style="flex-grow: 1; min-width: 0;">
+                  <div class="title-row" style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                    <h4 style="margin: 0;">${event.name}</h4>
+                    ${isMultiDay ? '<span class="multi-day-tag">Multi-Day</span>' : ''}
+                  </div>
+                  <p class="location-time" style="margin: 4px 0 0 0;">
+                    <i class="fa-solid fa-location-dot"></i> ${event.location} • ${event.time}
+                  </p>
+                </div>
+                <div class="date-container" style="display: flex; align-items: center; justify-content: flex-end; flex-shrink: 0; min-width: 60px;">
+                  <div class="date-badge">
+                    <span class="month">${d.toLocaleString('default', { month: 'short' })}</span>
+                    <span class="day">${d.getDate()}</span>
+                  </div>
+                </div>
+              </div>`;
+        });
+    } else {
+        container.innerHTML = `<p style="text-align: center; color: #64748b; padding: 20px;">No events scheduled for this week.</p>`;
+    }
+}
+</script>
 
 <style>
   /* Use the same styling as events.md for brand consistency */
