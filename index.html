@@ -202,16 +202,17 @@ function renderWeekendEvents() {
                     <span class="day">${startParts.day}</span>
                   </div>
 
-                  ${isMultiDay ? `
-                    <div class="event-dash-wrapper" style="padding: 0 8px; color: #64748b;">
-                      <span class="event-dash">–</span>
-                    </div>
-                    
-                    <div class="date-badge" style="margin-right: 0 !important;">
-                      <span class="month">${formatDate(event.end).month}</span>
-                      <span class="day">${formatDate(event.end).day}</span>
-                    </div>
-                  ` : ''}
+                  
+${isMultiDay ? `
+  <div class="event-dash-wrapper">
+    <span class="event-dash">–</span>
+  </div>
+  
+  <div class="date-badge" style="margin-right: 0 !important;">
+    <span class="month">${formatDate(event.end).month}</span>
+    <span class="day">${formatDate(event.end).day}</span>
+  </div>
+` : ''}
                 </div>
               </div>`;
         });
