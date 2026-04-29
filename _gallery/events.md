@@ -7,8 +7,12 @@ nav_show: false
 nav_order: 3
 ---
 
-### Outer Banks Event Calendar
-Stay up to date with festivals, live music, and local happenings.
+
+  <div class="snapshot-header">
+    <h3>Outer Banks Event Calendar</h3>
+    <p>Stay up to date with festivals, live music, and local happenings.</p>
+  </div>
+
 
 <div id="upcoming-event-list" class="event-list" style="margin-top: 20px;">
   <p style="text-align: center; color: #64748b;">Loading local events...</p>
