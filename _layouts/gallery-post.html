@@ -3,6 +3,7 @@ layout: default
 ---
 
 <div class="post-container">
+
   <div class="post-media">
     <section id="image-carousel" class="splide" aria-label="Beautiful OBX Photos">
       <div class="splide__track">
@@ -31,8 +32,7 @@ layout: default
   <h3 style="margin-bottom: 5px;">{{ page.title }} - Upcoming</h3>
   <p style="font-size: 0.9rem; color: #7f8c8d;">
     Showing events for: 
-    <strong id="start-date-display">...</strong> – 
-    <strong id="end-date-display">...</strong>
+    <strong id="start-date-display">...</strong> onwards
   </p>
 </div>
 
@@ -46,8 +46,8 @@ layout: default
     {
       "name": {{ event.name | jsonify }},
       "sort_id": {{ event.sort_id | default: 999 }},
-      "start": "{{ event.date }}",
-      "end": "{{ event.end_date | default: event.date }}",
+      "start": "{{ event.date | date: '%Y-%m-%d' }}",
+      "end": "{{ event.end_date | default: event.date | date: '%Y-%m-%d' }}",
       "time": {{ event.time | jsonify }},
       "location": {{ event.location | jsonify }},
       "link": {{ event.link | jsonify }},
@@ -61,87 +61,117 @@ layout: default
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
 <script>
-  // Setup Carousel
-  document.addEventListener('DOMContentLoaded', function () {
-    if (document.querySelector('#image-carousel')) {
-      new Splide('#image-carousel', { 
-        type: 'loop', 
-        drag: 'free', 
-        snap: true,
-        arrows: true,
-        pagination: true 
-      }).mount();
-    }
-    
-    // Initial Run for Events
-    renderFilteredEvents();
-  });
+document.addEventListener('DOMContentLoaded', function() {
+    // 1. Initialize Image Carousel (This was the missing piece for the images!)
+    new Splide('#image-carousel', { 
+      type: 'loop', 
+      drag: 'free', 
+      snap: true,
+      arrows: true,
+      pagination: true 
+    }).mount();
 
-  const pageCategory = "{{ page.category_filter }}";
+    // 2. Render Events
+    renderUpcomingEvents();
+});
 
-  function renderFilteredEvents() {
+const pageCategory = "{{ page.category_filter }}";
+
+function renderUpcomingEvents() {
+    // FIXED: Corrected the ID to match your HTML
     const container = document.getElementById('dynamic-event-list');
     const dataElement = document.getElementById('events-data');
     if (!container || !dataElement) return;
 
     let events = JSON.parse(dataElement.textContent);
     
-    // Get local today
+    // Calculate Today's date to filter out past events
     const now = new Date();
-    const offset = now.getTimezoneOffset() * 60000;
-    const todayObj = new Date(now - offset);
-    const todayStr = todayObj.toISOString().slice(0, 10);
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
 
-    // Calculate end of 7-day window for header display
-    const endWindowObj = new Date(todayObj);
-    endWindowObj.setDate(todayObj.getDate() + 7);
-    
-    // Update Header Dates Dynamically
-    const dateOptions = { month: 'short', day: 'numeric' };
-    document.getElementById('start-date-display').textContent = todayObj.toLocaleDateString('en-US', dateOptions);
-    document.getElementById('end-date-display').textContent = endWindowObj.toLocaleDateString('en-US', dateOptions);
+    // HELPER: Safely format local dates to YYYY-MM-DD
+    const formatLocalISO = (date) => {
+        const y = date.getFullYear();
+        const m = String(date.getMonth() + 1).padStart(2, '0');
+        const d = String(date.getDate()).padStart(2, '0');
+        return `${y}-${m}-${d}`;
+    };
 
-    // 1. PRIMARY FILTER: All Upcoming (expires today or later)
-    let filtered = events.filter(e => todayStr <= (e.end || e.start));
+    const todayStr = formatLocalISO(today);
 
-    // 2. SECONDARY FILTER: Category
+    // Populate the dynamic header with today's date
+    const options = { month: 'short', day: 'numeric' };
+    const displayDate = today.toLocaleDateString('en-US', options);
+    const headerStart = document.getElementById('start-date-display');
+    if (headerStart) headerStart.textContent = displayDate;
+
+    // Filter: Event must end ON or AFTER today
+    let filtered = events.filter(e => {
+        const eventEnd = e.end || e.start;
+        return eventEnd >= todayStr;
+    });
+
+    // SECONDARY FILTER: Category
     if (pageCategory && pageCategory !== "" && pageCategory !== "null") {
         filtered = filtered.filter(e => e.category === pageCategory);
     }
 
-    // 3. SORT: By sort_id
-    filtered.sort((a, b) => (a.sort_id || 999) - (b.sort_id || 999));
+    // Sort chronologically by start date, then by sort_id
+    filtered.sort((a, b) => {
+        if (a.start < b.start) return -1;
+        if (a.start > b.start) return 1;
+        return (a.sort_id || 999) - (b.sort_id || 999);
+    });
 
+    // Format YYYY-MM-DD strings for the visual Date Badges
+    const formatDate = (dateStr) => {
+        const [year, month, day] = dateStr.split('-');
+        const d = new Date(year, month - 1, day);
+        return {
+            month: d.toLocaleString('default', { month: 'short' }),
+            day: d.getDate()
+        };
+    };
+
+    // Render
     if (filtered.length > 0) {
         container.innerHTML = ''; 
         filtered.forEach(event => {
-            const d = new Date(event.start + 'T00:00:00');
             const isMultiDay = event.end && event.end !== event.start;
+            const startParts = formatDate(event.start); 
 
             container.innerHTML += `
-              <div class="event-card" style="display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-bottom: 15px;">
+              <div class="event-card" style="display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-bottom: 20px; padding: 15px;">
                 <a href="${event.link}" class="btn-sm" target="_blank" style="flex-shrink: 0;">Details</a>
 
                 <div class="event-info" style="flex-grow: 1; min-width: 0;">
-                  <div class="title-row" style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-                    <h4 style="margin: 0;">${event.name}</h4>
-                    ${isMultiDay ? '<span class="multi-day-tag">Multi-Day</span>' : ''}
-                  </div>
-                  <p class="location-time" style="margin: 4px 0 0 0;">
+                  <h4 style="margin: 0; font-size: 1.1rem; text-align: left;">${event.name}</h4>
+                  <p class="location-time" style="margin: 4px 0 0 0; font-size: 0.85rem; color: #64748b; text-align: left;">
                     <i class="fa-solid fa-location-dot"></i> ${event.location} • ${event.time}
                   </p>
                 </div>
-
-                <div class="date-container" style="display: flex; align-items: center; justify-content: flex-end; flex-shrink: 0; min-width: 60px;">
-                  <div class="date-badge">
-                    <span class="month">${d.toLocaleString('default', { month: 'short' })}</span>
-                    <span class="day">${d.getDate()}</span>
+                
+                <div class="date-container" style="display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  <div class="date-badge" style="margin-right: 0 !important;">
+                    <span class="month">${startParts.month}</span>
+                    <span class="day">${startParts.day}</span>
                   </div>
+
+                  ${isMultiDay ? `
+                    <div class="event-dash-wrapper" style="padding: 0 8px; color: #64748b;">
+                      <span class="event-dash">–</span>
+                    </div>
+                    
+                    <div class="date-badge" style="margin-right: 0 !important;">
+                      <span class="month">${formatDate(event.end).month}</span>
+                      <span class="day">${formatDate(event.end).day}</span>
+                    </div>
+                  ` : ''}
                 </div>
               </div>`;
         });
     } else {
-        container.innerHTML = `<p style="text-align: center; color: #64748b; padding: 40px; border: 1px dashed #ccc; border-radius: 12px;">No upcoming ${pageCategory || ''} events found at this time.</p>`;
+        container.innerHTML = `<p style="text-align: center; color: #64748b; padding: 40px; border: 1px dashed #ccc; border-radius: 12px;">No upcoming events found at this time.</p>`;
     }
-  }
+}
 </script>

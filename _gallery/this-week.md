@@ -6,7 +6,6 @@ hide: true
 nav_show: false
 ---
 
-
 <section class="weekly-snapshot">
   <div class="snapshot-header">
     <h3>The Weekly Outlook</h3>
@@ -24,8 +23,8 @@ nav_show: false
     {
       "name": {{ event.name | jsonify }},
       "sort_id": {{ event.sort_id | default: 999 }},
-      "start": "{{ event.date }}",
-      "end": "{{ event.end_date | default: event.date }}",
+      "start": "{{ event.date | date: '%Y-%m-%d' }}",
+      "end": "{{ event.end_date | default: event.date | date: '%Y-%m-%d' }}",
       "time": {{ event.time | jsonify }},
       "location": {{ event.location | jsonify }},
       "link": {{ event.link | jsonify }}
@@ -49,27 +48,35 @@ function renderWeeklyEvents() {
     // 1. Calculate the Monday-Sunday window
     const now = new Date();
     const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-    const dayOfWeek = today.getDay(); // 0 (Sun) to 6 (Sat)
+    const dayOfWeek = today.getDay(); // 0 is Sunday, 1 is Monday, etc.
 
-    let mon = new Date(today);
+    // Calculate how many days to subtract to get back to Monday
+    // If today is Sunday (0), we go back 6 days. Otherwise, go back (dayOfWeek - 1) days.
+    const distanceToMonday = dayOfWeek === 0 ? 6 : dayOfWeek - 1;
     
-    // Logic: If today is Sunday(0), go back 6 days to Monday.
-    // Otherwise, go back (dayOfWeek - 1) days to Monday.
-    const diffToMon = dayOfWeek === 0 ? 6 : dayOfWeek - 1;
-    mon.setDate(today.getDate() - diffToMon);
+    let monday = new Date(today);
+    monday.setDate(today.getDate() - distanceToMonday);
 
-    let sun = new Date(mon);
-    sun.setDate(mon.getDate() + 6);
+    let sunday = new Date(monday);
+    sunday.setDate(monday.getDate() + 6);
 
-    const startWindow = mon.toISOString().slice(0, 10);
-    const endWindow = sun.toISOString().slice(0, 10);
+    // HELPER: Safely format local dates to YYYY-MM-DD
+    const formatLocalISO = (date) => {
+        const y = date.getFullYear();
+        const m = String(date.getMonth() + 1).padStart(2, '0');
+        const d = String(date.getDate()).padStart(2, '0');
+        return `${y}-${m}-${d}`;
+    };
 
-    // Update Header Text
+    const startWindow = formatLocalISO(monday);
+    const endWindow = formatLocalISO(sunday);
+
+    // --- DYNAMIC HEADER LOGIC ---
     const options = { month: 'short', day: 'numeric' };
-    document.getElementById('week-start-display').textContent = mon.toLocaleDateString('en-US', options);
-    document.getElementById('week-end-display').textContent = sun.toLocaleDateString('en-US', options);
+    document.getElementById('week-start-display').textContent = monday.toLocaleDateString('en-US', options);
+    document.getElementById('week-end-display').textContent = sunday.toLocaleDateString('en-US', options);
 
-    // 2. Filter: Event overlaps the Mon-Sun window
+    // 2. Filter: Event must overlap the Mon-Sun window
     let filtered = events.filter(e => {
         const eventStart = e.start;
         const eventEnd = e.end || e.start;
@@ -79,34 +86,55 @@ function renderWeeklyEvents() {
     // 3. Sort by sort_id
     filtered.sort((a, b) => (a.sort_id || 999) - (b.sort_id || 999));
 
+    // HELPER: Format YYYY-MM-DD strings for the visual Date Badges
+    const formatDate = (dateStr) => {
+        const [year, month, day] = dateStr.split('-');
+        const d = new Date(year, month - 1, day);
+        return {
+            month: d.toLocaleString('default', { month: 'short' }),
+            day: d.getDate()
+        };
+    };
+
+    // 4. Render
     if (filtered.length > 0) {
         container.innerHTML = ''; 
         filtered.forEach(event => {
-            const d = new Date(event.start + 'T00:00:00');
             const isMultiDay = event.end && event.end !== event.start;
+            const startParts = formatDate(event.start); 
 
             container.innerHTML += `
-              <div class="event-card" style="display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-bottom: 15px;">
+              <div class="event-card" style="display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-bottom: 20px; padding: 15px;">
                 <a href="${event.link}" class="btn-sm" target="_blank" style="flex-shrink: 0;">Details</a>
+
                 <div class="event-info" style="flex-grow: 1; min-width: 0;">
-                  <div class="title-row" style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-                    <h4 style="margin: 0;">${event.name}</h4>
-                    ${isMultiDay ? '<span class="multi-day-tag">Multi-Day</span>' : ''}
-                  </div>
-                  <p class="location-time" style="margin: 4px 0 0 0;">
+                  <h4 style="margin: 0; font-size: 1.1rem; text-align: left;">${event.name}</h4>
+                  <p class="location-time" style="margin: 4px 0 0 0; font-size: 0.85rem; color: #64748b; text-align: left;">
                     <i class="fa-solid fa-location-dot"></i> ${event.location} • ${event.time}
                   </p>
                 </div>
-                <div class="date-container" style="display: flex; align-items: center; justify-content: flex-end; flex-shrink: 0; min-width: 60px;">
-                  <div class="date-badge">
-                    <span class="month">${d.toLocaleString('default', { month: 'short' })}</span>
-                    <span class="day">${d.getDate()}</span>
+                
+                <div class="date-container" style="display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  <div class="date-badge" style="margin-right: 0 !important;">
+                    <span class="month">${startParts.month}</span>
+                    <span class="day">${startParts.day}</span>
                   </div>
+
+                  ${isMultiDay ? `
+                    <div class="event-dash-wrapper" style="padding: 0 8px; color: #64748b;">
+                      <span class="event-dash">–</span>
+                    </div>
+                    
+                    <div class="date-badge" style="margin-right: 0 !important;">
+                      <span class="month">${formatDate(event.end).month}</span>
+                      <span class="day">${formatDate(event.end).day}</span>
+                    </div>
+                  ` : ''}
                 </div>
               </div>`;
         });
     } else {
-        container.innerHTML = `<p style="text-align: center; color: #64748b; padding: 20px;">No events scheduled for this week.</p>`;
+        container.innerHTML = `<p style="text-align: center; color: #64748b; padding: 20px;">No events scheduled for this week yet.</p>`;
     }
 }
 </script>

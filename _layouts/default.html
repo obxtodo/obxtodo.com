@@ -1185,6 +1185,100 @@ header p {
     }
 
     img { max-width: 100%; height: auto; display: block; }
+
+
+/* Mobile Adjustments for Event Cards */
+@media (max-width: 600px) {
+  .event-card {
+    flex-direction: column !important;
+    align-items: flex-start !important; /* Align everything to the left */
+    gap: 0px !important;
+  }
+
+  .date-container {
+    order: 1; /* Move Dates to the top */
+    justify-content: flex-start !important; /* Align badges to the far left */
+    width: 100%;
+  }
+
+  .event-info {
+    order: 2; /* Move Info to the middle */
+    text-align: left;
+    width: 100%;
+  }
+
+  .event-info h4 {
+    text-align: left !important;
+  }
+
+
+  
+
+}
+/* The Dash Container */
+.event-dash-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 45px; /* Matches the height of your date-badge */
+}
+
+.event-dash {
+  font-weight: 800;
+  color: #58C896;
+  font-size: 1.2rem;
+  line-height: 1;
+  transform: translateY(-3px); /* Final micro-nudge for mobile alignment */
+
+  margin-top: 10px; /* Aligns dash visually with the 'Day' numbers on desktop */
+}
+
+/* Mobile Reset */
+@media (max-width: 600px) {
+  .event-dash-wrapper {
+    height: auto; /* Allow it to collapse to content size on mobile */
+    align-self: center;
+  }
+  
+  .event-dash {
+    margin-top: 0; /* Reset desktop offset for the vertical mobile stack */
+    transform: translateY(-6px); /* Final micro-nudge for mobile alignment */
+  }
+}
+
+
+@media (max-width: 600px) {
+  .event-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem; /* Increase padding for better mobile touch targets */
+    position: relative;
+  }
+  
+  .date-badge {
+    flex-direction: row;
+    gap: 10px;
+    min-width: auto;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    align-self: flex-start; /* Keeps the badge from stretching full width */
+  }
+
+  .event-info {
+    width: 100%; /* Ensure the text doesn't squeeze the button */
+    margin-bottom: 1rem;
+  }
+  
+    .btn-sm {
+      order: 3; 
+    display: block; /* Makes it a full-width block */
+    width: 100%; 
+    text-align: center;
+    margin-left: 0; /* Resets the 'auto' margin from desktop */
+    box-sizing: border-box; /* Crucial: ensures padding doesn't add to width */
+  }
+}
   </style>
 </head>
 <body>
