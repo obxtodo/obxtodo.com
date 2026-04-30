@@ -1,7 +1,7 @@
 - name: "Manteo First Friday"
   date: 2026-05-01
   time: "6:00 PM - 8:00 PM"
-  location: "Downtown Manteo"
+  location: "Downtown Manteo" 
   link: "https://www.darearts.org/firstfriday"
   sort_id: 202605011800
 
