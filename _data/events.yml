@@ -210,6 +210,83 @@
   link: "https://obxrodandcustomfestival.com/"
   sort_id: 202604301000
 
+- name: "The Winning Pour @ The Christmas Shop"
+  date: 2026-05-02
+  time: "1:00 PM - 2:00 PM"
+  location: "The Christmas Shop, Manteo"
+  link: "https://www.outerbankschristmas.com/events"
+  sort_id: 202605021300
+
+- name: "Cinco de Mayo Sprinkle Fiesta"
+  date: 2026-05-05
+  time: "6:00 PM - 10:00 PM"
+  location: "Cookies & Cream, Nags Head"
+  link: "https://www.instagram.com/p/DXrkPv8GVh5/"
+  sort_id: 202605051800
+
+- name: "Cars & Coffee"
+  date: 2026-05-09
+  time: "9:00 AM - 11:00 AM"
+  location: "Noosa Scoops, Kill Devil Hills"
+  link: "https://www.instagram.com/p/DXnNPoTP_J4/"
+  sort_id: 202605090900
+
+- name: "A Toast to Mom @ The Christmas Shop"
+  date: 2026-05-09
+  time: "1:00 PM - 2:00 PM"
+  location: "The Christmas Shop, Manteo"
+  link: "https://www.outerbankschristmas.com/events"
+  sort_id: 202605091300
+
+- name: "Mother's Day in Thailand @ Red Sky Cafe"
+  date: 2026-05-10
+  time: "10:30 AM - 3:00 PM"
+  location: "Red Sky Cafe, Duck"
+  link: "https://www.instagram.com/p/DXmkS6cDsNr/"
+  sort_id: 202605101030
+
+- name: "Mother's Day Brunch @ Salt & Cypress"
+  date: 2026-05-10
+  time: "10:30 AM - 4:00 PM"
+  location: "Salt & Cypress, Manteo"
+  link: "https://www.instagram.com/p/DXciUgcD2Wp/"
+  sort_id: 202605101030
+
+- name: "Mother's Day Brunch & Market @ The Blue Point"
+  date: 2026-05-10
+  time: "11:00 AM - 3:00 PM (Brunch), 12:00 PM - 4:00 PM (Market)"
+  location: "The Blue Point, Duck"
+  link: "https://www.instagram.com/p/DXbvYbDjoTh/"
+  sort_id: 202605101100
+
+- name: "Mother's Day Brunch @ Aqua"
+  date: 2026-05-10
+  time: "10:30 AM - 2:00 PM"
+  location: "AQUA Restaurant, Duck"
+  link: "https://www.instagram.com/p/DXmkS6cDsNr/"
+  sort_id: 202605101030
+
+- name: "Mother's Day Brunch @ The Village Table & Tavern"
+  date: 2026-05-10
+  time: "10:00 AM - 2:00 PM"
+  location: "The Village Table & Tavern, Duck"
+  link: "https://www.instagram.com/p/DXm90flEnAq/"
+  sort_id: 202605101000
+
+- name: "Mother's Day Brunch @ Sugar Creek"
+  date: 2026-05-10
+  time: "11:30 AM - 3:00 PM"
+  location: "Sugar Creek, Nags Head"
+  link: "https://www.instagram.com/p/DXpcETYEhaU/"
+  sort_id: 202605101130
+
+- name: "Sips of Summer @ The Christmas Shop"
+  date: 2026-05-16
+  time: "1:00 PM - 2:00 PM"
+  location: "The Christmas Shop, Manteo"
+  link: "https://www.outerbankschristmas.com/events"
+  sort_id: 202605161300
+
 - name: "Kentucky Derby Party"
   date: 2026-05-02
   time: "4:00 PM"
@@ -478,6 +555,13 @@
   link: "https://www.roanokeisland.com/news/events/kool-gang"
   sort_id: 202606131830
   category: "live-music"
+
+- name: "Annual Youth Fishing Tournament"
+  date: 2026-06-14
+  time: "8:00 AM - 12:30 PM"
+  location: "Kitty Hawk Fishing Pier"
+  link: "https://www.facebook.com/KittyHawkPolice/posts/-reel-in-the-fun-at-the-kitty-hawk-youth-fishing-tournament-get-ready-to-make-a-/1262259812719154/"
+  sort_id: 202606140800
 
 - name: "String Cheese Incident"
   date: 2026-06-21
