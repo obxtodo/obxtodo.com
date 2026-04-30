@@ -237,6 +237,7 @@
   location: "The Christmas Shop, Manteo"
   link: "https://www.outerbankschristmas.com/events"
   sort_id: 202605091300
+  category: "mothers-day-2026"
 
 - name: "Mother's Day in Thailand @ Red Sky Cafe"
   date: 2026-05-10
@@ -244,6 +245,7 @@
   location: "Red Sky Cafe, Duck"
   link: "https://www.instagram.com/p/DXmkS6cDsNr/"
   sort_id: 202605101030
+  category: "mothers-day-2026"
 
 - name: "Mother's Day Brunch @ Salt & Cypress"
   date: 2026-05-10
@@ -251,6 +253,7 @@
   location: "Salt & Cypress, Manteo"
   link: "https://www.instagram.com/p/DXciUgcD2Wp/"
   sort_id: 202605101030
+  category: "mothers-day-2026"
 
 - name: "Mother's Day Brunch & Market @ The Blue Point"
   date: 2026-05-10
@@ -258,6 +261,7 @@
   location: "The Blue Point, Duck"
   link: "https://www.instagram.com/p/DXbvYbDjoTh/"
   sort_id: 202605101100
+  category: "mothers-day-2026"
 
 - name: "Mother's Day Brunch @ Aqua"
   date: 2026-05-10
@@ -265,6 +269,7 @@
   location: "AQUA Restaurant, Duck"
   link: "https://www.instagram.com/p/DXmkS6cDsNr/"
   sort_id: 202605101030
+  category: "mothers-day-2026"
 
 - name: "Mother's Day Brunch @ The Village Table & Tavern"
   date: 2026-05-10
@@ -272,6 +277,7 @@
   location: "The Village Table & Tavern, Duck"
   link: "https://www.instagram.com/p/DXm90flEnAq/"
   sort_id: 202605101000
+  category: "mothers-day-2026"
 
 - name: "Mother's Day Brunch @ Sugar Creek"
   date: 2026-05-10
@@ -279,6 +285,7 @@
   location: "Sugar Creek, Nags Head"
   link: "https://www.instagram.com/p/DXpcETYEhaU/"
   sort_id: 202605101130
+  category: "mothers-day-2026"
 
 - name: "Sips of Summer @ The Christmas Shop"
   date: 2026-05-16
