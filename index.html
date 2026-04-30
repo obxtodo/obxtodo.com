@@ -255,7 +255,7 @@ ${isMultiDay ? `
       <div class="gallery-item">
         <a href="{{ holiday.url | relative_url }}">
           <div class="gallery-image-wrap">
-            <img src="{{ holiday.image | relative_url }}" alt="{{ holiday.title }}">
+            <img src="{{ site.baseurl }}{{ holiday.images[0] }}" alt="{{ holiday.title }}">
           </div>
           <h3>{{ holiday.title }}</h3>
         </a>

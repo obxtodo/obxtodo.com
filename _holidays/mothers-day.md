@@ -8,4 +8,5 @@ images:
 date_of_holiday: 2026-05-10
 description: |
   Celebrate Mom with the best waterfront brunches and beach walks in the Outer Banks. 🌸
+instagram_url: "https://www.instagram.com/obxtodo/"
 ---
