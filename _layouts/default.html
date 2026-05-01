@@ -291,6 +291,13 @@ header h1 {
   background-color: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(10px);
   overflow-x: hidden;
+  
+  /* --- THE FIXES ARE BELOW --- */
+  box-sizing: border-box; /* Forces padding to stay within the 100% height */
+  overflow-y: auto;       /* Allows vertical scrolling if your links exceed screen height */
+  padding-bottom: 40px;   /* Adds breathing room at the bottom of the menu */
+  /* --------------------------- */
+  
   transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   box-shadow: 10px 0 30px rgba(0,0,0,0.05);
   padding-top: 60px;
