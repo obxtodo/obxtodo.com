@@ -203,12 +203,12 @@
   category: "live-music"
 
 - name: "OBX Rod & Custom Festival"
-  date: 2026-04-30
+  date: 2026-05-01
   end_date: 2026-05-02
-  time: "10:00 AM - 6:00 PM"
+  time: "Check website for times and locations"
   location: "Soundside Event Site, Nags Head"
   link: "https://obxrodandcustomfestival.com/"
-  sort_id: 202604301000
+  sort_id: 202605011000
 
 - name: "The Winning Pour @ The Christmas Shop"
   date: 2026-05-02
