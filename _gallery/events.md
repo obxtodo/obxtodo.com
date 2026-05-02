@@ -14,7 +14,7 @@ nav_order: 3
 
 <div class="filters-outer-wrapper" style="margin-bottom: 30px; text-align: left;">
   <button id="filter-toggle-btn" onclick="toggleFilters()" class="filter-main-toggle">
-    <i class="fa-solid fa-sliders"></i> Filters
+    <i class="fa-solid fa-sliders"></i> Filters 
     <i id="toggle-icon" class="fa-solid fa-chevron-down" style="transition: transform 0.3s ease;"></i>
   </button>
 
@@ -208,20 +208,32 @@ function renderEvents(eventsToRender) {
             const isMultiDay = event.end && event.end !== event.start;
             const startParts = formatDate(event.start); 
             container.innerHTML += `
-              <div class="event-card" style="display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-bottom: 20px; padding: 15px; border: 1px solid #eee; border-radius: 12px;">
-                <a href="${event.link}" class="btn-sm" target="_blank">Details</a>
+              <div class="event-card" style="display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-bottom: 20px; padding: 15px;">
+                <a href="${event.link}" class="btn-sm" target="_blank" style="flex-shrink: 0;">Details</a>
+
                 <div class="event-info" style="flex-grow: 1; min-width: 0;">
                   <h4 style="margin: 0; font-size: 1.1rem; text-align: left;">${event.name}</h4>
-                  <p style="margin: 4px 0 0 0; font-size: 0.85rem; color: #64748b; text-align: left;">
+                  <p class="location-time" style="margin: 4px 0 0 0; font-size: 0.85rem; color: #64748b; text-align: left;">
                     <i class="fa-solid fa-location-dot"></i> ${event.location} • ${event.time}
                   </p>
                 </div>
-                <div class="date-container" style="display: flex; align-items: center;">
-                  <div class="date-badge">
-                    <span class="month" style="display: block; font-size: 0.7rem; text-transform: uppercase;">${startParts.month}</span>
-                    <span class="day" style="display: block; font-size: 1.2rem; font-weight: bold;">${startParts.day}</span>
+                
+                <div class="date-container" style="display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  <div class="date-badge" style="margin-right: 0 !important;">
+                    <span class="month">${startParts.month}</span>
+                    <span class="day">${startParts.day}</span>
                   </div>
-                  ${isMultiDay ? `<div style="padding: 0 5px; color: #cbd5e1;">–</div><div class="date-badge"><span class="month" style="display: block; font-size: 0.7rem; text-transform: uppercase;">${formatDate(event.end).month}</span><span class="day" style="display: block; font-size: 1.2rem; font-weight: bold;">${formatDate(event.end).day}</span></div>` : ''}
+
+                  ${isMultiDay ? `
+                    <div class="event-dash-wrapper" style="padding: 0 8px; color: #64748b;">
+                      <span class="event-dash">–</span>
+                    </div>
+                    
+                    <div class="date-badge" style="margin-right: 0 !important;">
+                      <span class="month">${formatDate(event.end).month}</span>
+                      <span class="day">${formatDate(event.end).day}</span>
+                    </div>
+                  ` : ''}
                 </div>
               </div>`;
         });
