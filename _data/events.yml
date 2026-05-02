@@ -1,206 +1,64 @@
 - name: "Manteo First Friday"
   date: 2026-05-01
   time: "6:00 PM - 8:00 PM"
-  location: "Downtown Manteo" 
+  location: "Downtown Area, Manteo" 
   link: "https://www.darearts.org/firstfriday"
   sort_id: 202605011800
+  category: "Festivals"
 
 
 - name: "Manteo First Friday"
   date: 2026-06-05
   time: "6:00 PM - 8:00 PM"
-  location: "Downtown Manteo"
+  location: "Downtown Area, Manteo"
   link: "https://www.darearts.org/firstfriday"
   sort_id: 202606051800
+  category: "Festivals"
 
 
 - name: "Manteo First Friday"
   date: 2026-07-03
   time: "6:00 PM - 8:00 PM"
-  location: "Downtown Manteo"
+  location: "Downtown Area, Manteo"
   link: "https://www.darearts.org/firstfriday"
   sort_id: 202607031800
+  category: "Festivals"
 
 
 - name: "Manteo First Friday"
   date: 2026-08-07
   time: "6:00 PM - 8:00 PM"
-  location: "Downtown Manteo"
+  location: "Downtown Area, Manteo"
   link: "https://www.darearts.org/firstfriday"
   sort_id: 202608071800
+  category: "Festivals"
 
 
 - name: "Manteo First Friday"
   date: 2026-09-04
   time: "6:00 PM - 8:00 PM"
-  location: "Downtown Manteo"
+  location: "Downtown Area, Manteo"
   link: "https://www.darearts.org/firstfriday"
   sort_id: 202609051800
+  category: "Festivals"
 
 
 - name: "Manteo First Friday"
   date: 2026-10-02
   time: "6:00 PM - 8:00 PM"
-  location: "Downtown Manteo"
+  location: "Downtown Area, Manteo"
   link: "https://www.darearts.org/firstfriday"
   sort_id: 202610021800
+  category: "Festivals"
 
 
 - name: "Manteo First Friday"
   date: 2026-11-06
   time: "6:00 PM - 8:00 PM"
-  location: "Downtown Manteo"
+  location: "Downtown Area, Manteo"
   link: "https://www.darearts.org/firstfriday"
   sort_id: 202610061800
-
-
-- name: "Family Night Fun"
-  date: 2026-04-21
-  time: "4:30 PM - 6:30 PM"
-  location: "Kill Devil Hills Library"
-  link: "https://www.facebook.com/events/2473439533078641"
-  sort_id: 202604211630
-
-- name: "Springing & Spritzing into Summer!"
-  date: 2026-04-21
-  time: "4:00 PM - 6:00 PM"
-  location: "The Cottage Shop, Nags Head"
-  link: "https://www.facebook.com/events/2156054365224722"
-  sort_id: 202604211600
-
-- name: "Earth & Arts OBX"
-  date: 2026-04-22
-  time: "4:00 PM - SUNSET"
-  location: "Soundside Event Site, Nags Head"
-  link: "https://nouvines.com/events"
-  sort_id: 202604221600
-
-- name: "History Happy Hour"
-  date: 2026-04-22
-  time: "6:00 PM - 7:00 PM"
-  location: "NouVines, Manteo"
-  link: "https://nouvines.com/events"
-  sort_id: 202604221800
-
-- name: "Live Music @ Fish Heads - The Ramble"
-  date: 2026-04-22
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/ramble"
-  sort_id: 202604221800
-
-- name: "Spring Soirée @ The French Door"
-  date: 2026-04-23
-  time: "1:00 PM - 6:00 PM"
-  location: "The French Door, Nags Head"
-  link: "https://www.instagram.com/p/DXMMWjRDskT/" 
-  sort_id: 202604231300
-
-- name: "Live Music @ Fish Heads - Adam Nixon"
-  date: 2026-04-23
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/adam-nixon"
-  sort_id: 202604231800
-  category: "live-music"
-
-- name: "Live Music @ Fish Heads - Jackie Burns"
-  date: 2026-04-24
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/jackie-burns"
-  sort_id: 202604241800
-  category: "live-music"
-
-- name: "GOODBYE ALIBI"
-  date: 2026-04-24
-  time: "6:30 PM - 9:30 PM"
-  location: "Outer Banks Brewing Station, Kill Devil Hills"
-  link: "https://www.obbrewing.com/events/goodbye-alibi"
-  sort_id: 202604241830
-  category: "live-music"
-
-- name: "Independent Bookstore Day"
-  date: 2026-04-25
-  time: "9:00 AM - 5:00 PM"
-  location: "Downtown Books, Manteo"
-  link: "https://www.instagram.com/p/DW9opyFkTGq/"
-  sort_id: 202604250900
-
-- name: "GET SCONED AND DYE Make-Your-Own Tie-Dye Session"
-  date: 2026-04-25
-  time: "11:00 AM"
-  location: "OBX Wake & Take, Nags Head"
-  link: "https://www.facebook.com/events/1932129197667393"
-  sort_id: 202604251100
-
-- name: "Storywalk Ribbon Cutting"
-  date: 2026-04-25
-  time: "8:30 AM"
-  location: "Aviation Park, Kill Devil Hills"
-  link: "https://www.facebook.com/townofkdh/photos/the-town-of-kill-devil-hills-in-partnership-with-the-kill-devil-hills-library-in/1434038372083749/"
-  sort_id: 202604250830
-
-- name: "Earth Fair OBX"
-  date: 2026-04-25
-  time: "1:00 PM - 4:00 PM"
-  location: "Jockey's Ridge State Park"
-  link: "https://events.dncr.nc.gov/event/earth-fair-obx"
-  sort_id: 202604251300
-
-
-- name: "Live Music @ Fish Heads - Micah Iverson"
-  date: 2026-04-25
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/micah-iverson"
-  sort_id: 202604251800
-  category: "live-music"
-
-- name: "Surfing for Autism Percent Day @ Whalehead Brewery"
-  date: 2026-04-25
-  time: "ALL DAY"
-  location: "Whalehead Brewery, Corolla"
-  link: "https://www.instagram.com/p/DXaAbdwFTEW/"
-  sort_id: 202604250000
-
-- name: "Skate! Kitty Hawk"
-  date: 2026-05-03
-  time: "12:00 PM - 2:00 PM"
-  location: "Kitty Hawk Skate Park"
-  link: "https://www.facebook.com/KittyHawkPolice/posts/-time-to-hit-the-pavement-the-kitty-hawk-police-department-invites-you-to-the-6t/1247190180892784/"
-  sort_id: 202605031200,
-  category: "free"
-
-- name: "The Brothers Comatose - Bluegrass Island Nights"
-  date: 2026-04-28
-  time: "6:30 PM - 9:30 PM"
-  location: "Roanoke Island Festival Park, Manteo"
-  link: "https://www.roanokeisland.com/news/events/brothers-comatose-bluegrass-island-nights"
-  sort_id: 202604281830
-  category: "live-music"
-
-- name: "Live Music @ Fish Heads - The Walking Dolphins"
-  date: 2026-04-29
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/walking-dolphins"
-  sort_id: 202604291800
-  category: "live-music"
-
-- name: "Live Music @ Fish Heads - Graham Outten"
-  date: 2026-04-30
-  time: "6:00 PM - 9:00 PM"
-  other: "Weather Dependent"
-  location: "Fish Heads Bar & Grill, Nags Head"
-  link: "https://outerbanksthisweek.com/fishheads/events/graham-outten-live"
-  sort_id: 202604301800
-  category: "live-music"
+  category: "Festivals"
 
 - name: "OBX Rod & Custom Festival"
   date: 2026-05-01
@@ -209,6 +67,7 @@
   location: "Soundside Event Site, Nags Head"
   link: "https://obxrodandcustomfestival.com/"
   sort_id: 202605011000
+  category: "Festivals"
 
 - name: "The Winning Pour @ The Christmas Shop"
   date: 2026-05-02
@@ -216,6 +75,7 @@
   location: "The Christmas Shop, Manteo"
   link: "https://www.outerbankschristmas.com/events"
   sort_id: 202605021300
+  category: "Food & Drink"
 
 - name: "Cinco de Mayo Sprinkle Fiesta"
   date: 2026-05-05
@@ -223,6 +83,7 @@
   location: "Cookies & Cream, Nags Head"
   link: "https://www.instagram.com/p/DXrkPv8GVh5/"
   sort_id: 202605051800
+  category: "Food & Drink"
 
 - name: "Cars & Coffee"
   date: 2026-05-09
@@ -230,6 +91,7 @@
   location: "Noosa Scoops, Kill Devil Hills"
   link: "https://www.instagram.com/p/DXnNPoTP_J4/"
   sort_id: 202605090900
+  category: "Social"
 
 - name: "A Toast to Mom @ The Christmas Shop"
   date: 2026-05-09
@@ -237,7 +99,7 @@
   location: "The Christmas Shop, Manteo"
   link: "https://www.outerbankschristmas.com/events"
   sort_id: 202605091300
-  category: "mothers-day-2026"
+  category: "mothers-day"
 
 - name: "Mother's Day in Thailand @ Red Sky Cafe"
   date: 2026-05-10
@@ -245,7 +107,7 @@
   location: "Red Sky Cafe, Duck"
   link: "https://www.instagram.com/p/DXkhsvNCZee/"
   sort_id: 202605101030
-  category: "mothers-day-2026"
+  category: "mothers-day"
 
 - name: "Mother's Day Buffet @ Captain George's Seafood Restaurant"
   date: 2026-05-10
@@ -253,7 +115,7 @@
   location: "Captain George's Seafood Restaurant, Kill Devil Hills"
   link: "https://www.captaingeorges.com/#UPCOMINGEVENTS"
   sort_id: 202605101130
-  category: "mothers-day-2026"
+  category: "mothers-day"
 
 - name: "Mother's Day Open House @ Cozy Carolina"
   date: 2026-05-10
@@ -261,7 +123,7 @@
   location: "Cozy Carolina, Kill Devil Hills"
   link: "https://www.instagram.com/p/DXuaU_diUba/"
   sort_id: 202605101000
-  category: "mothers-day-2026"
+  category: "mothers-day"
 
 
 - name: "Mother's Day Brunch @ Salt & Cypress"
@@ -270,7 +132,7 @@
   location: "Salt & Cypress, Manteo"
   link: "https://www.instagram.com/p/DXciUgcD2Wp/"
   sort_id: 202605101030
-  category: "mothers-day-2026"
+  category: "mothers-day"
 
 - name: "Mother's Day Brunch & Market @ The Blue Point"
   date: 2026-05-10
@@ -278,7 +140,7 @@
   location: "The Blue Point, Duck"
   link: "https://www.instagram.com/p/DXbvYbDjoTh/"
   sort_id: 202605101100
-  category: "mothers-day-2026"
+  category: "mothers-day"
 
 - name: "Mother's Day Brunch @ Aqua"
   date: 2026-05-10
@@ -286,7 +148,7 @@
   location: "AQUA Restaurant, Duck"
   link: "https://www.instagram.com/p/DXmkS6cDsNr/"
   sort_id: 202605101030
-  category: "mothers-day-2026"
+  category: "mothers-day"
 
 - name: "Mother's Day Brunch @ The Village Table & Tavern"
   date: 2026-05-10
@@ -294,7 +156,7 @@
   location: "The Village Table & Tavern, Duck"
   link: "https://www.instagram.com/p/DXm90flEnAq/"
   sort_id: 202605101000
-  category: "mothers-day-2026"
+  category: "mothers-day"
 
 - name: "Mother's Day Brunch @ Sugar Creek"
   date: 2026-05-10
@@ -302,7 +164,7 @@
   location: "Sugar Creek, Nags Head"
   link: "https://www.instagram.com/p/DXpcETYEhaU/"
   sort_id: 202605101130
-  category: "mothers-day-2026"
+  category: "mothers-day"
 
 - name: "Sips of Summer @ The Christmas Shop"
   date: 2026-05-16
@@ -310,6 +172,7 @@
   location: "The Christmas Shop, Manteo"
   link: "https://www.outerbankschristmas.com/events"
   sort_id: 202605161300
+  category: "Food & Drink"
 
 - name: "Kentucky Derby Party"
   date: 2026-05-02
@@ -317,6 +180,7 @@
   location: "The Pioneer Theater, Manteo"
   link: "https://thepioneertheater.com/event/kentucky-derby-party-under-the-tent/"
   sort_id: 202605021600
+  category: ["Social", "Food & Drink"]
 
 
 - name: "Live Music @ Fish Heads - Bryan Campbell"
@@ -437,7 +301,7 @@
   date: 2026-05-14
   end_date: 2026-05-17
   time: "All Day"
-  location: "Jockey's Ridge State Park"
+  location: "Jockey's Ridge State Park, Nags Head"
   link: "https://www.kittyhawk.com/event/hang-gliding-spectacular/"
   sort_id: 202605140000
   category: "live-music"
@@ -445,7 +309,7 @@
 - name: "Concert on the Dunes"
   date: 2026-05-15
   time: "6:00 PM"
-  location: "Jockey's Ridge State Park"
+  location: "Jockey's Ridge State Park, Nags Head"
   link: "https://friendsofjockeysridge.org/news-events/concert-on-the-dunes/"
   sort_id: 202605151800
   category: "live-music"
@@ -546,6 +410,7 @@
   location: "Ocracoke"
   link: "https://www.visitocracokenc.com/event/ocrafolk-festival-4/"
   sort_id: 202606050000
+  category: "Festivals"
 
 - name: "Dare Day Dockside"
   date: 2026-06-06
@@ -553,7 +418,7 @@
   location: "Wanchese Marina, Wanchese"
   link: "https://outerbanksthisweek.com/wanchesemarina/events/dare-day-dockside"
   sort_id: 202606061000
-  category: "free"
+  category: ["free", "Festivals"]
 
 - name: "Joe Russo's Almost Dead"
   date: 2026-06-12
@@ -567,7 +432,7 @@
   date: 2026-06-12
   end_date: 2026-06-13
   time: "10:00 AM - 4:00 PM"
-  location: "Jockey's Ridge State Park"
+  location: "Jockey's Ridge State Park, Nags Head"
   link: "https://www.kittyhawk.com/event/rogallo-kite-festival/"
   sort_id: 202606121000
   category: "free"
@@ -583,9 +448,10 @@
 - name: "Annual Youth Fishing Tournament"
   date: 2026-06-14
   time: "8:00 AM - 12:30 PM"
-  location: "Kitty Hawk Fishing Pier"
+  location: "Kitty Hawk Fishing Pier, Kitty Hawk"
   link: "https://www.facebook.com/KittyHawkPolice/posts/-reel-in-the-fun-at-the-kitty-hawk-youth-fishing-tournament-get-ready-to-make-a-/1262259812719154/"
   sort_id: 202606140800
+  category: "Sports & Outdoors"
 
 - name: "String Cheese Incident"
   date: 2026-06-21
@@ -601,6 +467,7 @@
   location: "Kill Devil Hills"
   link: "https://www.theobxrunningcompany.com/5k-run-july-4th-outer-banks.html"
   sort_id: 202607031930
+  category: "Sports & Outdoors"
 
 - name: "Duck: Fourth of July Parade"
   date: 2026-07-04
@@ -608,7 +475,7 @@
   location: "Duck"
   link: "https://ducknc.gov/recreation-special-events/4th-of-july/"
   sort_id: 202607042120
-  category: "free"
+  category: ["free", "July 4th"]
 
 - name: "Kill Devil Hills: Fourth of July Fireworks Show"
   date: 2026-07-04
@@ -616,7 +483,7 @@
   location: "Avalon Pier, Kill Devil Hills"
   link: "https://events.dncr.nc.gov/event/town-of-kill-devil-hills-independence-day-fireworks-show"
   sort_id: 202607042115
-  category: "free"
+  category: ["free", "July 4th"]
 
 - name: "Nags Head: Fourth of July Fireworks Show"
   date: 2026-07-04
@@ -624,6 +491,7 @@
   location: "Nags Head Fishing Pier, Nags Head"
   link: "https://events.dncr.nc.gov/event/nags-head-fourth-of-july-fireworks-show"
   sort_id: 202607042120
+  category: ["free", "July 4th"]
 
 - name: "moe. & Umphrey's McGee"
   date: 2026-07-09
@@ -637,9 +505,10 @@
   date: 2026-07-17
   end_date: 2026-07-18
   time: "10:00 AM - 4:00 PM"
-  location: "Wright Brothers National Memorial"
+  location: "Wright Brothers National Memorial, Kill Devil Hills"
   link: "https://www.kittyhawk.com/event/wright-kite-festival/"
   sort_id: 202607171000
+  category: "Festivals"
 
 - name: "Maby Festival at Whalebone"
   date: 2026-07-24
@@ -648,7 +517,7 @@
   location: "Whalebone Junction, Nags Head"
   link: "https://www.kittyhawk.com/event/moby-fest/"
   sort_id: 202607240000
-  category: "free"
+  category: ["free", "Festivals"]
 
 - name: "20th Annual OBX Watermelon Festival"
   date: 2026-08-06
@@ -656,7 +525,7 @@
   location: "Kitty Hawk Kites, Nags Head"
   link: "https://www.kittyhawk.com/event/outer-banks-watermelon-festival/"
   sort_id: 202608061000
-  category: "free"
+  category: ["free", "Festivals"]
 
 - name: "Ocracoke Seafood Festival"
   date: 2026-09-05
@@ -664,6 +533,7 @@
   location: "Ocracoke"
   link: "https://www.visitocracokenc.com/event/ocracoke-seafood-festival-health-center-benefit-3/"
   sort_id: 202609051400
+  category: ["Festivals"]
 
 - name: "Outer Banks Pride Fest"
   date: 2026-09-11
@@ -672,4 +542,4 @@
   location: "Roanoke Island Festival Park, Manteo"
   link: "https://www.obxpridefest.com"
   sort_id: 202609111200
-  category: "free"
+  category: ["free", "Festivals"]

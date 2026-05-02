@@ -1,7 +1,7 @@
 ---
 layout: gallery-post
 title: "Mother's Day in the OBX"
-category_filter: "mothers-day-2026"
+category_filter: "mothers-day"
 images: 
   - "/assets/img/Mothers-Day.png"
   - "/assets/img/mothers-day1.jpeg"
