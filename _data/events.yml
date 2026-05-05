@@ -1,3 +1,85 @@
+# ART EXHIBITIONS
+- name: "Solo Show - Willow Temple"
+  date: 2026-06-12
+  time: ""
+  location: "The Duck Gallery, Duck"
+  link: "https://www.theduckgallery.com/show-schedule"
+  sort_id: 202606121800
+  category: "Art"
+
+- name: "Solo Show - Jackie Koenig"
+  date: 2026-07-10
+  time: ""
+  location: "The Duck Gallery, Duck"
+  link: "https://www.theduckgallery.com/show-schedule"
+  sort_id: 202607101800
+  category: "Art"
+
+- name: "Solo Show - Matt Lusk"
+  date: 2026-08-14
+  time: ""
+  location: "The Duck Gallery, Duck"
+  link: "https://www.theduckgallery.com/show-schedule"
+  sort_id: 202608141800
+  category: "Art"
+
+- name: "Group Show - Mini Masterpieces (Benefits Outer Banks Relief Foundation)"
+  date: 2026-10-09
+  time: ""
+  location: "The Duck Gallery, Duck"
+  link: "https://www.theduckgallery.com/show-schedule"
+  sort_id: 202610091800
+  category: "Art"
+
+# PAINTING CLASSES
+- name: "Painting Class with Reddawn"
+  date: 2026-05-08
+  time: "5:30 PM - 7:30 PM"
+  location: "The Duck Gallery, Duck"
+  link: "https://www.theduckgallery.com/show-schedule"
+  sort_id: 202605081730
+  category: "Art"
+
+- name: "Painting Class with Jackie Koenig"
+  date: 2026-06-10
+  time: "5:30 PM - 7:30 PM"
+  location: "The Duck Gallery, Duck"
+  link: "https://www.theduckgallery.com/show-schedule"
+  sort_id: 202606101730
+  category: "Art"
+
+- name: "Painting Class with Jackie Koenig"
+  date: 2026-06-24
+  time: "5:30 PM - 7:30 PM"
+  location: "The Duck Gallery, Duck"
+  link: "https://www.theduckgallery.com/show-schedule"
+  sort_id: 202606241730
+  category: "Art"
+
+- name: "Painting Class with Jackie Koenig"
+  date: 2026-07-08
+  time: "5:30 PM - 7:30 PM"
+  location: "The Duck Gallery, Duck"
+  link: "https://www.theduckgallery.com/show-schedule"
+  sort_id: 202607081730
+  category: "Art"
+
+- name: "Painting Class with Jackie Koenig"
+  date: 2026-07-22
+  time: "5:30 PM - 7:30 PM"
+  location: "The Duck Gallery, Duck"
+  link: "https://www.theduckgallery.com/show-schedule"
+  sort_id: 202607221730
+  category: "Art"
+
+- name: "Painting Class with Jackie Koenig"
+  date: 2026-08-05
+  time: "5:30 PM - 7:30 PM"
+  location: "The Duck Gallery, Duck"
+  link: "https://www.theduckgallery.com/show-schedule"
+  sort_id: 202608051730
+  category: "Art"
+
 # Duck Concert on the Green Series - 2026
 - name: "Concert on the Green: Mike Scoglio Duo"
   date: 2026-06-11
@@ -229,6 +311,14 @@
   location: "Salt & Cypress, Manteo"
   link: "https://www.instagram.com/p/DXciUgcD2Wp/"
   sort_id: 202605101030
+  category: "mothers-day"
+
+- name: "Mother's Day Brunch @ Mike Dianna's Grill Room"
+  date: 2026-05-10
+  time: "08:00 AM - 3:00 PM"
+  location: "Mike Dianna's Grill Room, Corolla"
+  link: "https://www.instagram.com/p/DX-DgqeAWoo/"
+  sort_id: 202605100800
   category: "mothers-day"
 
 - name: "Mother's Day Brunch Buffet @ Black Pelican"
