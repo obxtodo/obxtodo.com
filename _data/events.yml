@@ -1,3 +1,100 @@
+# Duck Concert on the Green Series - 2026
+- name: "Concert on the Green: Mike Scoglio Duo"
+  date: 2026-06-11
+  time: "6:30 PM - 8:00 PM"
+  location: "Duck Town Park, Duck"
+  link: "https://ducknc.gov/series/concert-on-the-green/"
+  category: "live-music"
+  sort_id: 202606111830
+
+- name: "Concert on the Green: The Ramble"
+  date: 2026-06-18
+  time: "6:30 PM - 8:00 PM"
+  location: "Duck Town Park, Duck"
+  link: "https://ducknc.gov/series/concert-on-the-green/"
+  category: "live-music"
+  sort_id: 202606181830
+
+- name: "Concert on the Green: Chase Payne"
+  date: 2026-06-25
+  time: "6:30 PM - 8:00 PM"
+  location: "Duck Town Park, Duck"
+  link: "https://ducknc.gov/series/concert-on-the-green/"
+  category: "live-music"
+  sort_id: 202606251830
+
+- name: "Concert on the Green: MikeMickXer Duo"
+  date: 2026-07-02
+  time: "6:30 PM - 8:00 PM"
+  location: "Duck Town Park, Duck"
+  link: "https://ducknc.gov/series/concert-on-the-green/"
+  category: "live-music"
+  sort_id: 202607021830
+
+- name: "Concert on the Green: SOULone"
+  date: 2026-07-09
+  time: "6:30 PM - 8:00 PM"
+  location: "Duck Town Park, Duck"
+  link: "https://ducknc.gov/series/concert-on-the-green/"
+  category: "live-music"
+  sort_id: 202607091830
+
+- name: "Concert on the Green: Jeremy & the Generations"
+  date: 2026-07-16
+  time: "6:30 PM - 8:00 PM"
+  location: "Duck Town Park, Duck"
+  link: "https://ducknc.gov/series/concert-on-the-green/"
+  category: "live-music"
+  sort_id: 202607161830
+
+- name: "Concert on the Green: Low Gap"
+  date: 2026-07-23
+  time: "6:30 PM - 8:00 PM"
+  location: "Duck Town Park, Duck"
+  link: "https://ducknc.gov/series/concert-on-the-green/"
+  category: "live-music"
+  sort_id: 202607231830
+
+- name: "Concert on the Green: Steve Rondo"
+  date: 2026-07-30
+  time: "6:30 PM - 8:00 PM"
+  location: "Duck Town Park, Duck"
+  link: "https://ducknc.gov/series/concert-on-the-green/"
+  category: "live-music"
+  sort_id: 202607301830
+
+- name: "Concert on the Green: Patrick Bliss"
+  date: 2026-08-06
+  time: "6:30 PM - 8:00 PM"
+  location: "Duck Town Park, Duck"
+  link: "https://ducknc.gov/series/concert-on-the-green/"
+  category: "live-music"
+  sort_id: 202608061830
+
+- name: "Concert on the Green: Scuffletown"
+  date: 2026-08-13
+  time: "6:30 PM - 8:00 PM"
+  location: "Duck Town Park, Duck"
+  link: "https://ducknc.gov/series/concert-on-the-green/"
+  category: "live-music"
+  sort_id: 202608131830
+
+- name: "Concert on the Green: Blue Crab Boys"
+  date: 2026-08-20
+  time: "6:30 PM - 8:00 PM"
+  location: "Duck Town Park, Duck"
+  link: "https://ducknc.gov/series/concert-on-the-green/"
+  category: "live-music"
+  sort_id: 202608201830
+
+- name: "Concert on the Green: Birddog"
+  date: 2026-08-27
+  time: "6:30 PM - 8:00 PM"
+  location: "Duck Town Park, Duck"
+  link: "https://ducknc.gov/series/concert-on-the-green/"
+  category: "live-music"
+  sort_id: 202608271830
+
 - name: "Manteo First Friday"
   date: 2026-05-01
   time: "6:00 PM - 8:00 PM"
@@ -134,6 +231,14 @@
   sort_id: 202605101030
   category: "mothers-day"
 
+- name: "Mother's Day Brunch Buffet @ Black Pelican"
+  date: 2026-05-10
+  time: "11:00 AM - 2:30 PM"
+  location: "Black Pelican, Kitty Hawk"
+  link: "https://www.instagram.com/p/DX6wY8rDhkx/"
+  sort_id: 202605101100
+  category: "mothers-day"
+
 - name: "Mother's Day Brunch & Market @ The Blue Point"
   date: 2026-05-10
   time: "11:00 AM - 3:00 PM (Brunch), 12:00 PM - 4:00 PM (Market)"
@@ -181,6 +286,16 @@
   link: "https://thepioneertheater.com/event/kentucky-derby-party-under-the-tent/"
   sort_id: 202605021600
   category: ["Social", "Food & Drink"]
+
+- name: "Soft Shell Crab Week"
+  date: 2026-05-11
+  end_date: 2026-05-16
+  time: "All Week"
+  location: "Multiple Locations"
+  link: "https://www.outerbanks.org/events/outer-banks-soft-shell-crab-week/"
+  sort_id: 202605110000
+  category: ["Social", "Food & Drink"]
+
 
 
 - name: "Live Music @ Fish Heads - Bryan Campbell"
@@ -394,6 +509,15 @@
   link: "https://outerbanksthisweek.com/fishheads/events/drew-freeland"
   sort_id: 202605231900
   category: "live-music"
+
+- name: "Mother's Day Brunch & Bubbly @ OBX Brewing Station"
+  date: 2026-05-10
+  time: "11:30 AM - 3:00 PM"
+  location: "Outer Banks Brewing Station, Kill Devil Hills"
+  link: "https://www.instagram.com/p/DX7zTGlEq0J/"
+  sort_id: 202605101130
+  category: "mothers-day"
+
 
 - name: "The Wailers"
   date: 2026-05-25
