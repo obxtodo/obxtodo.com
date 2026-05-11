@@ -110,9 +110,19 @@ function renderUpcomingEvents() {
         return eventEnd >= todayStr;
     });
 
-    // SECONDARY FILTER: Category
-    if (pageCategory && pageCategory !== "" && pageCategory !== "null") {
-        filtered = filtered.filter(e => e.category === pageCategory);
+   if (pageCategory && pageCategory !== "" && pageCategory !== "null") {
+        filtered = filtered.filter(e => {
+            // Handle case where e.category might be null/undefined
+            if (!e.category) return false;
+
+            // If the event category is an array, check if it contains the pageCategory
+            if (Array.isArray(e.category)) {
+                return e.category.includes(pageCategory);
+            }
+
+            // If it's a single string, do a direct comparison
+            return e.category === pageCategory;
+        });
     }
 
     // Sort chronologically by start date, then by sort_id
