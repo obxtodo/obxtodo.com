@@ -723,7 +723,7 @@
   location: "Jockey's Ridge State Park, Nags Head"
   link: "https://www.kittyhawk.com/event/hang-gliding-spectacular/"
   sort_id: 202605140000
-  category: "live-music"
+  category: "Festivals"
 
 - name: "Concert on the Dunes"
   date: 2026-05-15
@@ -748,7 +748,7 @@
   location: "Roanoke Island Maritime Museum, Manteo"
   link: "https://www.manteonc.gov/departments/community-and-economic-development/special-events/town-sponsored-events/rodney-crow-murray-annual-litter-pick-ups"
   sort_id: 202605160900
-  category: "live-music"
+  category: "Social"
 
 
 - name: "Live Music @ Fish Heads - Jay Decosta"
@@ -903,7 +903,7 @@
   location: "Duck"
   link: "https://ducknc.gov/recreation-special-events/4th-of-july/"
   sort_id: 202607042120
-  category: "July 4th"
+  category: ["free", "July 4th"]
 
 - name: "Kill Devil Hills: Fourth of July Fireworks Show"
   date: 2026-07-04
