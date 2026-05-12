@@ -331,7 +331,7 @@ header h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.7rem;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   color: #95a5a6;
   margin-top: 20px;
 }
@@ -484,23 +484,23 @@ header p {
 }
 
 /* Individual Event Card - Dashboard Style */
-.event-card {
-  display: flex;
-  align-items: center;
-  background: #f8fafc;
-  padding: 15px 20px;
-  border-radius: 16px;
-  text-decoration: none !important;
-  transition: all 0.2s ease;
-  border: 1px solid transparent;
-}
+  .event-card {
+    display: flex;
+    align-items: center;
+    background: #f8fafc;
+    padding: 15px 20px;
+    border-radius: 16px;
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+  }
 
-.event-card:hover {
-  background: #ffffff;
-  border-color: #58C896;
-  transform: translateX(5px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
+  .event-card:hover {
+    background: #ffffff;
+    border-color: #58C896;
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
 
 
 
@@ -1286,11 +1286,58 @@ header p {
     box-sizing: border-box; /* Crucial: ensures padding doesn't add to width */
   }
 }
+
+.utility-bar {
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.utility-bar p {
+  margin: 0 !important;
+  font-size: 0.7rem !important;
+  letter-spacing: 2px;
+  padding: 8px 0;
+  text-transform: uppercase;
+}
+
+/* Tighten the main header padding now that description is moved */
+header {
+  padding: 20px 0 !important;
+}
+
+  .network-bar { background: #2c3e50; color: white; text-align: center; padding: 10px 0; font-size: 0.75rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
+  .network-bar a { color: #58C896; text-decoration: none; margin-left: 10px; }
+
+
+.network-bar {
+  background: #f8fafc; /* Light subtle grey */
+  padding: 8px 0;
+  text-align: center;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.network-bar a {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #64748b;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+
   </style>
 </head>
 <body>
   <div class="wrapper">
+    <div class="network-bar">
+      <a style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+        <img src="{{ '/assets/img/logo.png' | relative_url }}" 
+            alt="OBX To Do Logo" 
+            style="height: 24px; width: auto; display: block;"> {{ site.description }}
+      </a>
+    </div>
 <header>
+  
   <div class="header-content">
 
 
@@ -1304,8 +1351,6 @@ header p {
       <div class="bar"></div>
     </div>
   </div>
-
-          <p>{{ site.description }}</p>
 </header>
 
 <div id="side-menu" class="side-menu">
