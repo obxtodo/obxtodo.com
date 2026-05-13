@@ -365,14 +365,44 @@ header h1 {
   flex: 2; /* Takes up the middle space */
 }
 
+/* Base Toggle Styling */
 .menu-toggle {
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* Keeps the bars on the right side of its flex-box */
-  gap: 5px;
+  align-items: flex-end;
+  gap: 6px; /* Increased gap slightly for a cleaner look */
   cursor: pointer;
   padding: 10px;
+  z-index: 2100; /* Ensure it stays above everything */
+}
+
+.bar {
+  width: 25px;
+  height: 2px;
+  background-color: #2c3e50;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); /* Smooth spring-like motion */
+  transform-origin: center;
+}
+
+/* ANIMATION LOGIC: The "X" Transformation */
+
+/* Hide the middle bar */
+.menu-toggle.open .bar:nth-child(2) {
+  opacity: 0;
+  transform: translateX(10px); /* Slides out to the right */
+}
+
+/* Rotate the top bar */
+.menu-toggle.open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: #58C896; /* Optional: change color to brand green when open */
+}
+
+/* Rotate the bottom bar */
+.menu-toggle.open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: #58C896;
 }
 
 
@@ -1324,6 +1354,32 @@ header {
   transition: color 0.2s ease;
 }
 
+.side-menu .menu-links a {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.side-menu.open .menu-links a {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Stagger the delay for each link using Liquid-friendly logic */
+.side-menu.open .menu-links a:nth-child(1) { transition-delay: 0.1s; }
+.side-menu.open .menu-links a:nth-child(2) { transition-delay: 0.15s; }
+.side-menu.open .menu-links a:nth-child(3) { transition-delay: 0.2s; }
+.side-menu.open .menu-links a:nth-child(4) { transition-delay: 0.25s; }
+.side-menu.open .menu-links a:nth-child(5) { transition-delay: 0.3s; }
+.side-menu.open .menu-links a:nth-child(6) { transition-delay: 0.35s; }
+.side-menu.open .menu-links a:nth-child(7) { transition-delay: 0.4s; }
+.side-menu.open .menu-links a:nth-child(8) { transition-delay: 0.45s; }
+.side-menu.open .menu-links a:nth-child(9) { transition-delay: 0.5s; }
+.side-menu.open .menu-links a:nth-child(10) { transition-delay: 0.55s; }
+.side-menu.open .menu-links a:nth-child(11) { transition-delay: 0.6s; }
+.side-menu.open .menu-links a:nth-child(12) { transition-delay: 0.65s; }
+.side-menu.open .menu-links a:nth-child(12) { transition-delay: 0.65s; }
+
 
   </style>
 </head>
@@ -1412,10 +1468,12 @@ header {
 
   <div style="margin-bottom: 50px;"></div>
   <script>
-  function toggleMenu() {
-    const menu = document.getElementById("side-menu");
-    menu.classList.toggle("open");
-  }
+ function toggleMenu() {
+  const menu = document.getElementById("side-menu");
+  const toggle = document.querySelector(".menu-toggle"); // Select the toggle button
+  menu.classList.toggle("open");
+  toggle.classList.toggle("open"); // Toggle the class for the animation
+}
 
   // Close menu if user clicks outside of it
   document.addEventListener('click', function(event) {
