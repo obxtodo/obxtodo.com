@@ -18,6 +18,49 @@ description: OBX To Do | Outer Banks Family Fun
   </div>
 </section>
 
+
+{% assign now_unix = "now" | date: "%s" | plus: 0 %}
+{% assign thirty_days_seconds = 5184000 %}
+{% assign upcoming_holidays = "" | split: "," %}
+
+{% comment %} 
+  Check if site.holidays is NOT null and NOT empty 
+{% endcomment %}
+
+  {% assign all_holidays = site.holidays | sort: "date_of_holiday" %}
+  
+  {% for holiday in all_holidays %}
+    {% assign holiday_unix = holiday.date_of_holiday | date: "%s" | plus: 0 %}
+    {% assign days_diff = holiday_unix | minus: now_unix %}
+    
+    {% if days_diff > 0 and days_diff < thirty_days_seconds %}
+      {% assign upcoming_holidays = upcoming_holidays | push: holiday %}
+    {% endif %}
+  {% endfor %}
+
+{% if upcoming_holidays.size > 0 %}
+<section class="seasonal-spotlight" style="margin-bottom: 0px;">
+  <div class="snapshot-header">
+    <h3 style="color: #e67e22;"><i class="fa-solid fa-sun"></i> Seasonal Spotlight</h3>
+    <p>Special upcoming events in the Outer Banks</p>
+  </div>
+
+  <div class="gallery-grid">
+    {% for holiday in upcoming_holidays %}
+      <div class="gallery-item">
+        <a href="{{ holiday.url | relative_url }}">
+          <div class="gallery-image-wrap">
+            <img src="{{ site.baseurl }}{{ holiday.images[0] }}" alt="{{ holiday.title }}">
+          </div>
+          <h3>{{ holiday.title }}</h3>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+  <hr style="border: 0; border-top: 1px solid rgba(0,0,0,0.05); margin: 40px 0;">
+</section>
+{% endif %}
+
 {% assign now_unix = "now" | date: "%s" | plus: 0 %}
 {% assign day_of_week = "now" | date: "%u" | plus: 0 %} {% comment %} 1 (Mon) to 7 (Sun) {% endcomment %}
 
@@ -224,47 +267,7 @@ ${isMultiDay ? `
 
 </section>
 </section>
-{% assign now_unix = "now" | date: "%s" | plus: 0 %}
-{% assign thirty_days_seconds = 2592000 %}
-{% assign upcoming_holidays = "" | split: "," %}
 
-{% comment %} 
-  Check if site.holidays is NOT null and NOT empty 
-{% endcomment %}
-
-  {% assign all_holidays = site.holidays | sort: "date_of_holiday" %}
-  
-  {% for holiday in all_holidays %}
-    {% assign holiday_unix = holiday.date_of_holiday | date: "%s" | plus: 0 %}
-    {% assign days_diff = holiday_unix | minus: now_unix %}
-    
-    {% if days_diff > 0 and days_diff < thirty_days_seconds %}
-      {% assign upcoming_holidays = upcoming_holidays | push: holiday %}
-    {% endif %}
-  {% endfor %}
-
-{% if upcoming_holidays.size > 0 %}
-<section class="seasonal-spotlight" style="margin-bottom: 60px;">
-  <div class="snapshot-header">
-    <h2 style="color: #e67e22;"><i class="fa-solid fa-sun"></i> Seasonal Spotlight</h2>
-    <p>Special upcoming events in the Outer Banks</p>
-  </div>
-
-  <div class="gallery-grid">
-    {% for holiday in upcoming_holidays %}
-      <div class="gallery-item">
-        <a href="{{ holiday.url | relative_url }}">
-          <div class="gallery-image-wrap">
-            <img src="{{ site.baseurl }}{{ holiday.images[0] }}" alt="{{ holiday.title }}">
-          </div>
-          <h3>{{ holiday.title }}</h3>
-        </a>
-      </div>
-    {% endfor %}
-  </div>
-  <hr style="border: 0; border-top: 1px solid rgba(0,0,0,0.05); margin: 40px 0;">
-</section>
-{% endif %}
 <h2>Guides</h2>
 <div class="gallery-grid">
 
