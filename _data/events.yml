@@ -416,7 +416,7 @@
   time: "6:00 PM - 8:00 PM"
   location: "Downtown Area, Manteo"
   link: "https://www.darearts.org/firstfriday"
-  sort_id: 202609051800
+  sort_id: 202609041800
   category: "Festivals"
 
 
@@ -434,7 +434,7 @@
   time: "6:00 PM - 8:00 PM"
   location: "Downtown Area, Manteo"
   link: "https://www.darearts.org/firstfriday"
-  sort_id: 202610061800
+  sort_id: 202611061800
   category: "Festivals"
 
 - name: "OBX Rod & Custom Festival"
@@ -873,10 +873,10 @@
 
 - name: "The Wailers"
   date: 2026-05-25
-  time: "8:00 PM"
+  time: "9:00 PM"
   location: "Outer Banks Brewing Station, Kill Devil Hills"
   link: "https://www.obbrewing.com/events/the-wailers"
-  sort_id: 202605252000
+  sort_id: 202605251900
   category: "live-music"
 
 - name: "Ocracoke Festival"
@@ -939,18 +939,18 @@
 
 - name: "Freedom 5k"
   date: 2026-07-03
-  time: "7:30 PM"
+  time: "7:30 AM"
   location: "Kill Devil Hills"
   link: "https://www.theobxrunningcompany.com/5k-run-july-4th-outer-banks.html"
-  sort_id: 202607031930
+  sort_id: 202607030730
   category: ["Sports & Outdoors", "July 4th"]
 
 - name: "Duck: Fourth of July Parade"
-  date: 2026-07-04
+  date: 2026-07-03
   time: "9:20 PM"
   location: "Duck"
   link: "https://ducknc.gov/recreation-special-events/4th-of-july/"
-  sort_id: 202607042120
+  sort_id: 202607030900
   category: ["free", "July 4th"]
 
 - name: "Kill Devil Hills: Fourth of July Fireworks Show"
