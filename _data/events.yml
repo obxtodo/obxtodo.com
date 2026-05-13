@@ -284,7 +284,7 @@
   time: "6:30 PM - 8:00 PM"
   location: "Duck Town Park, Duck"
   link: "https://ducknc.gov/series/concert-on-the-green/"
-  category: "live-music"
+  category: ["live-music"]
   sort_id: 202606111830
 
 - name: "Concert on the Green: The Ramble"
@@ -308,7 +308,7 @@
   time: "6:30 PM - 8:00 PM"
   location: "Duck Town Park, Duck"
   link: "https://ducknc.gov/series/concert-on-the-green/"
-  category: "live-music"
+  category: ["Live Music", "July 4th"]
   sort_id: 202607021830
 
 - name: "Concert on the Green: SOULone"
@@ -582,6 +582,54 @@
   link: "https://www.instagram.com/p/DYMz2e9EpnD/"
   sort_id: 202605161000
   category: "Social"
+
+- name: "Summer Concert @ Dowdy Park"
+  date: 2026-07-01
+  time: "6:30 PM - 8:00 PM"
+  location: "Dowdy Park, Nags Head"
+  link: "https://www.darea250.org/event-details/summer-concert-at-dowdy-park-featuring-soulone"
+  sort_id: 202607011830
+  category: ["Live Music", "July 4th"]
+
+- name: "Family Fun Times @ Dowdy Park"
+  date: 2026-06-30
+  time: "9:00 AM - 10:30 PM"
+  location: "Dowdy Park, Nags Head"
+  link: "https://www.darea250.org/event-details/family-fun-times-at-dowdy-park"
+  sort_id: 202606300900
+  category: ["July 4th", "free"]
+
+- name: "Americana Farmer's Market at Dowdy Park"
+  date: 2026-07-02
+  time: "9:00 AM - 1:00 PM"
+  location: "Dowdy Park, Nags Head"
+  link: "https://www.darea250.org/event-details/americana-farmers-market-at-dowdy-park"
+  sort_id: 202607020900
+  category: ["July 4th", "Markets"]
+
+- name: "Kids Move More at Dowdy Park"
+  date: 2026-07-03
+  time: "9:00 AM - 10:00 AM"
+  location: "Dowdy Park, Nags Head"
+  link: "https://www.darea250.org/event-details/kids-move-more-at-dowdy-park"
+  sort_id: 202607030900
+  category: ["July 4th", "free"]
+
+- name: "4 on the 4th Run/Walk"
+  date: 2026-07-03
+  time: "7:00 AM - 10:00 AM"
+  location: "Kinnakeet Shores, Avon"
+  link: "https://www.darea250.org/event-details/4-on-the-4th-run-walk"
+  sort_id: 202607030700
+  category: ["July 4th", "Sports & Outdoors"]
+
+- name: "Jockey's Ridge Challenge: Killer Dunes"
+  date: 2026-07-03
+  time: "8:00 AM - 9:00 AM"
+  location: "Jockey's Ridge State Park, Nags Head"
+  link: "https://www.darea250.org/event-details/killer-dunes"
+  sort_id: 202607030800
+  category: ["July 4th", "Sports & Outdoors"]
 
 - name: "Kentucky Derby Party"
   date: 2026-05-02
@@ -895,7 +943,7 @@
   location: "Kill Devil Hills"
   link: "https://www.theobxrunningcompany.com/5k-run-july-4th-outer-banks.html"
   sort_id: 202607031930
-  category: "Sports & Outdoors"
+  category: ["Sports & Outdoors", "July 4th"]
 
 - name: "Duck: Fourth of July Parade"
   date: 2026-07-04

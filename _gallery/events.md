@@ -55,7 +55,8 @@ nav_order: 3
       "time": {{ event.time | jsonify }},
       "location": {{ event.location | jsonify }},
       "link": {{ event.link | jsonify }},
-      "category": {{ event.category | default: "general" | jsonify }}
+      {% comment %} Force category to always be an array for JS processing {% endcomment %}
+      "category": {% if event.category.first %}{{ event.category | jsonify }}{% else %}[{{ event.category | default: "general" | jsonify }}]{% endif %}
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
@@ -166,7 +167,6 @@ function updateFilter(type, value) {
     });
     applyCombinedFilters();
 }
-
 function applyCombinedFilters() {
     const startDate = document.getElementById('start-date').value;
     const endDate = document.getElementById('end-date').value;
@@ -181,11 +181,13 @@ function applyCombinedFilters() {
     generateFilters(eventsInDateRange);
 
     const finalResults = eventsInDateRange.filter(event => {
-        const eventCats = Array.isArray(event.category) ? event.category : [event.category || 'general'];
-        const matchesCategory = (activeCategory === 'all' || eventCats.includes(activeCategory));
+        // Since we forced category to be an array in the Liquid block:
+        const matchesCategory = (activeCategory === 'all' || event.category.includes(activeCategory));
+        
         const parts = event.location.split(',');
         const town = parts.length > 1 ? parts[parts.length - 1].trim() : event.location.trim();
         const matchesLocation = (activeLocation === 'all' || town === activeLocation);
+        
         return matchesCategory && matchesLocation;
     });
 
