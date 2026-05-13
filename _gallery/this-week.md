@@ -8,7 +8,7 @@ nav_show: false
 
 <section class="weekly-snapshot">
   <div class="snapshot-header">
-    <h3>The Weekly Outlook</h3>
+    <h3>This Week in the Outer Banks</h3>
     <p>Hand-picked events for <span id="week-start-display">...</span> — <span id="week-end-display">...</span></p>
   </div>
 

@@ -18,6 +18,25 @@ description: OBX To Do | Outer Banks Family Fun
   </div>
 </section>
 
+<div class="snapshot-header">
+    <h3>OBX Current</h3>
+        <p>Current conditions, tides, and today’s local events</p>
+<div class="hero-actions-left">
+      <a href="https://obxcurrent.com" class="hero-btn secondary">
+        <div>
+          <span>
+            Today in the OBX
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:8px;">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </span>
+          <small class="btn-subtext" style="display: block; margin-top: 2px;">www.obxcurrent.com</small>
+        </div>
+      </a>
+    </div>
+  </div>
 
 {% assign now_unix = "now" | date: "%s" | plus: 0 %}
 {% assign thirty_days_seconds = 5184000 %}
@@ -39,7 +58,7 @@ description: OBX To Do | Outer Banks Family Fun
   {% endfor %}
 
 {% if upcoming_holidays.size > 0 %}
-<section class="seasonal-spotlight" style="margin-bottom: 0px;">
+<section class="seasonal-spotlight" style="margin-top: 80px;">
   <div class="snapshot-header">
     <h3 style="color: #e67e22;"><i class="fa-solid fa-sun"></i> Seasonal Spotlight</h3>
     <p>Special upcoming events in the Outer Banks</p>
@@ -105,25 +124,7 @@ description: OBX To Do | Outer Banks Family Fun
 
 {% assign weekend_start_date = "now" | date: "%s" | plus: fri_seconds | date: "%Y-%m-%d" %}
 {% assign weekend_end_date = "now" | date: "%s" | plus: sun_seconds | date: "%Y-%m-%d" %}
-  <div class="snapshot-header">
-    <h3>OBX Current</h3>
-        <p>Current conditions, tides, and today’s local events</p>
-<div class="hero-actions-left">
-  <a href="https://obxcurrent.com" class="hero-btn secondary">
-    <div>
-      <span>
-        Today in the OBX
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:8px;">
-          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-          <polyline points="15 3 21 3 21 9"></polyline>
-          <line x1="10" y1="14" x2="21" y2="3"></line>
-        </svg>
-      </span>
-      <small class="btn-subtext" style="display: block; margin-top: 2px;">www.obxcurrent.com</small>
-    </div>
-  </a>
-</div>
-  </div>
+  
 
   
 
@@ -132,7 +133,7 @@ description: OBX To Do | Outer Banks Family Fun
 
 <section class="weekly-snapshot">
   <div class="snapshot-header">
-    <h3>The Weekend Outlook</h3>
+    <h3>This Weekdend</h3>
     <p>Hand-picked events for <span id="wknd-start-display">...</span> — <span id="wknd-end-display">...</span></p>
   </div>
 
