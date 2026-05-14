@@ -1,7 +1,58 @@
 ---
 layout: default
 ---
+<style>.scroll-prompt {
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
 
+  /* --- ADJUSTED GLASSMORPHISM BACKDROP --- */
+  /* Using RGBA for #58C896 (88, 200, 150) at 0.75 transparency */
+background: rgba(255, 255, 255, 0.8); /* Pure white at 80% opacity */
+  backdrop-filter: blur(8px);           
+  -webkit-backdrop-filter: blur(8px);
+  padding: 10px 20px;
+  border-radius: 50px;                 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.scroll-prompt span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem; /* Slightly reduced for better balance */
+  font-weight: 700;
+  color: #000000; 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.scroll-arrow {
+  margin-top: 5px;
+  color: #000000; 
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-8px); }
+  60% { transform: translateY(-4px); }
+}
+/* Hide the scroll prompt on mobile devices */
+@media (max-width: 768px) {
+  .scroll-prompt {
+    display: none !important;
+  }
+}
+
+  </style>
 <div class="post-container">
 
   <div class="post-media">
@@ -27,6 +78,12 @@ layout: default
     </a>
   </div>
 </div>
+<div id="scroll-prompt" class="scroll-prompt">
+    <span>Scroll for Events</span>
+    <div class="scroll-arrow">
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </div>
 
 <div class="week-header" style="margin-bottom: 30px; margin-top: 40px;">
   <h3 style="margin-bottom: 5px;">{{ page.title }}</h3>
@@ -183,4 +240,16 @@ function renderUpcomingEvents() {
         container.innerHTML = `<p style="text-align: center; color: #64748b; padding: 40px; border: 1px dashed #ccc; border-radius: 12px;">No upcoming events found at this time.</p>`;
     }
 }
+
+window.addEventListener('scroll', function() {
+    const prompt = document.getElementById('scroll-prompt');
+    if (!prompt) return;
+
+    // Fades the prompt out once the user scrolls 60px down
+    if (window.scrollY > 60) {
+        prompt.style.opacity = "0";
+    } else {
+        prompt.style.opacity = "1";
+    }
+});
 </script>

@@ -287,10 +287,13 @@ header h1 {
   position: fixed;
   z-index: 2000;
   top: 0;
-  left: -300px; 
+  right: -300px; 
+  left: auto;
   background-color: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(10px);
   overflow-x: hidden;
+  box-shadow: -10px 0 30px rgba(0,0,0,0.05); /* Shadow on the left edge */
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   
   /* --- THE FIXES ARE BELOW --- */
   box-sizing: border-box; /* Forces padding to stay within the 100% height */
@@ -298,14 +301,12 @@ header h1 {
   padding-bottom: 40px;   /* Adds breathing room at the bottom of the menu */
   /* --------------------------- */
   
-  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  box-shadow: 10px 0 30px rgba(0,0,0,0.05);
   padding-top: 60px;
 }
 
 /* When the menu is "Open" */
 .side-menu.open {
-  transform: translateX(300px);
+  transform: translateX(-300px); /* Changed from positive 300px */
 }
 
 /* 3. Menu Links Styling */
@@ -1410,7 +1411,6 @@ header {
 </header>
 
 <div id="side-menu" class="side-menu">
-  <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times;</a>
   <div class="menu-links">
     <a href="{{ '/' | relative_url }}" 
    class="{% if page.url == '/' or page.url == '/index.html' %}active{% endif %}">
