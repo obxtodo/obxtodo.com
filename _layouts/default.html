@@ -387,24 +387,8 @@ header h1 {
 }
 
 /* ANIMATION LOGIC: The "X" Transformation */
+/* ANIMATION LOGIC: The "X" Transformation */
 
-/* Hide the middle bar */
-.menu-toggle.open .bar:nth-child(2) {
-  opacity: 0;
-  transform: translateX(10px); /* Slides out to the right */
-}
-
-/* Rotate the top bar */
-.menu-toggle.open .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-  background-color: #58C896; /* Optional: change color to brand green when open */
-}
-
-/* Rotate the bottom bar */
-.menu-toggle.open .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-  background-color: #58C896;
-}
 
 
 .header-spacer {
@@ -1411,6 +1395,9 @@ header {
 </header>
 
 <div id="side-menu" class="side-menu">
+  <!-- ADD THIS LINE: The dedicated "X" close button -->
+  <a href="javascript:void(0)" class="close-btn" aria-label="Close Menu" onclick="toggleMenu()">&times;</a>
+  
   <div class="menu-links">
     <a href="{{ '/' | relative_url }}" 
    class="{% if page.url == '/' or page.url == '/index.html' %}active{% endif %}">
