@@ -1,8 +1,7 @@
 ---
-layout: null
+layout: default
 permalink: /beachprogress/
 ---
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
