@@ -11,19 +11,16 @@ nav_show: true
 nav_order: 6
 ---
 
-<section class="weekly-snapshot">
-  <div class="snapshot-header">
-    <h3>Conquering Arrival Day</h3>
-    <p>How to start your vacation before your rental house is even ready</p>
+  <div class="post-content">
+    <h2 style="margin-top: 0;">{{ page.title }}</h2>
+    <div style="white-space: pre-wrap; margin-bottom: 25px; color: #555;">{{ page.description | lstrip }}</div>
+
   </div>
+<section class="weekly-snapshot">
+
 
   <div class="post-content">
     
-    <p>It’s a rite of passage for every Outer Banks family. You make great time down the road, cross the bridge with high spirits, and then reality sets in: it’s 1:00 PM, traffic on the bypass is creeping, and your rental home check-in code won't activate until late afternoon.</p>
-
-    <p>Instead of idling in a crowded grocery store line or trying to keep restless kids calm in a packed car, you can make arrival day feel like an active part of your vacation. With a few strategic local stops, you can start making memories before you ever unpack a single suitcase.</p>
-
-    <hr style="border: 0; border-top: 1px solid rgba(0,0,0,0.05); margin: 30px 0;">
 
     <h2 style="font-size: 1.6rem; color: #2c3e50; margin-top: 30px;"><i class="fa-solid fa-water" style="color: #58C896; margin-right: 10px;"></i>1. The H2OBX Side-Quest</h2>
     <p>If you want to pull off a major parenting win before vacation even officially begins, make your first stop <strong><a href="https://www.h2obxwaterpark.com/" target="_blank">H2OBX Waterpark</a></strong> located in Powells Point, just before you cross the Wright Memorial Bridge. Instead of fighting island traffic during peak turnover hours, pull off early and dive in.</p>
@@ -47,8 +44,9 @@ nav_order: 6
   <li style="margin-bottom: 10px;"><a href="https://northernouterbanks.com/things-to-do/historic-sites/" target="_blank" style="font-weight: 700;  text-decoration: underline;">Historic Corolla Village (Corolla):</a> If you are heading to the far north, pull into the historic village. Walk the unpaved sandy roads, explore the restored historic buildings, shop the local boutiques, and stretch your legs in a deeply relaxed setting.</li>
 </ul>
 
-    <div class="status-link-card-wrap" style="margin-top: 40px;">
-      <a href="{{ '/this-week/' | relative_url }}" class="status-link-card">
+
+    <div class="status-link-card-wrap" style="margin-top: 30px;">
+      <a href="{{ '/this-week/' | relative_url }}" class="event-card">
         <div class="status-icon-wrap">
           <i class="fa-solid fa-calendar-days"></i>
         </div>
@@ -56,9 +54,15 @@ nav_order: 6
           <span class="status-label">What's Happening This Week?</span>
           <span class="status-subtext">Check out live music, pop-up events, and more</span>
         </div>
-        <i class="fa-solid fa-arrow-right arrow-icon"></i>
       </a>
     </div>
 
+<div  style="margin-top: 20px;"></div>
+    <a href="https://www.instagram.com/p/DYgcE3IDb_4/" target="_blank" class="instagram-btn">
+      <i class="fa-brands fa-instagram"></i>
+      <span>View on Instagram</span>
+    </a>
   </div>
+
+  
 </section>
