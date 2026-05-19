@@ -8,7 +8,7 @@ hide: false
 images: 
   - "/assets/img/arrival-day.png"
 nav_show: true
-nav_order: 5
+nav_order: 6
 ---
 
 <section class="weekly-snapshot">
