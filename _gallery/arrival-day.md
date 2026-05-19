@@ -5,6 +5,8 @@ permalink: /arrival-day/
 description: |
   Don't let the 4:00 PM rental check-in stall your vacation! We've mapped out the ultimate family guide to surviving your first afternoon in the Outer Banks—from pre-packed trunk secrets to waterparks, walkable markets, and the best local playgrounds.
 hide: false
+images: 
+  - "/assets/img/arrival-day.png"
 nav_show: true
 nav_order: 5
 ---

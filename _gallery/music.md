@@ -3,6 +3,7 @@ layout: gallery-post
 title: "Live Music"
 nav_show: true
 nav_order: 5
+permalink: /live-music/
 category_filter: "live-music"
 images:
   - "/assets/img/music1.jpeg"
