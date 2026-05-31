@@ -969,6 +969,655 @@
   sort_id: 202607091830
   category: "live-music"
 
+# FISH HEADS BAR & GRILL - NAGS HEAD SUMMER LINEUP
+- name: "Live Music @ Fish Heads - Jay Decosta"
+  date: 2026-05-30
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/jay-decosta"
+  sort_id: 202605301900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Ashley Robinson"
+  date: 2026-05-31
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/ashley-robinson"
+  sort_id: 202605311900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Jeremy & The Generations"
+  date: 2026-06-03
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/jeremy-generations"
+  sort_id: 202606031900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Adam Nixon"
+  date: 2026-06-04
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/adam-nixon"
+  sort_id: 202606041900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Bryan Campbell"
+  date: 2026-06-05
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/bryan-campbell"
+  sort_id: 202606051900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Jackie Burns"
+  date: 2026-06-06
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/jackie-burns"
+  sort_id: 202606061900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Noel Beckwith"
+  date: 2026-06-07
+  time: "12:00 PM - 3:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/noel-beckwith"
+  sort_id: 202606071200
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Phil Watson"
+  date: 2026-06-07
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/phil-watson"
+  sort_id: 202606071900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Jeremy & The Generations"
+  date: 2026-06-10
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/jeremy-generations"
+  sort_id: 202606101900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Leisure Report"
+  date: 2026-06-11
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/leisure-report"
+  sort_id: 202606111900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Micah Iverson"
+  date: 2026-06-12
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/micah-iverson"
+  sort_id: 202606121900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Noel Beckwith"
+  date: 2026-06-13
+  time: "12:00 PM - 3:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/noel-beckwith"
+  sort_id: 202606131200
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Brooke & Nick"
+  date: 2026-06-13
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/brooke-nick"
+  sort_id: 202606131900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - TV 3 (Tom Vinick)"
+  date: 2026-06-14
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/tv-3-tom-vinick"
+  sort_id: 202606141900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Kill Devil Disco"
+  date: 2026-06-15
+  time: "8:00 PM - 11:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/kill-devil-disco"
+  sort_id: 202606152000
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Jeremy & The Generations"
+  date: 2026-06-17
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/jeremy-generations"
+  sort_id: 202606171900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Dan Rosnato"
+  date: 2026-06-18
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/dan-rosnato"
+  sort_id: 202606181900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - The Ramble"
+  date: 2026-06-19
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/the-ramble"
+  sort_id: 202606191900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Jackie Burns"
+  date: 2026-06-20
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/jackie-burns"
+  sort_id: 202606201900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Adam Nixon"
+  date: 2026-06-21
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/adam-nixon"
+  sort_id: 202606211900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Chezze"
+  date: 2026-06-22
+  time: "8:00 PM - 11:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/chezze"
+  sort_id: 202606222000
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Dan Rosnato"
+  date: 2026-06-24
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/dan-rosnato"
+  sort_id: 202606241900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Turkey & Buzzard"
+  date: 2026-06-25
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/turkey-buzzard"
+  sort_id: 202606251900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Micah Iverson"
+  date: 2026-06-26
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/micah-iverson"
+  sort_id: 202606261900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Noel Beckwith"
+  date: 2026-06-27
+  time: "12:00 PM - 3:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/noel-beckwith"
+  sort_id: 202606271200
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Randy Burton"
+  date: 2026-06-27
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/randy-burton"
+  sort_id: 202606271900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Phil Watson"
+  date: 2026-06-28
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/phil-watson"
+  sort_id: 202606281900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - RT Johnson"
+  date: 2026-06-29
+  time: "8:00 PM - 11:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/rt-johnson"
+  sort_id: 202606292000
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Julia the Band"
+  date: 2026-06-30
+  time: "8:00 PM - 11:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/julia-the-band"
+  sort_id: 202606302000
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Jeremy & The Generations"
+  date: 2026-07-01
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/jeremy-generations"
+  sort_id: 202607011900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Adam Nixon"
+  date: 2026-07-02
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/adam-nixon"
+  sort_id: 202607021900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Jackie Burns"
+  date: 2026-07-03
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/jackie-burns"
+  sort_id: 202607031900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Ashley Robinson"
+  date: 2026-07-04
+  time: "12:00 PM - 3:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/ashley-robinson"
+  sort_id: 202607041200
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Noel Beckwith"
+  date: 2026-07-05
+  time: "12:00 PM - 3:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/noel-beckwith"
+  sort_id: 202607051200
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Randy Burton"
+  date: 2026-07-05
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/randy-burton"
+  sort_id: 202607051900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Zack Mexico"
+  date: 2026-07-06
+  time: "8:00 PM - 11:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/zack-mexico"
+  sort_id: 202607062000
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Trick Fly"
+  date: 2026-07-07
+  time: "8:00 PM - 11:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/trick-fly"
+  sort_id: 202607072000
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Jeremy & The Generations"
+  date: 2026-07-08
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/jeremy-generations"
+  sort_id: 202607081900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Dan Rosnato"
+  date: 2026-07-09
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/dan-rosnato"
+  sort_id: 202607091900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Bryan Campbell"
+  date: 2026-07-10
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/bryan-campbell"
+  sort_id: 202607101900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Noel Beckwith"
+  date: 2026-07-11
+  time: "12:00 PM - 3:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/noel-beckwith"
+  sort_id: 202607111200
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Brooke & Nick"
+  date: 2026-07-11
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/brooke-nick"
+  sort_id: 202607111900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Brooke & Nick"
+  date: 2026-07-12
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/brooke-nick"
+  sort_id: 202607121900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Funkamongus"
+  date: 2026-07-13
+  time: "8:00 PM - 11:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/funkamongus"
+  sort_id: 202607132000
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Magenta Sunshine"
+  date: 2026-07-14
+  time: "8:00 PM - 11:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/magenta-sunshine"
+  sort_id: 202607142000
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Jeremy & The Generations"
+  date: 2026-07-15
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/jeremy-generations"
+  sort_id: 202607151900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Leisure Report"
+  date: 2026-07-16
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/leisure-report"
+  sort_id: 202607161900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - The Ramble"
+  date: 2026-07-17
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/the-ramble"
+  sort_id: 202607171900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Jackie Burns"
+  date: 2026-07-18
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/jackie-burns"
+  sort_id: 202607181900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Phil Watson"
+  date: 2026-07-19
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/phil-watson"
+  sort_id: 202607191900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Hot Sauce"
+  date: 2026-07-21
+  time: "8:00 PM - 11:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/hot-sauce"
+  sort_id: 202607212000
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Jeremy & The Generations"
+  date: 2026-07-22
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/jeremy-generations"
+  sort_id: 202607221900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Adam Nixon"
+  date: 2026-07-23
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/adam-nixon"
+  sort_id: 202607231900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Bryan Campbell"
+  date: 2026-07-24
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/bryan-campbell"
+  sort_id: 202607241900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Ty Fleming"
+  date: 2026-07-25
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/ty-fleming"
+  sort_id: 202607251900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Graham Outten"
+  date: 2026-07-26
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/graham-outten"
+  sort_id: 202607261900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - The Reggie Sullivan Band"
+  date: 2026-07-27
+  time: "8:00 PM - 11:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/reggie-sullivan-band"
+  sort_id: 202607272000
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - The Reggie Sullivan Band"
+  date: 2026-07-28
+  time: "8:00 PM - 11:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/reggie-sullivan-band"
+  sort_id: 202607282000
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Jeremy & The Generations"
+  date: 2026-07-29
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/jeremy-generations"
+  sort_id: 202607291900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Turkey & Buzzard"
+  date: 2026-07-30
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/turkey-buzzard"
+  sort_id: 202607301900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Bryan Campbell"
+  date: 2026-07-31
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/bryan-campbell"
+  sort_id: 202607311900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Noel Beckwith"
+  date: 2026-08-01
+  time: "12:00 PM - 3:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/noel-beckwith"
+  sort_id: 202608011200
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Jackie Burns"
+  date: 2026-08-01
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/jackie-burns"
+  sort_id: 202608011900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Randy Burton"
+  date: 2026-08-02
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/randy-burton"
+  sort_id: 202608021900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Lost Soul Society"
+  date: 2026-08-03
+  time: "8:00 PM - 11:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/lost-soul-society"
+  sort_id: 202608032000
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Jeremy & The Generations"
+  date: 2026-08-05
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/jeremy-generations"
+  sort_id: 202608051900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Leisure Report"
+  date: 2026-08-06
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/leisure-report"
+  sort_id: 202608061900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Bryan Campbell"
+  date: 2026-08-07
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/bryan-campbell"
+  sort_id: 202608071900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - The Ramble"
+  date: 2026-08-08
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/the-ramble"
+  sort_id: 202608081900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Corey Pavlosky"
+  date: 2026-08-09
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/corey-pavlosky"
+  sort_id: 202608091900
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Suns of Stars"
+  date: 2026-08-10
+  time: "8:00 PM - 11:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/suns-of-stars"
+  sort_id: 202608102000
+  category: "live-music"
+
+- name: "Live Music @ Fish Heads - Jeremy & The Generations"
+  date: 2026-08-12
+  time: "7:00 PM - 10:00 PM"
+  other: "Weather Dependent"
+  location: "Fish Heads Bar & Grill, Nags Head"
+  link: "https://outerbanksthisweek.com/fishheads/events/jeremy-generations"
+  sort_id: 202608121900
+  category: "live-music"
+
 - name: "Wright Kite Festival"
   date: 2026-07-17
   end_date: 2026-07-18
