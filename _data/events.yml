@@ -947,7 +947,7 @@
   category: "Social"
 
 # HOLIDAY CELEBRATIONS
-- name: "Independence Day Celebration"
+- name: "Manteo Independence Day Celebration"
   date: 2026-07-04
   time: "6:00 PM - 9:00 PM"
   location: "Downtown Waterfront, Manteo"
@@ -1713,6 +1713,14 @@
   sort_id: 202607042115
   category: ["free", "July 4th"]
 
+- name: "Avon Fishing Pier Fireworks"
+  date: 2026-07-04
+  time: "9:15 PM"
+  location: "Avon Fishing Pier, Avon"
+  link: "https://avonrvresort.com/event/avon-pier-july-4th-2026/"
+  category: ["free", "July 4th"]
+  sort_id: 202607042115
+
 - name: "Nags Head: Fourth of July Fireworks Show"
   date: 2026-07-04
   time: "9:20 PM"
@@ -1720,6 +1728,16 @@
   link: "https://events.dncr.nc.gov/event/nags-head-fourth-of-july-fireworks-show"
   sort_id: 202607042120
   category: ["free", "July 4th"]
+
+
+- name: "Ocracoke Island Fireworks"
+  date: 2026-07-02
+  time: "9:15 PM"
+  location: "Silver Lake Harbor, Ocracoke"
+  link: "https://www.visitocracokenc.com/events/"
+  category: ["free", "July 4th"]
+  sort_id: 202607022115
+
 
 - name: "moe. & Umphrey's McGee"
   date: 2026-07-09
@@ -2868,6 +2886,30 @@
   link: "https://www.nagsheadnc.gov/614/Events"
   category: "free"
   sort_id: 202607030900
+
+- name: "Historic Corolla Park Independence Day Celebration"
+  date: 2026-07-03
+  time: "5:00 PM - 9:00 PM"
+  location: "Historic Corolla Park, Corolla"
+  link: "https://www.visitcurrituck.com/events/"
+  category: ["free", "July 4th"]
+  sort_id: 202607031700
+
+- name: "Ocracoke Island 4th of July Festivities"
+  date: 2026-07-04
+  time: "9:00 AM - 9:00 PM"
+  location: "Ocracoke Island"
+  link: "https://www.visitocracokenc.com/events/"
+  category: ["free", "July 4th"]
+  sort_id: 202607040900
+
+- name: "1850s-style Independence Day @ Island Farm"
+  date: 2026-07-04
+  time: "9:00 AM - 3:00 PM"
+  location: "Island Farm, Manteo"
+  link: "https://obcinc.org/island-farm/"
+  category: ["July 4th"]
+  sort_id: 202607040900
 
 - name: "Family Fun Times"
   date: 2026-07-07
