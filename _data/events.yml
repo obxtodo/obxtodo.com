@@ -1723,7 +1723,7 @@
 
 - name: "Nags Head: Fourth of July Fireworks Show"
   date: 2026-07-04
-  time: "9:20 PM"
+  time: "9:00 PM"
   location: "Nags Head Fishing Pier, Nags Head"
   link: "https://events.dncr.nc.gov/event/nags-head-fourth-of-july-fireworks-show"
   sort_id: 202607042120
@@ -1734,7 +1734,7 @@
   date: 2026-07-02
   time: "9:15 PM"
   location: "Silver Lake Harbor, Ocracoke"
-  link: "https://www.visitocracokenc.com/events/"
+  link: "https://www.visitocracokenc.com/event/ocracoke-island-independence-day-celebration-fireworks/"
   category: ["free", "July 4th"]
   sort_id: 202607022115
 
@@ -2896,11 +2896,12 @@
   sort_id: 202607031700
 
 - name: "Ocracoke Island 4th of July Festivities"
-  date: 2026-07-04
-  time: "9:00 AM - 9:00 PM"
+  date: 2026-07-02
+  end_date: 2026-07-04
+  time: "See website"
   location: "Ocracoke Island"
-  link: "https://www.visitocracokenc.com/events/"
-  category: ["free", "July 4th"]
+  link: "https://www.visitocracokenc.com/event/ocracoke-island-independence-day-celebration-fireworks/"
+  category: ["July 4th"]
   sort_id: 202607040900
 
 - name: "1850s-style Independence Day @ Island Farm"
