@@ -210,15 +210,6 @@
   sort_id: 202609110000
   category: "Festivals"
 
-- name: "OBX Pride Week & Pridefest"
-  date: 2026-09-11
-  end_date: 2026-09-13
-  time: "12:00 PM - 6:00 PM"
-  location: "Roanoke Island Festival Park, Manteo"
-  link: "https://www.obxpridefest.com"
-  sort_id: 202609110000
-  category: "Festivals"
-
 - name: "Community Care Clinic of Dare Billfish Tournament"
   date: 2026-09-12
   time: ""
