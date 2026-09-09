@@ -164,13 +164,6 @@
   sort_id: 202609061800
   category: "live-music"
 
-- name: "Labor Day"
-  date: 2026-09-07
-  time: ""
-  location: "Outer Banks, NC"
-  link: "https://www.outerbanks.org/events/"
-  sort_id: 202609070000
-  category: "Community"
 
 - name: "OBX Arts & Craft Festival"
   date: 2026-09-09
